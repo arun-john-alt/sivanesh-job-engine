@@ -38,5 +38,10 @@
     "flex.wd1.myworkdayjobs.com"
   ],
   "maxPageFetches": 18,
-  "requestDelaySeconds": 1.2
+  "requestDelaySeconds": 1.2,
+  "linkedinQueries": [
+    "site:linkedin.com/jobs/view/ (\"buyer\" OR \"procurement\") Chennai",
+    "site:linkedin.com/jobs/view/ (\"supply chain\" OR \"material planner\" OR \"demand planner\") Chennai",
+    "site:linkedin.com/jobs/view/ (\"procurement\" OR \"sourcing\" OR \"supply planner\") \"remote\" \"India\""
+  ]
 }

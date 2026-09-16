@@ -54,7 +54,11 @@ Manual publication: commit this project to the chosen repository's `main` branch
 
 The workflow has `30 3 * * *` UTC, which is 09:00 IST. GitHub scheduled jobs are best-effort and can be delayed or disabled by platform/repository conditions. They are not precise-time alerts.
 
-Add `BRAVE_SEARCH_API_KEY` under **Settings > Secrets and variables > Actions** to enable the configured public web queries. This external service may involve its own plan/cost; nothing is purchased automatically. Without the secret, the job runs the limited employer watchlist. The key is never sent to the browser.
+Add `TAVILY_API_KEY` under **Settings > Secrets and variables > Actions** for public web and LinkedIn discovery. Tavily offers 1,000 free credits/month with no credit card required (checked 16 September 2026). Keep the free plan; paid billing is not enabled by this project. The scanner uses three LinkedIn queries and three employer queries, each at basic depth: up to six credits/run or 180–186 credits/month for daily runs. Manual runs also consume credits. `BRAVE_SEARCH_API_KEY` remains supported if Tavily is absent; when both are present, only Tavily is used. Keys stay in Actions and never reach the browser.
+
+LinkedIn discovery uses search-index results, never a LinkedIn login or direct LinkedIn scraping. Only individual job URLs with relevant role and location evidence become unscored, salary-unknown leads marked **LinkedIn indexed**. Search dates are not posting dates. Tracking/country/slug URL variants are deduplicated. Existing reviewed records and linked employer application URLs are preserved. Matching an employer listing to a LinkedIn lead requires checking the requisition and adding `linkedinUrl` to the reviewed record; the scanner does not guess a match from similar titles. No complete LinkedIn coverage or live availability is promised.
+
+Without either secret, employer checks still run and coverage explicitly reports LinkedIn as **Not configured**. After adding the key, manually run the workflow with scan=true and check its coverage report. Search failures are recorded and do not remove previous jobs.
 
 Change `config/search.json` to manage queries, approved employer hosts, request budget and watch pages. The script respects robots, refuses private/unapproved network destinations, limits requests, deduplicates roles and retains reviewed analyses. New discoveries require review before qualification. A failed check is not an expired vacancy.
 
@@ -93,6 +97,7 @@ No npm packages are required. See `docs/QA.md` for what was and was not tested. 
 
 - GitHub Pages custom workflows: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 - Workflow schedules: https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onschedule
+- Tavily Search API: https://docs.tavily.com/documentation/api-reference/endpoint/search
 - Brave Search API: https://api-dashboard.search.brave.com/app/documentation/web-search
 
 Reviewed 16 September 2026. Use official documentation when changing provider integrations; do not assume previous chat claims are current facts.

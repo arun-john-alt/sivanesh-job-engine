@@ -41,6 +41,7 @@ jobs:
       - name: Discover and recheck employer jobs
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scan == 'true')
         env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
         run: python scripts/scan.py
       - name: Validate resulting public dataset
