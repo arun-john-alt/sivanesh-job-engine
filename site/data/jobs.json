@@ -5,17 +5,17 @@
     "status": "completed",
     "checkedOn": "2026-09-16",
     "automaticEnabled": true,
-    "note": "0 new lead(s); 1 job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.",
+    "note": "9 new lead(s); 1 job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.",
     "coverage": [
       {
         "source": "LinkedIn public search index",
-        "status": "Not configured",
-        "detail": "Add TAVILY_API_KEY (free plan) or BRAVE_SEARCH_API_KEY in GitHub Actions secrets. No LinkedIn search ran."
+        "status": "3 queries completed",
+        "detail": "Tavily: 9 new unscored leads. Partial index coverage only; no LinkedIn login, direct scraping or availability verification."
       },
       {
-        "source": "Broad web discovery",
-        "status": "Not configured",
-        "detail": "No search API secret. Only the employer watchlist and existing employer roles are checked."
+        "source": "Tavily web discovery",
+        "status": "3 queries completed",
+        "detail": "Only approved employer hosts are fetched. New leads require review; matching employer links should be added after verification."
       },
       {
         "source": "Vestas",
@@ -56,6 +56,21 @@
         "source": "Comcast",
         "status": "Fetched",
         "detail": "https://jobs.comcast.com/category/procurement-jobs/45483/8707728/1 - no structured job data"
+      },
+      {
+        "source": "careers.caterpillar.com",
+        "status": "Fetched",
+        "detail": "https://careers.caterpillar.com/pt/empregos/r0000391776/associate-procurement-professional - job metadata found"
+      },
+      {
+        "source": "careers.vestas.com",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Chennai-Sr_-Supply-Chain-Analyst-TN-600-117/1418518033 - no structured job data"
+      },
+      {
+        "source": "www.careers.ford.com",
+        "status": "HTTP 404",
+        "detail": "https://www.careers.ford.com/job/chennai/analyst-material-fulfilment/48560/100301734416"
       },
       {
         "source": "Vestas",
@@ -101,11 +116,6 @@
         "source": "Vestas",
         "status": "Fetched",
         "detail": "https://careers.vestas.com/job/Goleni%C3%B3w-Specjalistaka-lub-M%C5%82odszya-Specjalistaka-ds_-Mechaniki-w-dziale-Utrzymania-Ruchu-Goleni%C3%B3w%2C-PL-Zach-72-100/1371536433 - no structured job data"
-      },
-      {
-        "source": "Comcast",
-        "status": "Fetched",
-        "detail": "https://jobs.comcast.com/job/philadelphia/manager-enterprise-procurement/45483/91379888448 - job metadata found"
       },
       {
         "source": "Salary, culture and resume analysis",
@@ -732,6 +742,546 @@
         "Does the role require prior energy-category ownership?",
         "What are the grade, salary budget and fixed/variable split?",
         "What category spend and independent negotiation authority would this position own?"
+      ]
+    },
+    {
+      "id": "linkedin-4464513509",
+      "company": "Employer to verify",
+      "title": "Senior Sourcing Transformation Consultant - LinkedIn",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4464513509",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4464513509",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4464513509",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4464978670",
+      "company": "Be Verse Technologies",
+      "title": "Demand Supply Planner",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4464978670",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4464978670",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4464978670",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4463326977",
+      "company": "Capgemini",
+      "title": "Demand Planner",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4463326977",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4463326977",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4463326977",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4466553203",
+      "company": "Capgemini",
+      "title": "Supply Planner",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4466553203",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4466553203",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4466553203",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4459927792",
+      "company": "Employer to verify",
+      "title": "Material Planner - Chennai at TR, part of the Trifast plc group",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4459927792",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4459927792",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4459927792",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4464524243",
+      "company": "Schneider Electric",
+      "title": "Manager - Material Planning",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4464524243",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4464524243",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4464524243",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4459115218",
+      "company": "Hired",
+      "title": "Procurement Specialist (Remote)",
+      "location": "Remote India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4459115218",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4459115218",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4459115218",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4455739716",
+      "company": "Gradiant",
+      "title": "Senior Executive - Procurement",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4455739716",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4455739716",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4455739716",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4464078833",
+      "company": "Employer to verify",
+      "title": "Supply Chain Manager (Remote) at Hired \u2014 India - Jobs - LinkedIn",
+      "location": "Remote India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4464078833",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4464078833",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-16",
+      "checkedOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4464078833",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
       ]
     }
   ]
