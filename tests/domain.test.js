@@ -13,7 +13,17 @@ test('base salary is not automatically compared to total CTC',()=>assert.equal(p
 test('expired deadline removed, closing day itself retained',()=>{assert.equal(isExpired({...base,closesOn:'2026-09-16'},'2026-09-17'),true);assert.equal(isExpired({...base,closesOn:'2026-09-16'},'2026-09-16'),false);});
 test('unsafe link protocols and embedded credentials rejected',()=>{for(const url of ['javascript:alert(1)','data:text/html,test','https://user:pass@example.com'])assert.equal(safeURL(url),'');});
 test('tracking removed but requisition query retained',()=>assert.equal(canonicalURL('https://example.com/jobs?gh_jid=42&utm_source=x#top'),'https://example.com/jobs?gh_jid=42'));
-test('public serializer excludes personal fields',()=>{const mixed=structuredClone(raw);mixed.master={phone:'secret'};mixed.jobs[0].notes='secret';mixed.jobs[0].currentCtcLpa=8.2;const out=JSON.stringify(validateDataset(mixed));assert.ok(!out.includes('secret'));assert.ok(!out.includes('currentCtcLpa'));});
+test('public serializer excludes personal fields',()=>{
+  const mixed=structuredClone(raw),marker='PRIVATE_TEST_VALUE_7e912c';
+  mixed.master={phone:marker};mixed.jobs[0].notes=marker;mixed.jobs[0].currentCtcLpa=8.2;
+  mixed.run.note='Add a search API secret in GitHub Actions.';
+  const out=validateDataset(mixed);
+  assert.equal(Object.hasOwn(out,'master'),false);
+  assert.equal(Object.hasOwn(out.jobs[0],'notes'),false);
+  assert.equal(Object.hasOwn(out.jobs[0],'currentCtcLpa'),false);
+  assert.ok(!JSON.stringify(out).includes(marker));
+  assert.equal(out.run.note,mixed.run.note);
+});
 test('duplicate IDs and invalid score ranges rejected',()=>{const a=structuredClone(raw);a.jobs.push(a.jobs[0]);assert.throws(()=>validateDataset(a));const b=structuredClone(raw);b.jobs[0].score[0].points=300;assert.throws(()=>validateDataset(b));});
 test('master remains unchanged and only approved changes apply',()=>{const master={summary:'Original',experience:[{bullets:['Real fact']}],skills:[]};const j={resumeEdits:[{id:'s',path:'summary',proposed:'Proposed'}]};const draft={edits:{s:{text:'Approved fact',approved:true}},extraBullets:[]};const result=applyApproved(master,j,draft);assert.equal(result.summary,'Approved fact');assert.equal(master.summary,'Original');draft.edits.s.approved=false;assert.equal(applyApproved(master,j,draft).summary,'Original');});
 test('unapproved new facts are excluded',()=>{const master={summary:'Original',experience:[{bullets:['Real fact']}],skills:[]};assert.equal(applyApproved(master,{resumeEdits:[]},{extraBullets:[{company:0,text:'Unverified',approved:false}]}).experience[0].bullets.length,1);});
