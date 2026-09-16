@@ -1,0 +1,42 @@
+{
+  "minimumTargetLpa": 12,
+  "experienceYears": 5.2,
+  "preferredLocations": [
+    "Chennai",
+    "Remote India"
+  ],
+  "queries": [
+    "(\"senior buyer\" OR \"procurement specialist\") Chennai jobs",
+    "(\"material planner\" OR \"supply chain analyst\") Chennai SAP jobs",
+    "(\"strategic sourcing\" OR \"demand planner\") \"India\" remote jobs"
+  ],
+  "watchPages": [
+    {
+      "company": "Vestas",
+      "url": "https://careers.vestas.com/go/Procurement/3297901/"
+    },
+    {
+      "company": "Comcast",
+      "url": "https://jobs.comcast.com/category/procurement-jobs/45483/8707728/1"
+    }
+  ],
+  "allowedHosts": [
+    "careers.vestas.com",
+    "jobs.comcast.com",
+    "www.careers.ford.com",
+    "careers.ford.com",
+    "alliancewd.wd3.myworkdayjobs.com",
+    "jobs.elastic.co",
+    "boards.greenhouse.io",
+    "job-boards.greenhouse.io",
+    "jobs.lever.co",
+    "careers.caterpillar.com",
+    "careers.se.com",
+    "careers.bosch.com",
+    "careers.hitachi.com",
+    "careers.gevernova.com",
+    "flex.wd1.myworkdayjobs.com"
+  ],
+  "maxPageFetches": 18,
+  "requestDelaySeconds": 1.2
+}

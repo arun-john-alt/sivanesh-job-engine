@@ -1,0 +1,19 @@
+# NEVER commit private resumes, application state, or credentials.
+.env
+.env.*
+!.env.example
+*private-workspace*.json
+*encrypted-workspace*.json
+private/
+*.pdf
+*.docx
+*.doc
+*.zip
+*.pem
+*.key
+*.log
+__pycache__/
+.DS_Store
+node_modules/
+dist/
+test-results/

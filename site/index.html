@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-led job discovery, application tracking and private resume tailoring for Sivanesh.">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>Sivanesh Job Engine | Next move</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<aside class="sidebar">
+  <a class="brand" href="#"><span class="brand-icon">s<span>.</span></span><div><b>nextmove</b><small>SIVANESH JOB ENGINE</small></div></a>
+  <div class="nav-label">WORKSPACE</div>
+  <nav aria-label="Main navigation">
+    <button class="nav-item active" data-view="jobs"><span class="nav-icon">&#9638;</span>Opportunities<span id="navCount" class="nav-count">0</span></button>
+    <button class="nav-item" data-view="pipeline"><span class="nav-icon">&#9776;</span>My pipeline</button>
+    <button class="nav-item" data-view="resume"><span class="nav-icon">&#9998;</span>Resume studio</button>
+    <button class="nav-item" data-view="sources"><span class="nav-icon">&#9673;</span>Search &amp; sources</button>
+    <button class="nav-item" data-view="settings"><span class="nav-icon">&#9881;</span>Setup &amp; privacy</button>
+  </nav>
+  <div class="sidebar-goal"><span class="tiny">THE 2026 MOVE</span><h3>A better role.<br>A meaningful raise.</h3><p id="sideGoal">Target &#8377;12 LPA+<br>By 31 December 2026</p><div class="goal-line"></div><span id="sideDays">Working towards your next chapter.</span></div>
+  <div class="sidebar-foot"><span class="avatar">SK</span><div><b>Sivanesh</b><small>Supply chain &amp; procurement</small></div><button id="themeBtn" title="Toggle dark mode" aria-label="Toggle dark mode">&#9680;</button></div>
+</aside>
+<main id="main" class="main" tabindex="-1">
+  <header class="topbar"><div class="breadcrumb">Your workspace <span>/</span> <b id="pageName">Opportunities</b></div><div class="top-actions"><span id="saveState" class="save-state">Private work stays in this browser</span><button class="button compact" data-action="reload" title="Reload the published JSON, not a new web search">&#8635; Reload jobs</button><button class="button primary compact" data-action="workspace-import">Load private workspace</button></div></header>
+  <div id="app"><div class="loading">Loading your job workspace...</div></div>
+  <footer class="footer"><span id="dataStamp">Loading dataset</span><span>Public job research &middot; Private application workspace</span></footer>
+</main>
+<input type="file" id="fileInput" accept="application/json,.json" hidden>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="passDialog"><form method="dialog"><h2 id="passTitle">Protect your workspace</h2><p>Your passphrase is not stored. Use a long, unique phrase and share it separately.</p><label for="passphrase">Passphrase</label><input id="passphrase" type="password" minlength="12" autocomplete="off" required><div class="dialog-actions"><button value="cancel" class="button" formnovalidate>Cancel</button><button value="confirm" class="button primary">Continue</button></div></form></dialog>
+<noscript>This application requires JavaScript. Job research is also available in data/jobs.json.</noscript>
+<script type="module" src="app.js"></script>
+</body></html>

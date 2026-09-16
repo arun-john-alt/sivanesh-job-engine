@@ -1,0 +1,129 @@
+TAP version 13
+# Subtest: seed dataset passes strict schema
+ok 1 - seed dataset passes strict schema
+  ---
+  duration_ms: 0.904275
+  type: 'test'
+  ...
+# Subtest: weighted scores sum and reviewed jobs alone get scores
+ok 2 - weighted scores sum and reviewed jobs alone get scores
+  ---
+  duration_ms: 0.160231
+  type: 'test'
+  ...
+# Subtest: percentage increase uses recurring annual CTC values
+ok 3 - percentage increase uses recurring annual CTC values
+  ---
+  duration_ms: 0.140972
+  type: 'test'
+  ...
+# Subtest: unknown salary is not a rejection
+ok 4 - unknown salary is not a rejection
+  ---
+  duration_ms: 0.119931
+  type: 'test'
+  ...
+# Subtest: low third-party estimate cannot reject a role
+ok 5 - low third-party estimate cannot reject a role
+  ---
+  duration_ms: 0.104227
+  type: 'test'
+  ...
+# Subtest: employer CTC ceiling below target is a gate
+ok 6 - employer CTC ceiling below target is a gate
+  ---
+  duration_ms: 0.750522
+  type: 'test'
+  ...
+# Subtest: base salary is not automatically compared to total CTC
+ok 7 - base salary is not automatically compared to total CTC
+  ---
+  duration_ms: 0.15886
+  type: 'test'
+  ...
+# Subtest: expired deadline removed, closing day itself retained
+ok 8 - expired deadline removed, closing day itself retained
+  ---
+  duration_ms: 0.140792
+  type: 'test'
+  ...
+# Subtest: unsafe link protocols and embedded credentials rejected
+ok 9 - unsafe link protocols and embedded credentials rejected
+  ---
+  duration_ms: 0.47722
+  type: 'test'
+  ...
+# Subtest: tracking removed but requisition query retained
+ok 10 - tracking removed but requisition query retained
+  ---
+  duration_ms: 0.383378
+  type: 'test'
+  ...
+# Subtest: public serializer excludes personal fields
+ok 11 - public serializer excludes personal fields
+  ---
+  duration_ms: 0.922943
+  type: 'test'
+  ...
+# Subtest: duplicate IDs and invalid score ranges rejected
+ok 12 - duplicate IDs and invalid score ranges rejected
+  ---
+  duration_ms: 0.898145
+  type: 'test'
+  ...
+# Subtest: master remains unchanged and only approved changes apply
+ok 13 - master remains unchanged and only approved changes apply
+  ---
+  duration_ms: 0.334124
+  type: 'test'
+  ...
+# Subtest: unapproved new facts are excluded
+ok 14 - unapproved new facts are excluded
+  ---
+  duration_ms: 0.088754
+  type: 'test'
+  ...
+# Subtest: prototype paths do not modify master or globals
+ok 15 - prototype paths do not modify master or globals
+  ---
+  duration_ms: 0.262185
+  type: 'test'
+  ...
+# Subtest: workspace defaults contain no current CTC or personal contacts
+ok 16 - workspace defaults contain no current CTC or personal contacts
+  ---
+  duration_ms: 0.22585
+  type: 'test'
+  ...
+# Subtest: DOCX is a genuine ZIP, not HTML renamed .docx
+ok 17 - DOCX is a genuine ZIP, not HTML renamed .docx
+  ---
+  duration_ms: 2.068852
+  type: 'test'
+  ...
+# Subtest: encrypted backup round trip and incorrect password rejection
+ok 18 - encrypted backup round trip and incorrect password rejection
+  ---
+  duration_ms: 161.524535
+  type: 'test'
+  ...
+# Subtest: employer-specific education edits preserve master dates
+ok 19 - employer-specific education edits preserve master dates
+  ---
+  duration_ms: 0.27835
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 225.498897
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

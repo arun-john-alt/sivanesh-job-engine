@@ -1,0 +1,78 @@
+name: Job engine - scan, test and publish
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      scan:
+        description: 'Discover new jobs before publishing (new leads require review)'
+        required: true
+        default: 'true'
+        type: choice
+        options: ['true', 'false']
+  schedule:
+    # 03:30 UTC = 09:00 Asia/Kolkata. GitHub scheduling is best-effort.
+    - cron: '30 3 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: job-engine-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Unit tests
+        run: |
+          node --test tests/*.test.js
+          python -m unittest discover -s tests -p 'test_*.py'
+      - name: Discover and recheck employer jobs
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scan == 'true')
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+        run: python scripts/scan.py
+      - name: Validate resulting public dataset
+        run: node scripts/validate.mjs
+      - name: Public-only build and privacy checks
+        run: python scripts/build.py
+      - name: Commit updated public research, when changed
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scan == 'true')
+        run: |
+          if ! git diff --quiet -- site/data/jobs.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add site/data/jobs.json
+            git commit -m 'data: refresh employer-job discovery and coverage'
+            git push origin HEAD:main
+          fi
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload public site only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

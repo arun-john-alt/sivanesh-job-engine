@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-16",
+  "run": {
+    "status": "manual-research",
+    "checkedOn": "2026-09-16",
+    "note": "Four employer-hosted listings were found in the search index. Fresh direct fetches failed. No live-availability or salary guarantee.",
+    "automaticEnabled": false,
+    "coverage": [
+      {
+        "source": "Employer career pages",
+        "status": "Indexed",
+        "detail": "Four exact requisitions found; direct page checks blocked."
+      },
+      {
+        "source": "LinkedIn",
+        "status": "Limited",
+        "detail": "Discovery results only; no comprehensive logged-in search."
+      },
+      {
+        "source": "Salary and review sources",
+        "status": "Partial",
+        "detail": "Sparse or historical pay evidence; team-specific review gaps remain."
+      },
+      {
+        "source": "Naukri / Foundit",
+        "status": "Not searched",
+        "detail": "No claim of coverage."
+      },
+      {
+        "source": "Scheduled GitHub scan",
+        "status": "Not connected",
+        "detail": "Included workflow needs deployment; broad discovery additionally needs a search API key."
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "location": "Chennai, India",
+      "workModel": "Not specified",
+      "status": "Discovered",
+      "postedOn": null,
+      "closesOn": "2026-09-30",
+      "checkedOn": "2026-09-16",
+      "discoveredOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Employer-hosted listing found in web search on 16 Sep 2026. A fresh direct page fetch could not be completed; confirm the application form still accepts applications.",
+      "analysisStatus": "reviewed",
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No employer salary range verified. Confirm the approved annual CTC budget before a lengthy interview process.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "A small set of Chennai Glassdoor reviews is mixed. These are anonymous experiences, not verified findings about the buying team.",
+        "signals": [
+          "August 2026 engineering reviews mention learning and culture, alongside inconsistent decisions and job-security concerns.",
+          "Another visible review describes work-life balance positively but questions compensation.",
+          "No buyer/procurement-specific review was verified. Ask the actual hiring team about attrition and working hours."
+        ],
+        "sources": [
+          {
+            "label": "Glassdoor: Vestas Chennai reviews",
+            "url": "https://www.glassdoor.co.in/Reviews/Vestas-Wind-Systems-Chennai-Reviews-EI_IE26454.0%2C19_IL.20%2C27_IC2833209.htm",
+            "scope": "Chennai; visible engineering reviews, not procurement",
+            "asOf": "2026-08",
+            "checkedOn": "2026-09-16"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "Vestas careers: requisition 79195",
+          "url": "https://careers.vestas.com/job/Chennai-Buyer-Sr-Buyer-TN-600-117/1436030333/",
+          "scope": "Employer job posting",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ],
+      "hardGaps": [],
+      "ats": {
+        "supported": [
+          "Purchase orders",
+          "Supplier coordination",
+          "SAP MM",
+          "Inventory management",
+          "P2P",
+          "Reporting",
+          "Root cause analysis"
+        ],
+        "confirm": [
+          "SOP ownership",
+          "Process audits",
+          "Lead-time optimisation"
+        ],
+        "unsupported": [
+          "SAP configuration",
+          "Unverified language proficiency",
+          "Category ownership not demonstrated"
+        ]
+      },
+      "resumeEdits": [
+        {
+          "id": "summary",
+          "path": "summary",
+          "proposed": "Supply Chain and Procurement professional with 5+ years across automotive and electronics, focused on material availability, purchase-order management, supplier delivery performance and inventory control. Experienced with SAP MM, Baan ERP, Microsoft Dynamics 365, Power BI and Advanced Excel.",
+          "reason": "Lead with the buying and supplier-delivery experience already in the resume.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "ford-expedite",
+          "path": "experience.0.bullets.1",
+          "proposed": "Coordinate daily with global suppliers to monitor shipments, resolve delivery issues and expedite critical materials required across customer plants.",
+          "reason": "Make the existing supplier-expediting responsibility immediately visible.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "flex-po",
+          "path": "experience.1.bullets.0",
+          "proposed": "Managed purchase orders for assigned products, coordinating supplier confirmation, material delivery, PO changes and payment follow-up.",
+          "reason": "Combine existing PO-lifecycle facts without claiming sourcing ownership.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "masters-no-dates",
+          "path": "education.0",
+          "proposed": "Master's in Logistics and Supply Chain Management | Birmingham City University, UK | Distinction",
+          "reason": "The employer asks applicants to omit graduation dates. Retain the qualification and result; remove education dates only for this application.",
+          "evidence": "Vestas requisition 79195, fair-hiring CV guidance; candidate master resume education."
+        },
+        {
+          "id": "degree-no-dates",
+          "path": "education.3",
+          "proposed": "BE - Civil Engineering | Sona College of Technology, Tamil Nadu | CGPA 7.72",
+          "reason": "Remove the education date range to follow this employer-specific request; the master resume remains unchanged.",
+          "evidence": "Vestas requisition 79195, fair-hiring CV guidance; candidate master resume education."
+        }
+      ],
+      "id": "vestas-79195",
+      "company": "Vestas",
+      "title": "Buyer / Sr Buyer",
+      "family": "Buying",
+      "experience": "5-7 years",
+      "requisition": "79195",
+      "applyUrl": "https://careers.vestas.com/job/Chennai-Buyer-Sr-Buyer-TN-600-117/1436030333/",
+      "linkedinUrl": null,
+      "summary": "Service and spare-parts buying with PO follow-up, supplier coordination, SAP records, reporting and resolution of invoice or receiving issues.",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 31,
+          "reason": "Ford supplier expediting and Flex PO/shortage work align strongly. Process documentation is not evidenced."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 18,
+          "reason": "SAP MM and reporting tools are listed; depth of each tool is not quantified."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 20,
+          "reason": "Five-plus total years fall within the stated band. Confirm level and buying ownership."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 10,
+          "reason": "Manufacturing experience transfers; wind-service procurement is new."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai matches the stated search preference."
+        }
+      ],
+      "benefits": [
+        "Close continuation of existing supplier/material expertise with an explicit buying title.",
+        "Opportunity to demonstrate procurement ownership rather than only demand analysis."
+      ],
+      "risks": [
+        "An execution-heavy buying job may not improve commercial scope.",
+        "Salary is unknown; an unsupported estimate must not be used to approve or reject it.",
+        "Vestas requests a CV without graduation dates or unrelated personal details. Review the education edits before submitting."
+      ],
+      "questions": [
+        "What is the budgeted annual fixed pay and total CTC?",
+        "How much time is spent on supplier negotiations versus PO follow-up?",
+        "Which service regions and working hours does this team support?"
+      ]
+    },
+    {
+      "location": "Chennai, India",
+      "workModel": "Not specified",
+      "status": "Discovered",
+      "postedOn": "2026-09-11",
+      "closesOn": null,
+      "checkedOn": "2026-09-16",
+      "discoveredOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Employer-hosted listing found in web search on 16 Sep 2026. A fresh direct page fetch could not be completed; confirm the application form still accepts applications.",
+      "analysisStatus": "reviewed",
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "Employer range not disclosed. One Chennai Glassdoor submission from June 2023 reports total pay of INR 11-13 lakh. It is historical context, NOT a current likely salary or the vacancy budget.",
+        "sources": [
+          {
+            "label": "Glassdoor: one historical procurement submission",
+            "url": "https://www.glassdoor.co.in/Salary/Comcast-Procurement-Salaries-E1280_D_KO8%2C19.htm",
+            "scope": "One Chennai Procurement Specialist submission; 7-9 years",
+            "asOf": "2023-06-01",
+            "checkedOn": "2026-09-16"
+          }
+        ],
+        "historicalRange": "INR 11-13L total pay; one submission, June 2023"
+      },
+      "culture": {
+        "summary": "Available Chennai reviews describe both learning opportunities and occasional late work. These are primarily technology roles, not this procurement team.",
+        "signals": [
+          "An April 2025 Chennai software-engineering review mentions learning and late work with onshore teams.",
+          "Other visible reviews conflict on workload; team-level conditions require checking.",
+          "The job posting itself is stronger evidence for possible nights/weekends than company-wide ratings."
+        ],
+        "sources": [
+          {
+            "label": "Indeed: Comcast employee reviews",
+            "url": "https://in.indeed.com/cmp/Comcast/reviews",
+            "scope": "Chennai technology reviews; not procurement-specific",
+            "asOf": "2025-04-18",
+            "checkedOn": "2026-09-16"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "Comcast careers: R441661",
+          "url": "https://jobs.comcast.com/job/chennai/specialist-3-procurement/45483/100469944304",
+          "scope": "Employer job posting",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ],
+      "hardGaps": [
+        "RFQ/RFP ownership and mentoring are not supported by the current experience bullets."
+      ],
+      "ats": {
+        "supported": [
+          "Procurement",
+          "Supplier performance",
+          "Inventory management",
+          "Purchase orders",
+          "Receiving issues",
+          "Cost reduction",
+          "Stakeholder management"
+        ],
+        "confirm": [
+          "RFQ",
+          "RFP",
+          "Capital materials",
+          "Mentoring"
+        ],
+        "unsupported": [
+          "Independent RFQ/RFP ownership without confirmation",
+          "People-management experience"
+        ]
+      },
+      "resumeEdits": [
+        {
+          "id": "summary",
+          "path": "summary",
+          "proposed": "Supply Chain and Procurement professional with 5+ years in automotive and electronics, covering procurement operations, supplier performance, material availability and inventory management. Delivered 20% procurement cost reduction at Flex and maintained 99%+ dealer order fill at Ford. Skilled in SAP MM, Baan ERP, Dynamics 365, Power BI and Advanced Excel.",
+          "reason": "Connect existing operational and commercial evidence to this procurement role.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "flex-shortages",
+          "path": "experience.1.bullets.4",
+          "proposed": "Managed supplier shortages, excess inventory, past-due deliveries and receiving issues to minimise material disruption and support procurement service levels.",
+          "reason": "Surface direct overlap with receiving and material-management requirements.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "ford-risk",
+          "path": "experience.0.bullets.4",
+          "proposed": "Identified production and supply risks and coordinated contingency actions with internal stakeholders to prevent material shortages.",
+          "reason": "Retain the original scope; do not introduce capital-project ownership.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        }
+      ],
+      "id": "comcast-r441661",
+      "company": "Comcast",
+      "title": "Specialist 3 - Procurement",
+      "family": "Procurement",
+      "experience": "5-7 years",
+      "requisition": "R441661",
+      "applyUrl": "https://jobs.comcast.com/job/chennai/specialist-3-procurement/45483/100469944304",
+      "linkedinUrl": null,
+      "summary": "Materials procurement, supplier performance, receiving and invoice issue resolution, inventory coordination and RFQ/RFP activity. The posting mentions possible nights/weekends and mentoring.",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 29,
+          "reason": "PO, shortages, receiving and supplier-performance work align; RFQ/RFP ownership and mentoring need confirmation."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 14,
+          "reason": "ERP and reporting experience are useful; the JD does not establish an exact system match."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 20,
+          "reason": "Five-plus years align with the stated experience range."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 8,
+          "reason": "Automotive/electronics procurement transfers to a different industry."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai fits."
+        }
+      ],
+      "benefits": [
+        "Broadens procurement experience beyond automotive and electronics.",
+        "Strong continuity with Flex supplier, inventory and receiving-issue responsibilities."
+      ],
+      "risks": [
+        "The posting explicitly allows variable schedules, including nights/weekends.",
+        "Historical salary evidence is too old and sparse to establish current budget."
+      ],
+      "questions": [
+        "What is the annual fixed/variable split for this requisition?",
+        "How often are late shifts or weekends actually needed?",
+        "Does RFQ/RFP responsibility require independent ownership from day one?"
+      ]
+    },
+    {
+      "location": "Chennai, India",
+      "workModel": "Hybrid",
+      "status": "Discovered",
+      "postedOn": null,
+      "closesOn": null,
+      "checkedOn": "2026-09-16",
+      "discoveredOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Employer-hosted listing found in web search on 16 Sep 2026. A fresh direct page fetch could not be completed; confirm the application form still accepts applications.",
+      "analysisStatus": "reviewed",
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No employer salary range verified. Confirm the approved annual CTC budget before a lengthy interview process.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "This is an internal Ford opportunity. Candidate experience with the company is more relevant than an unverified company-wide rating.",
+        "signals": [
+          "Team, manager and internal-transfer compensation rules have not been verified.",
+          "Ask about decision authority, supplier category, travel and global-team working hours."
+        ],
+        "sources": []
+      },
+      "sources": [
+        {
+          "label": "Ford careers: 64092",
+          "url": "https://www.careers.ford.com/en/job/chennai/commodity-buyer-automotive/48560/95841239408",
+          "scope": "Employer job posting",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ],
+      "hardGaps": [
+        "The stated experience is specifically automotive purchasing/strategic sourcing, not just total supply-chain tenure.",
+        "Commodity strategy, TCO, localisation and programme-launch ownership are not documented."
+      ],
+      "ats": {
+        "supported": [
+          "Automotive",
+          "Supplier management",
+          "Negotiation",
+          "Cost reduction",
+          "Supply risk",
+          "Cross-functional collaboration"
+        ],
+        "confirm": [
+          "RFQ ownership",
+          "Contract negotiations",
+          "Supplier selection"
+        ],
+        "unsupported": [
+          "Commodity strategy ownership",
+          "TCO ownership",
+          "Localisation leadership",
+          "Value engineering"
+        ]
+      },
+      "resumeEdits": [
+        {
+          "id": "summary",
+          "path": "summary",
+          "proposed": "Supply Chain and Procurement professional with 5+ years across automotive and electronics, including global supplier coordination and supply-risk mitigation at Ford and procurement operations at Flex. Delivered 20% procurement cost reduction through supplier negotiations and process optimisation.",
+          "reason": "Lead with automotive and procurement facts, not unverified commodity leadership.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "ford-risk",
+          "path": "experience.0.bullets.4",
+          "proposed": "Identify and mitigate production and supply risks, coordinating contingency actions to prevent material shortages.",
+          "reason": "Move this existing strength higher when discussing an internal sourcing transition.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "flex-savings",
+          "path": "experience.1.bullets.8",
+          "proposed": "Achieved 20% reduction in procurement cost through supplier negotiations and process optimisation.",
+          "reason": "Keep the existing quantified commercial result; be ready to explain baseline, period and personal contribution.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        }
+      ],
+      "id": "ford-64092",
+      "company": "Ford",
+      "title": "Commodity Buyer - Automotive",
+      "family": "Sourcing",
+      "experience": "5-10 years in automotive purchasing or strategic sourcing",
+      "requisition": "64092",
+      "applyUrl": "https://www.careers.ford.com/en/job/chennai/commodity-buyer-automotive/48560/95841239408",
+      "linkedinUrl": null,
+      "summary": "Commodity sourcing and supplier negotiation, contract and cost management, supplier development and programme support. Engineering degree required; MBA preferred.",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 22,
+          "reason": "Supplier risk and negotiations transfer; end-to-end commodity and TCO ownership are not demonstrated."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 12,
+          "reason": "ERP and data analysis are relevant; commodity cost-model capability is not evidenced."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 15,
+          "reason": "Five-plus total supply-chain years do not automatically equal five years of automotive purchasing."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 15,
+          "reason": "Current Ford automotive exposure is directly relevant."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai and hybrid are consistent with the preference."
+        }
+      ],
+      "benefits": [
+        "Potential internal route from demand analysis into commercial sourcing.",
+        "Existing Ford context could help with an internal introduction."
+      ],
+      "risks": [
+        "An internal transfer may not reset compensation to external-market levels.",
+        "A stronger title is not a substitute for confirmed responsibility and pay."
+      ],
+      "questions": [
+        "Is this open to internal moves from demand analysis?",
+        "What experience can substitute for direct commodity ownership?",
+        "What grade, salary revision and sourcing responsibility accompany the move?"
+      ]
+    },
+    {
+      "location": "Chennai, India",
+      "workModel": "Not specified",
+      "status": "Discovered",
+      "postedOn": null,
+      "closesOn": "2026-09-23",
+      "checkedOn": "2026-09-16",
+      "discoveredOn": "2026-09-16",
+      "verification": "indexed",
+      "verificationNote": "Employer-hosted listing found in web search on 16 Sep 2026. A fresh direct page fetch could not be completed; confirm the application form still accepts applications.",
+      "analysisStatus": "reviewed",
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No employer salary range verified. Confirm the approved annual CTC budget before a lengthy interview process.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Glassdoor contains several similarly named RNTBCI profiles with different sample sizes and ratings. They should not be averaged into a single company score.",
+        "signals": [
+          "A visible August 2026 review on the larger profile describes culture positively while questioning salary growth.",
+          "A separate smaller profile has conflicting 2026 reports about management and work-life balance.",
+          "No review was verified as coming from this exact energy/logistics buying team."
+        ],
+        "sources": [
+          {
+            "label": "Glassdoor: larger RNTBCI profile",
+            "url": "https://www2.glassdoor.co.in/Reviews/Renault-Nissan-Technology-and-Business-Centre-Reviews-E658169.htm",
+            "scope": "Company-wide; not category-specific",
+            "asOf": "2026-08-27",
+            "checkedOn": "2026-09-16"
+          },
+          {
+            "label": "Glassdoor: separate RNTBCI India profile",
+            "url": "https://www.glassdoor.co.in/Reviews/Renault-Nissan-Technology-and-Business-Centre-India-Reviews-E5202840.htm",
+            "scope": "Different company profile; do not merge ratings",
+            "asOf": "2026-05-30",
+            "checkedOn": "2026-09-16"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "Renault Group careers: JOBREQ_50275099",
+          "url": "https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1",
+          "scope": "Employer job posting",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        },
+        {
+          "label": "Employer Workday indexed page",
+          "url": "https://alliancewd.wd3.myworkdayjobs.com/ro-RO/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1",
+          "scope": "Employer-hosted Romanian locale; same requisition",
+          "asOf": "2026-09-16",
+          "checkedOn": "2026-09-16"
+        }
+      ],
+      "hardGaps": [
+        "Energy/indirect-category ownership is not established.",
+        "Brief JD leaves experience, tools and work model unresolved."
+      ],
+      "ats": {
+        "supported": [
+          "Procurement",
+          "Logistics",
+          "Supplier management",
+          "Negotiation",
+          "Cost reduction",
+          "Contract management"
+        ],
+        "confirm": [
+          "Indirect procurement",
+          "Category management",
+          "Contractual negotiations"
+        ],
+        "unsupported": [
+          "Energy-category ownership",
+          "Unverified savings or spend managed"
+        ]
+      },
+      "resumeEdits": [
+        {
+          "id": "summary",
+          "path": "summary",
+          "proposed": "Procurement and Supply Chain professional with 5+ years in automotive and electronics, covering supplier management, logistics coordination, inventory control and cost improvement. Holds a Master's in Logistics and Supply Chain Management. Delivered 20% procurement cost reduction at Flex and currently coordinates global supplier delivery and material-availability risks at Ford.",
+          "reason": "Emphasise relevant logistics education and proven savings without claiming energy procurement.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "ford-carrier",
+          "path": "experience.0.bullets.6",
+          "proposed": "Track carrier performance and supplier delivery metrics using SUPER-G to support continuous improvement and on-time delivery.",
+          "reason": "Existing logistics-performance evidence is relevant to the logistics category.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        },
+        {
+          "id": "flex-savings",
+          "path": "experience.1.bullets.8",
+          "proposed": "Achieved 20% reduction in procurement cost through supplier negotiations and process optimisation.",
+          "reason": "Keep existing metric; confirm its evidence and scope before interviews.",
+          "evidence": "Candidate master resume: Ford / Flex experience. Wording proposal, not new experience."
+        }
+      ],
+      "id": "renault-50275099",
+      "company": "Renault Group / RNTBCI",
+      "title": "Senior Buyer - Energy & Logistics",
+      "family": "Sourcing",
+      "experience": "Not specified in available employer description",
+      "requisition": "JOBREQ_50275099",
+      "applyUrl": "https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1",
+      "linkedinUrl": null,
+      "summary": "Indirect sourcing for energy and selected logistics categories, with savings, supplier coordination, contracts and continuous improvement. The available employer description is brief.",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 23,
+          "reason": "Logistics, supplier management and cost improvement are supported; category ownership is not."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 10,
+          "reason": "ERP and reporting are useful but specific tools are not named in this brief JD."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 10,
+          "reason": "The employer experience requirement is unknown: score is provisional."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 15,
+          "reason": "Automotive industry and logistics education are relevant."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai fits."
+        }
+      ],
+      "benefits": [
+        "Potential transition into an explicit senior buying and indirect-sourcing role.",
+        "Uses logistics education and commercial cost-improvement experience."
+      ],
+      "risks": [
+        "Deadline is indexed as 23 September; confirm directly before investing time.",
+        "Energy-category expertise and compensation remain unresolved."
+      ],
+      "questions": [
+        "Does the role require prior energy-category ownership?",
+        "What are the grade, salary budget and fixed/variable split?",
+        "What category spend and independent negotiation authority would this position own?"
+      ]
+    }
+  ]
+}

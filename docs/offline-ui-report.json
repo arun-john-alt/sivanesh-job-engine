@@ -1,0 +1,18 @@
+{
+  "mode": "Offline Chromium DOM harness; network, storage and download delivery mocked because browser navigation is restricted",
+  "passed": [
+    "Four real sourced jobs render in offline DOM harness",
+    "Private CTC and raise comparison rendered correctly",
+    "Approved edits produce DOCX blob, retain master and store a separate version",
+    "Editing resets individual and final approval",
+    "State reinitialization uses saved private record (storage mocked)",
+    "Public export excludes private notes, CTC and email",
+    "Pipeline columns render",
+    "Coverage exposes setup and evidence limitations",
+    "Search, empty state and filter reset work",
+    "Unknown salary does not appear as meeting target",
+    "Dark mode and 390px mobile layout render without horizontal page overflow",
+    "No JavaScript errors in exercised DOM flows"
+  ],
+  "browserErrors": []
+}
