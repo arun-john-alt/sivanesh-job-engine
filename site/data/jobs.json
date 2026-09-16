@@ -2,35 +2,115 @@
   "schemaVersion": 2,
   "updatedAt": "2026-09-16",
   "run": {
-    "status": "manual-research",
+    "status": "completed",
     "checkedOn": "2026-09-16",
-    "note": "Four employer-hosted listings were found in the search index. Fresh direct fetches failed. No live-availability or salary guarantee.",
-    "automaticEnabled": false,
+    "automaticEnabled": true,
+    "note": "0 new lead(s); 1 job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.",
     "coverage": [
       {
-        "source": "Employer career pages",
-        "status": "Indexed",
-        "detail": "Four exact requisitions found; direct page checks blocked."
+        "source": "LinkedIn public search index",
+        "status": "Not configured",
+        "detail": "Add TAVILY_API_KEY (free plan) or BRAVE_SEARCH_API_KEY in GitHub Actions secrets. No LinkedIn search ran."
       },
       {
-        "source": "LinkedIn",
-        "status": "Limited",
-        "detail": "Discovery results only; no comprehensive logged-in search."
+        "source": "Broad web discovery",
+        "status": "Not configured",
+        "detail": "No search API secret. Only the employer watchlist and existing employer roles are checked."
       },
       {
-        "source": "Salary and review sources",
-        "status": "Partial",
-        "detail": "Sparse or historical pay evidence; team-specific review gaps remain."
+        "source": "Vestas",
+        "status": "Unresolved",
+        "detail": "Page fetched but exact JobPosting could not be confirmed. Prior evidence retained: https://careers.vestas.com/job/Chennai-Buyer-Sr-Buyer-TN-600-117/1436030333"
       },
       {
-        "source": "Naukri / Foundit",
-        "status": "Not searched",
-        "detail": "No claim of coverage."
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Chennai-Buyer-Sr-Buyer-TN-600-117/1436030333 - no structured job data"
       },
       {
-        "source": "Scheduled GitHub scan",
-        "status": "Not connected",
-        "detail": "Included workflow needs deployment; broad discovery additionally needs a search API key."
+        "source": "Comcast",
+        "status": "Fetched",
+        "detail": "https://jobs.comcast.com/job/chennai/specialist-3-procurement/45483/100469944304 - job metadata found"
+      },
+      {
+        "source": "Ford",
+        "status": "HTTP 404",
+        "detail": "https://www.careers.ford.com/en/job/chennai/commodity-buyer-automotive/48560/95841239408"
+      },
+      {
+        "source": "Renault Group / RNTBCI",
+        "status": "Unresolved",
+        "detail": "Page fetched but exact JobPosting could not be confirmed. Prior evidence retained: https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1"
+      },
+      {
+        "source": "Renault Group / RNTBCI",
+        "status": "Fetched",
+        "detail": "https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1 - job metadata found"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/go/Procurement/3297901 - no structured job data"
+      },
+      {
+        "source": "Comcast",
+        "status": "Fetched",
+        "detail": "https://jobs.comcast.com/category/procurement-jobs/45483/8707728/1 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Chennai-Operational-Buyer-TN-600-117/1437376433 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Pasay-Regional-Real-Estate-and-Facility-Management-Systems-&-Data-Lead-00-1300/1436558233 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Chennai-TL-Contract-Administration-APAC-TN-600-117/1388626233 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Rokewood-Site-Administrator-VIC-VIC-3330/1435983033 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Claude-Stock-Keeper-Goodnight%2C-TX-TX/1425442633 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Szczecin-Executive-Management-Assistant-Zach-71-700/1423758033 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Chennai-TL-Service-Operation-Support-APAC-TN-600-117/1412117133 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Smithton-TAS-7330-Site-Administrator-VICTAS-TAS-160/1423635033 - no structured job data"
+      },
+      {
+        "source": "Vestas",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Goleni%C3%B3w-Specjalistaka-lub-M%C5%82odszya-Specjalistaka-ds_-Mechaniki-w-dziale-Utrzymania-Ruchu-Goleni%C3%B3w%2C-PL-Zach-72-100/1371536433 - no structured job data"
+      },
+      {
+        "source": "Comcast",
+        "status": "Fetched",
+        "detail": "https://jobs.comcast.com/job/philadelphia/manager-enterprise-procurement/45483/91379888448 - job metadata found"
+      },
+      {
+        "source": "Salary, culture and resume analysis",
+        "status": "Human review required",
+        "detail": "New leads are unscored. The crawler never invents pay, reviews, candidate achievements or tailored bullets."
       }
     ]
   },
@@ -204,8 +284,8 @@
       "closesOn": null,
       "checkedOn": "2026-09-16",
       "discoveredOn": "2026-09-16",
-      "verification": "indexed",
-      "verificationNote": "Employer-hosted listing found in web search on 16 Sep 2026. A fresh direct page fetch could not be completed; confirm the application form still accepts applications.",
+      "verification": "live",
+      "verificationNote": "Matching employer JobPosting metadata fetched directly. Application submission was not attempted.",
       "analysisStatus": "reviewed",
       "salary": {
         "kind": "unknown",
@@ -361,8 +441,8 @@
       "closesOn": null,
       "checkedOn": "2026-09-16",
       "discoveredOn": "2026-09-16",
-      "verification": "indexed",
-      "verificationNote": "Employer-hosted listing found in web search on 16 Sep 2026. A fresh direct page fetch could not be completed; confirm the application form still accepts applications.",
+      "verification": "closed",
+      "verificationNote": "Employer returned HTTP 404. Confirm before attempting to apply.",
       "analysisStatus": "reviewed",
       "salary": {
         "kind": "unknown",
