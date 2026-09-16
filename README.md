@@ -18,7 +18,7 @@ An evidence-led job-search dashboard, private application tracker and editable r
 
 ## Current status - be precise
 
-The package is built. It has NOT been published to the user's GitHub by this build session. No account credentials or exact repository destination were available.
+Published at https://arun-john-alt.github.io/sivanesh-job-engine/ from https://github.com/arun-john-alt/sivanesh-job-engine. GitHub Pages deployment and a Tavily-powered discovery run have succeeded. The daily 09:00 IST schedule is configured; scheduled execution remains best-effort. See docs/QA.md for release checks and limitations.
 
 Four employer-hosted listings were researched on 16 September 2026: Vestas 79195, Comcast R441661, Ford 64092, and RNTBCI JOBREQ_50275099. They were found in the search index; fresh direct page fetches failed. They are therefore labelled **employer-indexed**, not guaranteed-live vacancies. Actual source URLs are included per claim. Unsupported salary guesses from the earlier starter were removed.
 
@@ -34,7 +34,7 @@ python3 -m http.server 8000 --directory site
 
 Open `http://localhost:8000`. Do not double-click index.html: browser ES modules and JSON fetch need an HTTP server.
 
-Download the separate **sivanesh-private-workspace.json** supplied in the conversation. Click **Load private workspace** in the app. This restores the supplied professional profile, private current CTC and baseline resume. Do NOT upload that JSON to GitHub. The original PDF is not modified and is not part of this public repository.
+Download the separate **sivanesh-private-workspace.json** supplied in the conversation. Click **Import profile** in the app. This restores the supplied professional profile, private current CTC and baseline resume. Do NOT upload that JSON to GitHub. The original PDF is not modified and is not part of this public repository.
 
 ## First GitHub publication
 
@@ -78,7 +78,7 @@ High fit is 80%+, Medium is 65-79%, Low is below 65%. The score is a documented 
 
 The published job dataset is shared. Application status, recruiter notes, private compensation, master resume and approved versions are local to each browser. They do not automatically sync between Arun and Sivanesh or between devices.
 
-Use **Export encrypted backup** and import the snapshot on the other device. This is explicit transfer, not real-time collaboration. Encryption uses PBKDF2-SHA256 (250,000 iterations, random salt) and AES-256-GCM (random IV). Use a strong unique passphrase, shared separately. Local browser storage itself is not encrypted by the app. Clearing site data can lose local records; keep backups.
+Use **Encrypted backup** and import the snapshot on the other device. This is explicit transfer, not real-time collaboration. Encryption uses PBKDF2-SHA256 (250,000 iterations, random salt) and AES-256-GCM (random IV). Use a strong unique passphrase, shared separately. Local browser storage itself is not encrypted by the app. Clearing site data can lose local records; keep backups.
 
 Plain private JSON backups contain personal data. Never publish them. The build has an exact-file allowlist and private-field checks; those are safeguards, not a substitute for reviewing free-text research for personal information. `noindex` is not access control.
 

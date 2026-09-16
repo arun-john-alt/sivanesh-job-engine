@@ -215,6 +215,16 @@ def search_results(fetcher,provider,key,query,linkedin=False):
     except (ValueError,TypeError,AttributeError):return None,'Invalid search response'
 
 
+def matches_existing(node,existing,page_url):
+    # Recommended jobs can share the same HTML page. Their evidence is not this role's.
+    node_url=node.get('url')
+    if node_url and (not isinstance(node_url,str) or canonical(urllib.parse.urljoin(page_url,node_url))!=canonical(existing['applyUrl'])):return False
+    if plain(node.get('title','')).casefold()!=existing['title'].casefold():return False
+    ident=node.get('identifier') or {}
+    req=str(ident.get('value','') if isinstance(ident,dict) else ident)
+    return not (req and existing.get('requisition') and req!=str(existing['requisition']))
+
+
 def run(config_path,data_path):
     cfg=json.loads(config_path.read_text());data=json.loads(data_path.read_text());now=dt.datetime.now(dt.timezone.utc).date().isoformat();fetcher=Fetcher(cfg)
     coverage=[];queue=[];known={canonical(j['applyUrl']):j for j in data['jobs']};seen=set();new_count=0;success=0
@@ -257,13 +267,21 @@ def run(config_path,data_path):
             coverage.append({'source':company,'status':status,'detail':url});continue
         page=Page();page.feed(text);nodes=list(job_nodes(page.jsonld));visible=' '.join(page.text)
         if existing:
-            same_job=any(plain(n.get('title','')).lower()==existing['title'].lower() for n in nodes)
+            same_job=any(matches_existing(n,existing,url) for n in nodes)
             if same_job:
                 existing['verification']='live';existing['checkedOn']=now;existing['verificationNote']='Matching employer JobPosting metadata fetched directly. Application submission was not attempted.';success+=1
             elif re.search(r'this job is no longer available|this position has been filled|this job has expired',visible,re.I):
                 existing['verification']='closed';existing['checkedOn']=now;existing['verificationNote']='Employer page explicitly indicates closure.';success+=1
             else:coverage.append({'source':company,'status':'Unresolved','detail':'Page fetched but exact JobPosting could not be confirmed. Prior evidence retained: '+url})
         for node in nodes:
+            node_url=node.get('url')
+            if isinstance(node_url,str):
+                candidate=canonical(urllib.parse.urljoin(url,node_url))
+                if candidate!=url:
+                    if valid_url(candidate,fetcher.hosts):queue.append((candidate,company,True))
+                    continue  # Fetch the exact listing before attaching its evidence.
+            if existing and not matches_existing(node,existing,url):continue
+            if not existing and (not is_job or len(nodes)>1) and not node_url:continue
             item=extract(node,url,company,now)
             if not item:continue
             u=canonical(item['applyUrl'])

@@ -31,3 +31,30 @@ The initial job dataset is an employer-indexed research snapshot, not a promise 
 ## Preview
 
 `dashboard-preview.png` is a screenshot of the real client rendered offline, not an image-generated mockup. Initial pipeline counts are zero; no applications were fabricated in the delivered dataset.
+
+## Share-readiness QA — 16 September 2026
+
+Release review after the Nextmove UI refresh. All checks use synthetic private data; no personal workspace or generated resume is committed.
+
+Fixed findings:
+- Private imports now validate settings, resume structure, application records, approvals and saved versions before replacing local state. Noncanonical dates, injected pay values, prototype keys and broken nested records are rejected. Optional resume lists normalize safely for printing.
+- Settings validate a prospective copy before mutation. Import success messages no longer mask browser-storage failures.
+- Employer scans require matching title, URL (when present) and requisition (when present) before updating an existing listing. Recommended-job metadata cannot replace another role's deadline, salary or availability. Distinct listing URLs are fetched separately.
+- Dataset import works after an initial fetch failure. Empty mobile result sets exit detail mode. Hash-based shared links clear conflicting filters.
+- README deployment status and current UI labels corrected.
+
+Verification:
+- 22 Node tests and 20 Python tests passed, including malformed private import cases, full private snapshot round-trip, encryption/wrong-passphrase checks and four scanner identity regressions.
+- Public validation passed for 13 jobs (9 LinkedIn-indexed leads); exact build allowlist and private-field gate passed.
+- Real browser on isolated localhost: synthetic profile import; Applied status and notes persist after reload; malformed import rejected while existing note remains; editing approved text disables final export; DOCX action creates a separate saved version; no console errors observed.
+- Search no-results/reset, keyboard Enter job opening, mobile Back, shared Comcast link after a Vestas filter, 390 px job detail, 320 px settings/dark mode passed with no horizontal overflow. Prior refresh QA also covered desktop and tablet layouts.
+- Generated a genuine DOCX via the production generator and rendered it with bundled LibreOffice. Both synthetic two-page output images inspected: text readable, no clipping or overlap. This does not guarantee every candidate-edited resume fits two pages.
+- Tracked files inspected for credential patterns, personal email addresses and prohibited private artifacts; none found. Public output contains only index.html, styles.css, app.js, engine.js, resume.js, favicon.svg, data/jobs.json and .nojekyll.
+- GitHub account verified as arun-john-alt; Tavily secret name present; previous manual scan and Pages deployments succeeded. Cron remains 03:30 UTC / 09:00 IST.
+
+Limits:
+- The automated browser tool blocked blob download/PDF-popup navigation. DOCX generator structure/rendering and UI snapshot creation passed, but actual browser download delivery and Print-to-PDF remain manual smoke checks. No workaround of that browser policy was attempted.
+- Chromium-based desktop/browser viewport QA is not a physical iOS/Android or Safari compatibility certification.
+- A scheduled run has not yet been observed after initial setup; successful manual execution and configured cron establish setup, not precise future timing.
+- LinkedIn coverage is partial search-index discovery, not logged-in access or verified live vacancies. New leads still need review. Application submission remains manual.
+- Private resume/profile and tracker data are local to each browser. Sivanesh must import the separate profile to tailor resumes and keep encrypted backups for transfer/recovery. Public sharing does not grant GitHub edit access.

@@ -55,12 +55,40 @@ export function applyApproved(master,job,draft){
   return out;
 }
 export function newWorkspace(){return {kind:'sivanesh-private-workspace',schemaVersion:2,settings:{...DEFAULTS},master:null,applications:{},drafts:{},versions:{}};}
+// Validate the entire snapshot before replacing any browser state.
+const object=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
+function requireShape(ok,label){if(!ok)throw new Error('Invalid private workspace: '+label);}
+function textList(v,label){requireShape(Array.isArray(v)&&v.every(x=>typeof x==='string'),label);return clone(v);}
+function resumeShape(m){
+  requireShape(object(m)&&typeof m.name==='string'&&m.name.trim(),'master resume');
+  const out={};for(const k of ['name','summary','email','phone','linkedin']){requireShape(m[k]===undefined||typeof m[k]==='string','resume '+k);out[k]=m[k]||'';}
+  out.skills=textList(m.skills,'resume skills');out.education=textList(m.education??[],'education');out.certifications=textList(m.certifications??[],'certifications');
+  requireShape(Array.isArray(m.experience),'experience');out.experience=m.experience.map(e=>{requireShape(object(e),'experience section');const row={};for(const k of ['company','role','location','dates']){requireShape(typeof e[k]==='string','experience '+k);row[k]=e[k];}row.bullets=textList(e.bullets,'experience bullets');return row;});return out;
+}
+function privateMap(value,check,label){
+  if(value===undefined)return {};requireShape(object(value),label);const out={};
+  for(const [id,item] of Object.entries(value)){requireShape(/^[a-z0-9][a-z0-9_-]{0,119}$/i.test(id)&&!['__proto__','constructor','prototype'].includes(id),label+' ID');out[id]=check(item);}return out;
+}
+function draftShape(d){
+  requireShape(object(d),'draft');const edits=privateMap(d.edits??{},e=>{requireShape(object(e)&&typeof e.text==='string'&&typeof e.approved==='boolean','approved edit');return {text:e.text,approved:e.approved};},'edits');
+  requireShape(Array.isArray(d.extraBullets??[]),'extra bullets');const extraBullets=(d.extraBullets??[]).map(b=>{requireShape(object(b)&&[0,1].includes(b.company)&&typeof b.text==='string'&&typeof b.approved==='boolean','extra bullet');return {company:b.company,text:b.text,approved:b.approved};});
+  requireShape(d.facts===undefined||typeof d.facts==='string','facts');requireShape(d.confirmed===undefined||typeof d.confirmed==='boolean','confirmation');return {edits,extraBullets,facts:d.facts||'',confirmed:d.confirmed===true};
+}
 export function validateWorkspace(raw){
   if(raw?.kind!=='sivanesh-private-workspace'||raw.schemaVersion!==2)throw new Error('Not a version 2 private workspace.');
-  const out=newWorkspace();out.settings={...DEFAULTS,...raw.settings};
-  for(const key of ['currentCtcLpa','targetCtcLpa','noticeDays','weeklyApplications']){const v=out.settings[key];if(v!==null&&(!Number.isFinite(v)||v<0))throw new Error('Invalid workspace setting: '+key);}
-  if(!day(out.settings.goalDate))throw new Error('Invalid goal date.');
-  if(raw.master){const m=raw.master;if(!m.name||!Array.isArray(m.skills)||!Array.isArray(m.experience))throw new Error('Invalid master resume.');out.master=clone(m);}
-  for(const key of ['applications','drafts','versions'])if(raw[key]&&typeof raw[key]==='object'&&!Array.isArray(raw[key]))out[key]=clone(raw[key]);
+  const out=newWorkspace();requireShape(raw.settings===undefined||object(raw.settings),'settings');
+  for(const key of Object.keys(DEFAULTS))if(Object.hasOwn(raw.settings??{},key))out.settings[key]=raw.settings[key];
+  for(const key of ['currentCtcLpa','targetCtcLpa','noticeDays','weeklyApplications']){const v=out.settings[key];requireShape(v===null?['currentCtcLpa','noticeDays'].includes(key):Number.isFinite(v)&&v>=0,'setting '+key);}
+  requireShape(typeof out.settings.goalDate==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(out.settings.goalDate)&&day(out.settings.goalDate),'goal date');
+  requireShape(typeof out.settings.repoUrl==='string'&&(!out.settings.repoUrl||/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+\/?$/.test(out.settings.repoUrl)),'repository URL');
+  if(raw.master!==null&&raw.master!==undefined)out.master=resumeShape(raw.master);
+  out.applications=privateMap(raw.applications,a=>{
+    requireShape(object(a)&&STAGES.includes(a.stage),'application stage');const row={stage:a.stage};
+    for(const k of ['notes','nextAction','followUpOn','appliedOn','updatedAt','payEvidence']){requireShape(a[k]===undefined||typeof a[k]==='string','application '+k);if(a[k]!==undefined)row[k]=a[k];}
+    for(const k of ['confirmedCtcLpa','fixedCtcLpa'])if(a[k]!==undefined){requireShape(a[k]===null||Number.isFinite(a[k])&&a[k]>=0,'application pay');row[k]=a[k];}
+    requireShape(Array.isArray(a.history??[]),'application history');row.history=(a.history??[]).map(h=>{requireShape(object(h)&&typeof h.at==='string'&&typeof h.event==='string','history entry');return {at:h.at,event:h.event};});if(a.shortlisted===true)row.shortlisted=true;return row;
+  },'applications');
+  out.drafts=privateMap(raw.drafts,draftShape,'drafts');
+  out.versions=privateMap(raw.versions,items=>{requireShape(Array.isArray(items),'versions');return items.map(v=>{requireShape(object(v)&&typeof v.createdAt==='string'&&typeof v.jobId==='string','version');return {createdAt:v.createdAt,jobId:v.jobId,resume:resumeShape(v.resume),approvedEdits:draftShape(v.approvedEdits)};});},'versions');
   return out;
 }

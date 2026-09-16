@@ -32,3 +32,16 @@ test('workspace defaults contain no current CTC or personal contacts',()=>{const
 test('DOCX is a genuine ZIP, not HTML renamed .docx',async()=>{const blob=resumeDocx({name:'Test Candidate',summary:'A real summary.',skills:['Procurement'],experience:[],education:[],certifications:[]});const bytes=new Uint8Array(await blob.arrayBuffer());assert.equal(bytes[0],0x50);assert.equal(bytes[1],0x4b);assert.ok(blob.type.includes('wordprocessingml'));});
 test('encrypted backup round trip and incorrect password rejection',async()=>{const {encryptWorkspace,decryptWorkspace}=await import('../site/resume.js');const data={private:'sample-only'};const encrypted=await encryptWorkspace(data,'a-long-unique-test-passphrase');assert.deepEqual(await decryptWorkspace(encrypted,'a-long-unique-test-passphrase'),data);await assert.rejects(()=>decryptWorkspace(encrypted,'incorrect-passphrase'));assert.ok(!JSON.stringify(encrypted).includes('sample-only'));});
 test('employer-specific education edits preserve master dates',()=>{const m={education:['Degree | 2020']};const result=applyApproved(m,{resumeEdits:[{id:'edu',path:'education.0'}]},{edits:{edu:{approved:true,text:'Degree'}}});assert.equal(result.education[0],'Degree');assert.equal(m.education[0],'Degree | 2020');});
+
+const sampleMaster={name:'QA Candidate',summary:'Procurement professional.',skills:['Procurement'],experience:[{company:'Example',role:'Buyer',location:'Chennai',dates:'2021–present',bullets:['Supported supplier coordination.']}],education:[],certifications:[]};
+test('private backup preserves complete valid state',()=>{
+  const w=newWorkspace();w.master=sampleMaster;w.applications[base.id]={stage:'Applied',notes:'Private test note',confirmedCtcLpa:14,history:[{at:'2026-09-16T00:00:00Z',event:'Applied'}]};
+  w.drafts[base.id]={edits:{summary:{text:'Approved summary',approved:true}},extraBullets:[],facts:'Check facts',confirmed:true};
+  w.versions[base.id]=[{createdAt:'2026-09-16T00:00:00Z',jobId:base.id,resume:sampleMaster,approvedEdits:w.drafts[base.id]}];
+  const out=validateWorkspace(w);assert.equal(out.applications[base.id].notes,'Private test note');assert.equal(out.versions[base.id][0].resume.name,'QA Candidate');assert.deepEqual(out.drafts,w.drafts);
+});
+test('malformed private imports cannot become persistent broken state',()=>{
+  const mutations=[w=>w.settings.goalDate='2026-12-31" autofocus data-test="injected',w=>w.settings.targetCtcLpa=null,w=>w.master={...sampleMaster,experience:[{company:'Example',bullets:null}]},w=>w.applications[base.id]={stage:'Applied',confirmedCtcLpa:'" autofocus'},w=>w.applications[base.id]={stage:'Applied',history:{}},w=>w.drafts[base.id]={edits:[]},w=>w.drafts[base.id]={extraBullets:[null]},w=>w.versions[base.id]={},w=>w.versions[base.id]=[{resume:{}}],w=>w.applications=JSON.parse('{"__proto__":{}}')];
+  for(const mutate of mutations){const w=newWorkspace();mutate(w);assert.throws(()=>validateWorkspace(w));}
+});
+test('optional resume lists normalized for both export formats',async()=>{const w=newWorkspace();w.master={...sampleMaster,education:undefined,certifications:undefined};const {resumePrintHTML}=await import('../site/resume.js');assert.ok(resumePrintHTML(validateWorkspace(w).master).includes('QA Candidate'));});
