@@ -1,6 +1,16 @@
 # Validation report - 16 September 2026
 
-## Passed
+## UI refresh verification — 16 September 2026
+
+Neutral/indigo redesign with compact navigation, condensed job cards, expandable evidence, and mobile list/detail navigation. No private-storage keys, domain scoring, discovery schedule, or resume document generator changed.
+
+Passed: 19 Node tests, 16 Python tests, dataset validation, JavaScript syntax check, public build privacy gate and Git whitespace checks. Real browser preview checked at desktop size, 390×844, 320×740 and 820×1180. Verified mobile search, filter panel, job selection and Back, saving a job into the local preview pipeline, resume import empty state, settings and dark theme. DOM width checks at 320px and 820px showed no page overflow; no browser console errors were captured. Export logic remains covered by the existing tests; a new resume document layout was not introduced or re-rendered.
+
+Design references: [Linear interface refresh](https://linear.app/now/behind-the-latest-design-refresh) and [Dribbble job-search mobile concept](https://dribbble.com/shots/26496497-Job-Finder-Mobile-App-Dashboard-Search-UI). The older dashboard screenshot below documents the initial design, not this refresh.
+
+## Initial package checks
+
+### Passed
 
 19 Node unit tests and 6 Python unit tests (25 total): data validation, weighted scores, salary gates, date expiry, duplicate rejection, unsafe links, private/public separation, resume approval and immutability, actual ZIP/DOCX output, encrypted backup round-trip/wrong-password rejection, source URL restrictions, role filtering, structured job parsing, salary unit handling and India-remote eligibility.
 
