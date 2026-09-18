@@ -1,5 +1,7 @@
 // Verified company identities; images are bundled locally (no tracking or API keys).
 const logos = {
+  'RRD':'rrd', 'Accenture':'accenture', 'Nextpower':'nextpower',
+  'Flexing It®':'flexing-it', 'MPloyChek':'mploychek',
   'Vestas':'vestas', 'Comcast':'comcast', 'Ford':'ford',
   'Renault Group / RNTBCI':'renault', 'HP':'hp',
   'Buying Simplified':'buying-simplified', 'Capgemini':'capgemini',
@@ -11,5 +13,5 @@ const logos = {
 };
 export function companyLogo(company) {
   const key=Object.hasOwn(logos,company)?logos[company]:null;
-  return key?`assets/companies/${key}.${key==='hitachi-energy'?'svg':'png'}`:'assets/companies/company.svg';
+  return key?`assets/companies/${key}.${['hitachi-energy','rrd'].includes(key)?'svg':'png'}`:'assets/companies/company.svg';
 }

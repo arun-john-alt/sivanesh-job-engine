@@ -18,3 +18,9 @@ Local image copies retrieved 18 September 2026. Used only to identify job poster
 - **schneider**: [company](https://www.se.com); [asset](https://www.google.com/s2/favicons?domain=www.se.com&sz=128).
 - **agnikul**: [company](https://agnikul.in); [asset](https://www.google.com/s2/favicons?domain=agnikul.in&sz=128).
 - **ford**: [company](https://www.ford.com); [asset](https://www.google.com/s2/favicons?domain=www.ford.com&sz=128).
+
+- **rrd**: [company](https://www.rrd.com); [asset: inline header SVG](https://www.rrd.com).
+- **accenture**: [company](https://www.accenture.com); [asset](https://www.google.com/s2/favicons?domain=www.accenture.com&sz=128).
+- **nextpower**: [company](https://nextpower.com); [asset](https://www.google.com/s2/favicons?domain=nextpower.com&sz=128).
+- **flexing-it**: [company](https://www.flexingit.com); [asset](https://www.flexingit.com/static/ui23/images/logo.png).
+- **mploychek**: [company](https://www.mploychek.com); [asset](https://www.mploychek.com/assets/mploychek-logo.png).
