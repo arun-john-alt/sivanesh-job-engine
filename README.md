@@ -5,7 +5,7 @@ An evidence-led job-search dashboard, private application tracker and editable r
 ## What is built
 
 - Search, match/location/pay filters, recency/deadline sorting, direct employer links and shareable job deep links.
-- Explainable weighted match scores; pay screening is separate.
+- Every recommended role has an explainable weighted match score and a locally bundled company logo; pay screening is separate.
 - Salary source, confidence, historical-data warnings, review scope and evidence dates.
 - Job-specific benefits, risks, recruiter questions, ATS matches and actual gaps.
 - Private stages, notes, follow-up dates, recruiter-confirmed total/fixed CTC and application history.
@@ -22,7 +22,7 @@ Published at https://arun-john-alt.github.io/sivanesh-job-engine/ from https://g
 
 Four employer-hosted listings were researched on 16 September 2026: Vestas 79195, Comcast R441661, Ford 64092, and RNTBCI JOBREQ_50275099. They were found in the search index; fresh direct page fetches failed. They are therefore labelled **employer-indexed**, not guaranteed-live vacancies. Actual source URLs are included per claim. Unsupported salary guesses from the earlier starter were removed.
 
-The included crawler is discovery and availability checking, **not a fully autonomous salary/culture/recruiter-research agent**. New leads have no match percentage until reviewed. Broad discovery requires a search API key; without it, only configured employer pages and existing roles are checked. No coverage of restricted/logged-in portals is promised.
+The included crawler is discovery and availability checking, **not a fully autonomous salary/culture/recruiter-research agent**. New leads stay out of the Jobs and Resume lists until their full descriptions support reviewed match percentages. Their specific limitations are listed under Sources → Not listed yet. Daily discovery does not perform that review. Broad discovery requires a search API key; without it, only configured employer pages and existing roles are checked. No coverage of restricted/logged-in portals is promised.
 
 The earlier ChatGPT task is separate. It does not automatically push into this repository. This package contains an independent GitHub workflow; it begins functioning only after deployment/setup.
 

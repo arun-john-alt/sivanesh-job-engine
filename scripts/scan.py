@@ -184,10 +184,11 @@ def listing_text(row):
 
 def result_deadline(row):
     text=listing_text(row)[:12000]
-    match=re.search(r'(?:job posting end date|valid through|end date|apply (?:by|before)|application deadline)\s*[:\-]?\s*(\d{4}-\d{2}-\d{2}|[A-Za-z]+ \d{1,2},? \d{4})',text,re.I)
+    match=re.search(r'(?:job posting end date|valid through|end date|apply (?:by|before|on or before)|application deadline)\s*[:\-]?\s*(\d{4}-\d{2}-\d{2}|[A-Za-z]+ \d{1,2},? \d{4}|\d{1,2}(?:st|nd|rd|th)? [A-Za-z]+,? \d{4})',text,re.I)
     if not match:return None
-    for fmt in ('%Y-%m-%d','%B %d, %Y','%B %d %Y','%b %d, %Y'):
-        try:return dt.datetime.strptime(match[1],fmt).date().isoformat()
+    value=re.sub(r'(?<=\d)(?:st|nd|rd|th)\b','',match[1],flags=re.I)
+    for fmt in ('%Y-%m-%d','%B %d, %Y','%B %d %Y','%b %d, %Y','%d %B %Y','%d %b %Y','%d %B, %Y'):
+        try:return dt.datetime.strptime(value,fmt).date().isoformat()
         except ValueError:pass
     return None
 

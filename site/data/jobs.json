@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-18T09:11:00.775236+00:00",
   "run": {
     "status": "completed",
     "checkedOn": "2026-09-18",
@@ -772,33 +772,65 @@
     },
     {
       "id": "linkedin-4464513509",
-      "company": "Employer to verify",
-      "title": "Senior Sourcing Transformation Consultant - LinkedIn",
+      "company": "Danish Business Services",
+      "title": "Senior Sourcing Transformation Consultant",
       "location": "Chennai, India",
-      "workModel": "Not verified",
+      "workModel": "On-site",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "Consulting and transformation delivery experience; years not stated",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4464513509",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4464513509",
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-16",
-      "checkedOn": "2026-09-16",
+      "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 16,
+          "reason": "PO and supplier operations transfer partially; transformation ownership is not evidenced."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 9,
+          "reason": "Excel and Power BI help analysis; AI automation and transformation tooling are unverified."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 8,
+          "reason": "Five-plus operational years do not establish consulting or coaching experience."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 9,
+          "reason": "Manufacturing exposure helps, but Nordic sourcing consultancy is new."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Client-facing sourcing transformation, category governance and digital improvement for Nordic customers.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Consulting delivery, category strategy and change leadership are not established.",
+        "Mechanical/electrical engineering is preferred; the candidate holds a civil engineering degree."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -827,39 +859,79 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/senior-sourcing-transformation-consultant-at-danish-business-services-pvt-ltd-4464513509",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "linkedin-4464978670",
       "company": "Be Verse Technologies",
       "title": "Demand Supply Planner",
       "location": "Chennai, India",
-      "workModel": "Not verified",
+      "workModel": "Hybrid",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "Relevant planning experience; minimum years not stated",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4464978670",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4464978670",
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-16",
-      "checkedOn": "2026-09-16",
-      "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "checkedOn": "2026-09-18",
+      "verification": "closed",
+      "verificationNote": "LinkedIn explicitly says no longer accepting applications.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 27,
+          "reason": "Material availability and inventory align; forecast ownership is unverified."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 17,
+          "reason": "SAP MM, Excel and Power BI transfer to ERP and reporting requirements."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 15,
+          "reason": "Relevant operational experience, but independent demand planning depth is unclear."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 8,
+          "reason": "Automotive/electronics experience transfers partially to FMCG."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Demand forecasting, production coordination and inventory planning for FMCG and retail.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Forecast model ownership and FMCG planning experience need confirmation."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -888,9 +960,25 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/demand-supply-planner-at-be-verse-technologies-4464978670",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Closure evidence",
+          "url": "https://in.linkedin.com/jobs/view/demand-supply-planner-at-be-verse-technologies-4464978670",
+          "scope": "LinkedIn explicitly says no longer accepting applications.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": "LinkedIn explicitly says no longer accepting applications."
     },
     {
       "id": "linkedin-4463326977",
@@ -906,9 +994,9 @@
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-16",
-      "checkedOn": "2026-09-16",
-      "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "checkedOn": "2026-09-18",
+      "verification": "closed",
+      "verificationNote": "LinkedIn explicitly says no longer accepting applications.",
       "analysisStatus": "needs-review",
       "score": [],
       "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
@@ -949,9 +1037,18 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
+        },
+        {
+          "label": "Closure evidence",
+          "url": "https://in.linkedin.com/jobs/view/demand-planner-at-capgemini-4463326977",
+          "scope": "LinkedIn explicitly says no longer accepting applications.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": "LinkedIn explicitly says no longer accepting applications."
     },
     {
       "id": "linkedin-4466553203",
@@ -1012,37 +1109,70 @@
           "checkedOn": "2026-09-16"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure."
     },
     {
       "id": "linkedin-4459927792",
-      "company": "Employer to verify",
-      "title": "Material Planner - Chennai at TR, part of the Trifast plc group",
+      "company": "TR / Trifast",
+      "title": "Material Planner",
       "location": "Chennai, India",
       "workModel": "Not verified",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "2–6 years",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4459927792",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4459927792",
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-16",
-      "checkedOn": "2026-09-16",
+      "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 31,
+          "reason": "Supplier follow-up, shortages and PO lifecycle strongly align; supplier selection is less established."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 18,
+          "reason": "SAP MM, Dynamics 365 and advanced Excel match the ERP/reporting requirements."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 18,
+          "reason": "Five-plus supply-chain years fit the published band."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 11,
+          "reason": "Automotive and electronics transfer; fastener-specific knowledge is unverified."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Supplier expediting, purchase orders and stock planning for industrial fasteners.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Hindi proficiency and fastener standards are not established.",
+        "Confirm hands-on technical quotation and vendor-selection experience."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1071,9 +1201,18 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/material-planner-chennai-at-tr-part-of-the-trifast-plc-group-4459927792",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "linkedin-4464524243",
@@ -1134,7 +1273,8 @@
           "checkedOn": "2026-09-16"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure."
     },
     {
       "id": "linkedin-4459115218",
@@ -1150,9 +1290,9 @@
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-16",
-      "checkedOn": "2026-09-16",
-      "verification": "indexed",
-      "verificationNote": "Hidden pending verification after a report that Hired listings stopped accepting applications. Closure of this exact URL could not be independently confirmed.",
+      "checkedOn": "2026-09-18",
+      "verification": "closed",
+      "verificationNote": "LinkedIn explicitly says no longer accepting applications.",
       "analysisStatus": "needs-review",
       "score": [],
       "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
@@ -1193,10 +1333,18 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
+        },
+        {
+          "label": "Closure evidence",
+          "url": "https://in.linkedin.com/jobs/view/procurement-specialist-remote-at-hired-4459115218",
+          "scope": "LinkedIn explicitly says no longer accepting applications.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityHold": true,
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityHold": false,
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "LinkedIn explicitly says no longer accepting applications."
     },
     {
       "id": "linkedin-4455739716",
@@ -1205,28 +1353,60 @@
       "location": "Chennai, India",
       "workModel": "Not verified",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "6–8 years in project procurement/subcontracts",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4455739716",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4455739716",
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-16",
-      "checkedOn": "2026-09-16",
+      "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 23,
+          "reason": "Supplier and PO work transfer; project contracts and bid evaluation remain gaps."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 15,
+          "reason": "ERP and analysis experience help; project contracting tools are unverified."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 9,
+          "reason": "Five-plus total years fall below the stated 6–8-year band."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 8,
+          "reason": "Manufacturing background transfers partially; water-treatment projects are new."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Project procurement, vendor qualification and subcontract support for water-treatment projects.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Project subcontract/MSA ownership and vendor qualification are not established.",
+        "Experience is below the stated minimum; clarify flexibility."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1255,14 +1435,23 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/senior-executive-procurement-at-gradiant-4455739716",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "linkedin-4464078833",
-      "company": "Employer to verify",
-      "title": "Supply Chain Manager (Remote) at Hired \u2014 India - Jobs - LinkedIn",
+      "company": "Hired",
+      "title": "Supply Chain Manager (Remote)",
       "location": "Remote India",
       "workModel": "Not verified",
       "family": "Needs classification",
@@ -1273,9 +1462,9 @@
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-16",
-      "checkedOn": "2026-09-16",
-      "verification": "indexed",
-      "verificationNote": "Hidden pending verification after a report that Hired listings stopped accepting applications. Closure of this exact URL could not be independently confirmed.",
+      "checkedOn": "2026-09-18",
+      "verification": "closed",
+      "verificationNote": "Exact LinkedIn listing redirects with expired_jd_redirect; original vacancy is expired.",
       "analysisStatus": "needs-review",
       "score": [],
       "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
@@ -1316,40 +1505,80 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
+        },
+        {
+          "label": "Closure evidence",
+          "url": "https://in.linkedin.com/jobs/view/supply-chain-manager-remote-at-hired-4464078833",
+          "scope": "Exact LinkedIn listing redirects with expired_jd_redirect; original vacancy is expired.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityHold": true,
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityHold": false,
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Exact LinkedIn listing redirects with expired_jd_redirect; original vacancy is expired."
     },
     {
       "id": "linkedin-4467904366",
-      "company": "Employer to verify",
-      "title": "Supply Chain Planner at HP \u2014 Chennai, Tamil Nadu, India - LinkedIn",
+      "company": "HP",
+      "title": "Supply Chain Planner",
       "location": "Chennai, India",
       "workModel": "Not verified",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "6–10 years; experience gap",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4467904366",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4467904366",
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-17",
-      "checkedOn": "2026-09-17",
+      "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "verificationNote": "Full LinkedIn JD reviewed: same title, location and responsibilities as the listed HP planner. Held as a possible duplicate until requisition identity is confirmed.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 29,
+          "reason": "Demand and material planning align; multi-echelon optimization needs confirmation."
+        },
+        {
+          "name": "Tools / analysis",
+          "weight": 20,
+          "points": 15,
+          "reason": "ERP and analytical tools are relevant; integrated planning-system experience needs checking."
+        },
+        {
+          "name": "Relevant experience / seniority",
+          "weight": 20,
+          "points": 12,
+          "reason": "The JD asks for 6–10 years, above the supplied five-plus-year profile."
+        },
+        {
+          "name": "Industry",
+          "weight": 15,
+          "points": 12,
+          "reason": "Electronics and supply-chain experience are relevant to hardware operations."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "The listing specifies Chennai."
+        }
+      ],
+      "summary": "Demand forecasting, forecast-error analysis and inventory optimization across service-support networks.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Experience is below the stated 6–10-year range.",
+        "Confirm forecasting-method and multi-echelon inventory expertise."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Confirm current availability and annual CTC before applying."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "What is the annual total CTC and fixed/variable split?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1378,17 +1607,27 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-17",
           "checkedOn": "2026-09-17"
+        },
+        {
+          "label": "Exact LinkedIn planner description",
+          "url": "https://in.linkedin.com/jobs/view/supply-chain-planner-at-hp-4467904366",
+          "scope": "Full description; identity comparison only, not confirmed requisition linkage",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityHold": true,
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Possible duplicate of the reviewed HP Supply Chain Planner; requisition linkage is unconfirmed."
     },
     {
       "id": "linkedin-4464838891",
-      "company": "Employer to verify",
-      "title": "Procurement & Supplier Development Associate (Supply Chain)",
+      "company": "AgniKul Cosmos",
+      "title": "Procurement & Supplier Development Associate",
       "location": "Chennai, India",
-      "workModel": "Not verified",
+      "workModel": "On-site · extensive supplier travel",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "0–5 years",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4464838891",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4464838891",
@@ -1397,19 +1636,51 @@
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 20,
+          "reason": "Supplier coordination and reported cost reduction transfer; new-vendor development is not demonstrated."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 9,
+          "reason": "ERP/Excel support analysis; drawings, machining costing and capability audits are unverified."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 14,
+          "reason": "Five-plus years are near the upper band; field sourcing ownership is a separate gap."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 14,
+          "reason": "Automotive and electronics are explicitly relevant backgrounds."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Factory-based supplier development, commercial negotiation and manufacturing cost reduction.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "This role prioritises factory visits and sourcing ownership over desk-based PO processing.",
+        "Manufacturing drawings, supplier audits and independent negotiations need evidence."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1438,18 +1709,28 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/procurement-supplier-development-associate-supply-chain-at-agnikul-cosmos-4464838891",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "careerssecom-c931e6902d39",
       "company": "Schneider Electric",
-      "title": "Manager - Material Planning in Chennai, India",
+      "title": "Manager - Material Planning",
       "location": "Chennai, India",
-      "workModel": "Not specified",
+      "workModel": "On-site",
       "family": "Needs classification",
-      "experience": "Review full JD",
-      "requisition": "",
+      "experience": "Years not stated in the reviewed description",
+      "requisition": "133573",
       "applyUrl": "https://careers.se.com/jobs/133573?lang=en-us",
       "linkedinUrl": null,
       "postedOn": null,
@@ -1457,19 +1738,50 @@
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Employer listing found in the search index. Direct availability is not yet confirmed.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "Employer job lead. Review the full description and application availability before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 30,
+          "reason": "Material availability, expediting and stock control align; S&OP ownership needs confirmation."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 15,
+          "reason": "ERP and reporting transfer; specific control-tower and supplier-portal tools are unverified."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 14,
+          "reason": "Operational experience is relevant; manager-level scope is not established."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 13,
+          "reason": "Automotive and electronics supply chains transfer well to electrical manufacturing."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Coordinate supply flow, supplier delivery and inventory; resolve bottlenecks with production teams.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Confirm managerial scope, S&OP ownership and planning-tool depth."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1498,18 +1810,28 @@
           "scope": "Search-index discovery; full JD needs review",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://careers.se.com/jobs/133573?lang=en-us",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "hp-3f87dc466857",
       "company": "HP",
-      "title": "Principal Supply Chain Planning Process Design - Careers at HP",
+      "title": "Principal Supply Chain Planning Process Design",
       "location": "Chennai, India",
       "workModel": "Not specified",
       "family": "Needs classification",
-      "experience": "Review full JD",
-      "requisition": "",
+      "experience": "Typically 12+ years",
+      "requisition": "3165158",
       "applyUrl": "https://apply.hp.com/careers/job/42781415",
       "linkedinUrl": null,
       "postedOn": null,
@@ -1517,19 +1839,51 @@
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Employer listing found in the search index. Direct availability is not yet confirmed.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "Employer job lead. Review the full description and application availability before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 13,
+          "reason": "Operational planning overlaps, but global architecture and governance are unverified."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 8,
+          "reason": "ERP user experience is not solution architecture or Servigistics expertise."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 3,
+          "reason": "Five-plus years are far below the typical 12+ years and principal scope."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 13,
+          "reason": "Electronics and service-material experience transfer."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Global planning architecture, process standards and executive-led supply-chain transformation.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Global process architecture, executive alignment and transformation leadership are not established.",
+        "Substantial seniority gap: typically 12+ years."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1558,17 +1912,27 @@
           "scope": "Search-index discovery; full JD needs review",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://apply.hp.com/careers/job/42781415",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "linkedin-4464811477",
       "company": "ConverSight",
       "title": "Supply Chain Analyst",
-      "location": "Chennai, India",
-      "workModel": "Not verified",
+      "location": "Chennai / Coimbatore, India",
+      "workModel": "Travel required",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "2–5 years",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4464811477",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4464811477",
@@ -1577,19 +1941,51 @@
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 23,
+          "reason": "Supply-chain operations overlap; customer implementations and workshops are unverified."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 5,
+          "reason": "Power BI and ERP help, but required Python, SQL and ETL are not evidenced."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 15,
+          "reason": "Five-plus years are near the published band; technical implementation experience is missing."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 8,
+          "reason": "Manufacturing domain transfers to analytics services."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 8,
+          "reason": "Description permits Chennai/Coimbatore; confirm Chennai base and required India travel."
+        }
+      ],
+      "summary": "Customer-facing supply-chain analytics, data integration and implementation support.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Strong Python, SQL, ETL and API integration are required but not established.",
+        "Chennai base and frequent customer travel need agreement."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1618,13 +2014,23 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/supply-chain-analyst-at-conversight-4464811477",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "linkedin-4463803474",
-      "company": "Employer to verify",
-      "title": "Material Planning Specialist at Capgemini",
+      "company": "Capgemini",
+      "title": "Material Planning Specialist",
       "location": "Chennai, India",
       "workModel": "Not verified",
       "family": "Needs classification",
@@ -1679,16 +2085,18 @@
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure."
     },
     {
       "id": "linkedin-4459685171",
-      "company": "Employer to verify",
-      "title": "Supply Chain Planning & Operations Support at Hitachi Energy",
+      "company": "Hitachi Energy",
+      "title": "Supply Chain Planning & Operations Support",
       "location": "Chennai, India",
       "workModel": "Not verified",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "5+ years",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4459685171",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4459685171",
@@ -1697,19 +2105,50 @@
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 31,
+          "reason": "Delivery, shortages and supplier coordination strongly align."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 9,
+          "reason": "SAP MM and reporting are evidenced; required hands-on SAP PP is not."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 18,
+          "reason": "Five-plus years align, but direct production-planning scope needs confirmation."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 12,
+          "reason": "Manufacturing experience transfers to energy equipment."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Planning metrics, SAP records, inventory exceptions and supplier/material coordination.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Strong hands-on SAP PP is required; SAP MM does not establish SAP PP experience."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1738,8 +2177,18 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/supply-chain-planning-operations-support-at-hitachi-energy-4459685171",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "hp-519b5af97919",
@@ -1799,7 +2248,9 @@
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure."
     },
     {
       "id": "linkedin-4460187978",
@@ -1813,11 +2264,11 @@
       "applyUrl": "https://www.linkedin.com/jobs/view/4460187978",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4460187978",
       "postedOn": null,
-      "closesOn": null,
+      "closesOn": "2026-09-10",
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
-      "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "verification": "closed",
+      "verificationNote": "Full description says apply on or before 10 September 2026; deadline has passed.",
       "analysisStatus": "needs-review",
       "score": [],
       "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
@@ -1858,17 +2309,27 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Closure evidence",
+          "url": "https://in.linkedin.com/jobs/view/inventory-count-analyst-at-vestas-4460187978",
+          "scope": "Full description says apply on or before 10 September 2026; deadline has passed.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityHold": false,
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Full description says apply on or before 10 September 2026; deadline has passed."
     },
     {
       "id": "linkedin-4463190467",
       "company": "Rockwell Automation",
-      "title": "Project Execution - Planner/Buyer",
-      "location": "Sriperumbudur, India",
+      "title": "Buyer/Planner - Project Execution",
+      "location": "Kanchipuram, Chennai region, India",
       "workModel": "Not verified",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "2+ years",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4463190467",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4463190467",
@@ -1877,19 +2338,50 @@
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 29,
+          "reason": "Material shortages and supplier coordination align; capacity planning and manufacturer allocation need evidence."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 17,
+          "reason": "SAP MM and advanced Excel transfer; production scheduling depth is unverified."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 18,
+          "reason": "Five-plus relevant years exceed the minimum; project ownership is less clear."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 13,
+          "reason": "Automotive/electronics background aligns with industrial manufacturing."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Kanchipuram is within the broader Chennai manufacturing region."
+        }
+      ],
+      "summary": "Coordinate material readiness, production schedules and contract manufacturers through project delivery.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Contract-manufacturer selection, capacity planning and project allocation are not established."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1918,38 +2410,80 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/buyer-planner-project-execution-at-rockwell-automation-4463190467",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "jobssmartrecruiterscom-2fc1677a3460",
       "company": "Konecranes",
       "title": "Specialist, Procurement Controlling",
       "location": "Chennai, India",
-      "workModel": "Not specified",
+      "workModel": "Hybrid · about 15% travel",
       "family": "Needs classification",
-      "experience": "Review full JD",
-      "requisition": "",
-      "applyUrl": "https://jobs.smartrecruiters.com/Konecranes/744000149800099-specialist-procurement-controlling",
+      "experience": "8–10 years",
+      "requisition": "60009527",
+      "applyUrl": "https://konecranes.careers/job/specialist-procurement-controlling-in-chennai-india-jid-3283",
       "linkedinUrl": null,
       "postedOn": null,
       "closesOn": null,
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
       "verification": "indexed",
-      "verificationNote": "Employer listing found in the search index. Direct availability is not yet confirmed.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "Employer job lead. Review the full description and application availability before shortlisting.",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 19,
+          "reason": "Procurement operations help; inflation models and savings validation ownership are unverified."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 14,
+          "reason": "Power BI and SAP align partly; Sievo and commodity modelling are not evidenced."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 6,
+          "reason": "Five-plus years are below the stated 8–10-year requirement."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 12,
+          "reason": "Manufacturing purchasing experience transfers to industrial equipment."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Procurement inflation modelling, commodity intelligence, payment-term governance and spend reporting.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Experience falls below 8–10 years.",
+        "Commodity forecasting, procurement controlling and Sievo ownership are not established."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -1978,8 +2512,18 @@
           "scope": "Search-index discovery; full JD needs review",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://konecranes.careers/job/specialist-procurement-controlling-in-chennai-india-jid-3283",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "linkedin-4458356585",
@@ -2039,13 +2583,15 @@
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure."
     },
     {
       "id": "caterpillar-5cd3a55b53b3",
       "company": "Caterpillar",
       "title": "Associate Procurement Professional",
-      "location": "Thiruvallur, Tamil N\u0101du, India",
+      "location": "Thiruvallur, Tamil Nādu, India",
       "workModel": "Not specified",
       "family": "Needs classification",
       "experience": "Review full JD",
@@ -2060,7 +2606,7 @@
       "verificationNote": "Employer JobPosting metadata fetched directly. This checks the page, not completion of the application form.",
       "analysisStatus": "needs-review",
       "score": [],
-      "summary": "Career Area: Procurement Job Description: Your Work Shapes the World at Caterpillar Inc. When you join Caterpillar, you're joining a global team who cares not just about the work we do \u2013 but also about each other. We are the makers, problem solvers, and future world builders who are creating stronger, more sustainable communities. We don't just talk about progress and innovation here \u2013 we make it happen, with our customers, where we work and live. Together, we are building a better world, so we can all enjoy living in",
+      "summary": "Career Area: Procurement Job Description: Your Work Shapes the World at Caterpillar Inc. When you join Caterpillar, you're joining a global team who cares not just about the work we do – but also about each other. We are the makers, problem solvers, and future world builders who are creating stronger, more sustainable communities. We don't just talk about progress and innovation here – we make it happen, with our customers, where we work and live. Together, we are building a better world, so we can all enjoy living in",
       "hardGaps": [
         "Full JD and candidate evidence require review before scoring."
       ],
@@ -2099,16 +2645,18 @@
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "reviewNote": "Employer page is available, but omits detailed qualifications and experience requirements. Insufficient evidence for a five-part match score."
     },
     {
       "id": "comcast-b1c0e4473b71",
       "company": "Comcast",
       "title": "Analyst 3 - Supply Chain Planning",
-      "location": "Chennai, Tamil N\u0101du, India",
+      "location": "Chennai, Tamil Nādu, India",
       "workModel": "Not specified",
       "family": "Needs classification",
-      "experience": "Review full JD",
+      "experience": "JD: 6–7 years; page experience field: 5–7 years",
       "requisition": "R444522",
       "applyUrl": "https://jobs.comcast.com/job/chennai/analyst-3-supply-chain-planning/45483/100718257520",
       "linkedinUrl": null,
@@ -2116,20 +2664,52 @@
       "closesOn": null,
       "discoveredOn": "2026-09-18",
       "checkedOn": "2026-09-18",
-      "verification": "live",
-      "verificationNote": "Employer JobPosting metadata fetched directly. This checks the page, not completion of the application form.",
-      "analysisStatus": "needs-review",
-      "score": [],
-      "summary": "Comcast brings together the best in media and technology. We drive innovation to create the world's best entertainment and online experiences. As a Fortune 50 leader, we set the pace in a variety of innovative and fascinating businesses and create career opportunities across a wide range of locations and disciplines. We are at the forefront of change and move at an amazing pace, thanks to our remarkable people, who bring cutting-edge products and services to life for millions of customers every day. If you share in our passion for teamwork,",
+      "verification": "indexed",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 29,
+          "reason": "Inventory, procurement and operational reporting align; workflow automation is not established."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 14,
+          "reason": "Excel and Power BI match; Power Query and Power Automate depth need confirmation."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 12,
+          "reason": "Five-plus years fit the page band but fall short of the detailed 6–7-year requirement."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 9,
+          "reason": "Electronics supply-chain exposure transfers to media/technology."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Supply-chain reporting, data quality and workflow automation across planning and procurement.",
       "hardGaps": [
-        "Full JD and candidate evidence require review before scoring."
+        "Confirm whether five-plus years meet the conflicting experience bands.",
+        "Power Query, Power Automate and automated workflow delivery are not established."
       ],
       "benefits": [],
       "risks": [
-        "Compensation and team conditions unverified."
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
       ],
       "questions": [
-        "Confirm role level, salary budget, work model and required experience."
+        "Which requirements are essential, and what is the approved annual CTC budget?"
       ],
       "salary": {
         "kind": "unknown",
@@ -2158,17 +2738,27 @@
           "scope": "Public JobPosting metadata",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
+        },
+        {
+          "label": "Reviewed full job description",
+          "url": "https://jobs.comcast.com/job/chennai/analyst-3-supply-chain-planning/45483/100718257520",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     },
     {
       "id": "linkedin-4454094786",
       "company": "Buying Simplified",
-      "title": "Senior Buyer \u2014 Procurement Operations",
+      "title": "Senior Buyer — Procurement Operations",
       "location": "Chennai, India",
       "workModel": "Hybrid; evening shift",
       "family": "Needs classification",
-      "experience": "5\u20139 years",
+      "experience": "5–9 years",
       "requisition": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/4454094786",
       "linkedinUrl": "https://www.linkedin.com/jobs/view/4454094786",
@@ -2211,7 +2801,7 @@
           "reason": "Chennai hybrid matches the geographic preference."
         }
       ],
-      "summary": "Own purchasing and sourcing for US client accounts. Chennai hybrid; evening hours. Requires 5\u20139 years. Salary is undisclosed.",
+      "summary": "Own purchasing and sourcing for US client accounts. Chennai hybrid; evening hours. Requires 5–9 years. Salary is undisclosed.",
       "hardGaps": [
         "Confirm independent sourcing and negotiation ownership.",
         "Evening shift and hybrid attendance need personal agreement."
@@ -2260,7 +2850,7 @@
       "location": "Chennai, India",
       "workModel": "Not specified",
       "family": "Needs classification",
-      "experience": "6\u201310 years; experience gap",
+      "experience": "6–10 years; experience gap",
       "requisition": "3161228",
       "applyUrl": "https://hp.wd5.myworkdayjobs.com/en-US/ExternalCareerSite/job/Supply-Chain-Planner_3161228",
       "linkedinUrl": null,
@@ -2288,7 +2878,7 @@
           "name": "Relevant experience / seniority",
           "weight": 20,
           "points": 12,
-          "reason": "The JD asks for 6\u201310 years, above the supplied five-plus-year profile."
+          "reason": "The JD asks for 6–10 years, above the supplied five-plus-year profile."
         },
         {
           "name": "Industry",
@@ -2305,7 +2895,7 @@
       ],
       "summary": "Demand forecasting, forecast-error analysis and inventory optimization across service-support networks.",
       "hardGaps": [
-        "Experience is below the stated 6\u201310-year range.",
+        "Experience is below the stated 6–10-year range.",
         "Confirm forecasting-method and multi-echelon inventory expertise."
       ],
       "benefits": [],
@@ -2344,6 +2934,100 @@
           "checkedOn": "2026-09-18"
         }
       ]
+    },
+    {
+      "id": "linkedin-4463810106",
+      "company": "Capgemini",
+      "title": "Supply Planning Specialist",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "5–7 years",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4463810106",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4463810106",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-18",
+      "checkedOn": "2026-09-18",
+      "verification": "indexed",
+      "verificationNote": "Full public job description reviewed on 18 Sep 2026. No closure notice found in the retrieved listing; the application form was not submitted.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 28,
+          "reason": "Shortages, material availability and inventory align; production-plan ownership is unverified."
+        },
+        {
+          "name": "Tools and analysis",
+          "weight": 20,
+          "points": 14,
+          "reason": "ERP and reporting skills transfer; no specific platform requirement is stated."
+        },
+        {
+          "name": "Experience and seniority",
+          "weight": 20,
+          "points": 19,
+          "reason": "Five-plus relevant years fit the stated range."
+        },
+        {
+          "name": "Industry relevance",
+          "weight": 15,
+          "points": 10,
+          "reason": "Manufacturing experience transfers; client-side planning delivery is new."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai is within the requested region."
+        }
+      ],
+      "summary": "Production-plan coordination, inventory policies and material availability with factory and client teams.",
+      "hardGaps": [
+        "S&OP ownership, finished-goods stock policies and production-plan accountability need confirmation."
+      ],
+      "benefits": [],
+      "risks": [
+        "Salary budget is undisclosed; confirm annual CTC and working hours."
+      ],
+      "questions": [
+        "Which requirements are essential, and what is the approved annual CTC budget?"
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "Reviewed full job description",
+          "url": "https://in.linkedin.com/jobs/view/supply-planning-specialist-at-capgemini-4463810106",
+          "scope": "Exact role responsibilities, requirements and availability evidence; profile match is an evidence-based heuristic, not an ATS or interview probability.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
+        }
+      ],
+      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityHold": false,
+      "reviewNote": ""
     }
   ]
 }

@@ -6,7 +6,26 @@ import shutil
 import re
 ROOT=Path(__file__).resolve().parents[1]
 source=ROOT/'site';target=ROOT/'dist'
-allowed={'index.html','styles.css','app.js','engine.js','resume.js','favicon.svg','data/jobs.json'}
+allowed={'index.html','styles.css','app.js','engine.js','resume.js','favicon.svg','data/jobs.json','companies.js'}
+allowed.update({
+    'assets/companies/agnikul.png',
+    'assets/companies/buying-simplified.png',
+    'assets/companies/capgemini.png',
+    'assets/companies/comcast.png',
+    'assets/companies/company.svg',
+    'assets/companies/conversight.png',
+    'assets/companies/danish.png',
+    'assets/companies/ford.png',
+    'assets/companies/gradiant.png',
+    'assets/companies/hitachi-energy.svg',
+    'assets/companies/hp.png',
+    'assets/companies/konecranes.png',
+    'assets/companies/renault.png',
+    'assets/companies/rockwell.png',
+    'assets/companies/schneider.png',
+    'assets/companies/trifast.png',
+    'assets/companies/vestas.png',
+})
 actual={p.relative_to(source).as_posix() for p in source.rglob('*') if p.is_file()}
 extra=actual-allowed
 if extra:raise SystemExit('Unexpected public files: '+', '.join(sorted(extra)))

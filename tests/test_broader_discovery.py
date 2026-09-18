@@ -55,3 +55,10 @@ class DiscoveryTests(unittest.TestCase):
     def test_common_employer_closure_phrases(self):
         for phrase in ('This job has expired','This position has been filled','This job is no longer available','Applications are closed'):
             self.assertTrue(scan.closed_result({'content':phrase}),phrase)
+
+    def test_day_first_ordinal_deadline_and_recommendation_boundary(self):
+        for text in ['Apply on or before 10th September 2020','Application deadline: 10 September 2020','Apply before 1st Sep 2020']:
+            self.assertIsNotNone(scan.result_deadline({'content':text}))
+            self.assertTrue(scan.closed_result({'content':text}))
+        self.assertIsNone(scan.result_deadline({'content':'Apply now. Similar jobs Apply on or before 10th September 2020'}))
+        self.assertIsNone(scan.result_deadline({'content':'Apply before 31st February 2020'}))
