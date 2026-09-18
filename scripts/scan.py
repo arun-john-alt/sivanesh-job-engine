@@ -175,7 +175,7 @@ def linkedin_url(url):
     match=re.fullmatch(r'/jobs/view/(?:[^/]+-)?(\d+)/?',urllib.parse.urlsplit(url).path)
     return 'https://www.linkedin.com/jobs/view/'+match[1] if match else None
 
-CLOSED=re.compile(r'no longer accepting (?:new )?applications|(?:this |the )?(?:job|position|vacancy) (?:is |has been )?(?:no longer available|closed|filled|expired)|applications (?:are |have been )?closed',re.I)
+CLOSED=re.compile(r'no longer accepting (?:new )?applications|(?:this |the )?(?:job|position|vacancy) (?:is |has been |has )?(?:no longer available|closed|filled|expired)|applications (?:are |have been )?closed',re.I)
 
 def listing_text(row):
     # Do not mistake a recommended role's status/location for the result itself.

@@ -51,3 +51,7 @@ class DiscoveryTests(unittest.TestCase):
     def test_company_chennai_office_does_not_override_foreign_linkedin_location(self):
         row={**ROW,'title':'Example hiring Senior Buyer in London, United Kingdom','raw_content':'Example has offices in Chennai, India. Purchasing and supplier management.'}
         self.assertIsNone(scan.linkedin_lead(row,'2026-09-18'))
+
+    def test_common_employer_closure_phrases(self):
+        for phrase in ('This job has expired','This position has been filled','This job is no longer available','Applications are closed'):
+            self.assertTrue(scan.closed_result({'content':phrase}),phrase)
