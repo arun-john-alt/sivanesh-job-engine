@@ -38,7 +38,8 @@ class LinkedInTests(unittest.TestCase):
         self.assertEqual(rows,[ROW])
         self.assertEqual(f.payload['search_depth'],'basic')
         self.assertFalse(f.payload['auto_parameters'])
-        self.assertFalse(f.payload['include_raw_content'])
+        self.assertTrue(f.payload['include_raw_content'])
+        self.assertEqual(f.payload['max_results'],20)
         self.assertEqual(f.payload['include_domains'],['linkedin.com'])
 
     def test_invalid_search_responses(self):
@@ -71,6 +72,7 @@ class LinkedInTests(unittest.TestCase):
         self.assertEqual(len(data['jobs']),1)
         self.assertEqual(calls,6)
         again,_=self.run_fixture({'TAVILY_API_KEY':'test-only'},[ROW],data['jobs'])
+        self.assertTrue(again['jobs'][0].pop('availabilityAttemptedOn'))
         self.assertEqual(again['jobs'],data['jobs'])
         # Check the public client schema against generated leads, not only fixtures.
         import subprocess
@@ -80,6 +82,7 @@ class LinkedInTests(unittest.TestCase):
     def test_preserve_employer_link_and_review(self):
         lead=scan.linkedin_lead(ROW,'2026-09-16');lead['applyUrl']='https://careers.example.com/job/42';lead['analysisStatus']='reviewed'
         data,_=self.run_fixture({'TAVILY_API_KEY':'test-only'},[ROW],[lead])
+        self.assertTrue(data['jobs'][0].pop('availabilityAttemptedOn'))
         self.assertEqual(data['jobs'],[lead])
 
     def test_no_key_reports_not_configured(self):

@@ -25,7 +25,7 @@ from html.parser import HTMLParser
 
 ROOT=Path(__file__).resolve().parents[1]
 AGENT='SivaneshJobEngine/2.0 (public job discovery; no login bypass)'
-ROLE=re.compile(r'procurement|purchasing|\bbuyer\b|supply.?chain|material.?plan|demand.?plan|supply.?plan|sourcing',re.I)
+ROLE=re.compile(r'procurement|purchasing|\bbuyer\b|supply.?chain|materials?.?plan|demand.?plan|supply.?plan|sourcing|\bpurchase\b|inventory.*(?:analyst|plan)|logistics.*(?:analyst|specialist)|production.?plan',re.I)
 EXCLUDE=re.compile(r'\bintern\b|\binternship\b|\bgraduate trainee\b|\bjunior\b|warehouse|SAP.*(?:consultant|implementation|configuration)|\bvice president\b|\bdirector\b',re.I)
 
 class Page(HTMLParser):
@@ -85,7 +85,7 @@ class Fetcher:
         time.sleep(max(0,self.delay-(time.monotonic()-self.last)));self.last=time.monotonic()
         try:
             req=urllib.request.Request(url,data=json.dumps(payload).encode() if payload is not None else None,headers={'User-Agent':AGENT,**(headers or {})})
-            with self.opener.open(req,timeout=15) as res:
+            with self.opener.open(req,timeout=25) as res:
                 raw=res.read(2_000_001)
                 if len(raw)>2_000_000:return None,'Response too large'
                 return raw.decode('utf-8',errors='replace'),'HTTP '+str(res.status)
@@ -122,7 +122,7 @@ def job_nodes(value):
 def is_relevant(title,location,description):
     if not ROLE.search(title) or EXCLUDE.search(title):return False
     loc=location.lower();text=(title+' '+description).lower()
-    if 'chennai' not in loc and not ('india' in loc and 'remote' in loc):return False
+    if not re.search(r'chennai|sriperumbudur|oragadam|chengalpattu|thiruvallur|tiruvallur|pallavaram',loc) and not ('india' in loc and 'remote' in loc):return False
     years=re.search(r'(\d+)\s*(?:-|to)\s*(\d+)\s*(?:years|yrs)',text)
     if years and (int(years[1])>8 or int(years[2])<4):return False
     return True
@@ -175,44 +175,105 @@ def linkedin_url(url):
     match=re.fullmatch(r'/jobs/view/(?:[^/]+-)?(\d+)/?',urllib.parse.urlsplit(url).path)
     return 'https://www.linkedin.com/jobs/view/'+match[1] if match else None
 
+CLOSED=re.compile(r'no longer accepting (?:new )?applications|(?:this |the )?(?:job|position|vacancy) (?:is |has been )?(?:no longer available|closed|filled|expired)|applications (?:are |have been )?closed',re.I)
+
+def listing_text(row):
+    # Do not mistake a recommended role's status/location for the result itself.
+    text=plain(row.get('raw_content') or row.get('content',row.get('description','')))
+    return re.split(r'\bSimilar jobs\b|\bPeople also viewed\b|\bMore jobs like this\b',text,flags=re.I)[0]
+
+def result_deadline(row):
+    text=listing_text(row)[:12000]
+    match=re.search(r'(?:job posting end date|valid through|end date|apply (?:by|before)|application deadline)\s*[:\-]?\s*(\d{4}-\d{2}-\d{2}|[A-Za-z]+ \d{1,2},? \d{4})',text,re.I)
+    if not match:return None
+    for fmt in ('%Y-%m-%d','%B %d, %Y','%B %d %Y','%b %d, %Y'):
+        try:return dt.datetime.strptime(match[1],fmt).date().isoformat()
+        except ValueError:pass
+    return None
+
+def closed_result(row):
+    deadline=result_deadline(row)
+    return bool(CLOSED.search(listing_text(row)[:6000])) or bool(deadline and deadline<dt.datetime.now(dt.timezone.utc).date().isoformat())
+
+def mark_index_closed(job,now):
+    job.update(verification='closed',availabilityHold=False,checkedOn=now,verificationNote='The exact listing search result reports closure or an expired application deadline. Hidden from active jobs; index evidence can lag the source.')
+
+def result_location(title,text):
+    # The title/header is stronger evidence than a company overview farther down a JD.
+    head=(title+' '+text[:700])
+    match=re.search(r'\b(Chennai|Sriperumbudur|Oragadam|Chengalpattu|Thiruvallur|Tiruvallur|Pallavaram)\b',head,re.I)
+    if match:return match[1].title()+', India'
+    if re.search(r'\bremote\b',head,re.I) and re.search(r'\bIndia\b',head,re.I):return 'Remote India'
+    return ''
+
 def linkedin_lead(row,now):
     url=linkedin_url(row.get('url',''))
-    if not url:return None
+    if not url or closed_result(row):return None
     title=plain(row.get('title','')).removesuffix(' | LinkedIn').strip()
-    snippet=plain(row.get('content',row.get('description','')))
+    snippet=listing_text(row)
     # Location must be present in the result, never inferred from the query.
     text=title+' '+snippet
-    location='Chennai, India' if re.search(r'\bChennai\b',text,re.I) else 'Remote India' if re.search(r'\bremote\b',text,re.I) and re.search(r'\bIndia\b',text,re.I) else ''
+    location=result_location(title,snippet)
     company='Employer to verify'
     match=re.match(r'^(.+?) hiring (.+?)(?: in (.+))?$',title,re.I)
     if match:company,title=match[1],match[2]
+    else:
+        match=re.match(r'^(.+?) at (.+?) (?:—|–|in) .+?(?: - LinkedIn)?$',title)
+        if match:title,company=match[1],match[2]
+    title=re.sub(r'\s*[-|]\s*(?:Jobs\s*[-|]\s*)?LinkedIn(?: Jobs)?$','',title).strip()
     if not is_relevant(title,location,snippet):return None
     # Never persist raw snippets, contacts, or guessed salary / dates from search.
     if re.search(r'@|\+?\d[\d ()-]{8,}',title+' '+company):return None
     node={'title':title[:300],'hiringOrganization':{'name':company[:200]},'jobLocation':{'address':{'addressLocality':location}}}
     item=extract(node,url,company,now)
-    item.update(id='linkedin-'+url.rsplit('/',1)[1],linkedinUrl=url,requisition='',verification='indexed',
+    item.update(closesOn=result_deadline(row),id='linkedin-'+url.rsplit('/',1)[1],linkedinUrl=url,requisition='',verification='indexed',
         verificationNote='Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.',
         summary='LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.',
         workModel='Not verified',experience='Review full JD',
         sources=[{'label':'LinkedIn job search result','url':url,'scope':'Public search index; listing not directly checked','asOf':now,'checkedOn':now}])
     return item
 
-def search_results(fetcher,provider,key,query,linkedin=False):
+def search_results(fetcher,provider,key,query,linkedin=False,availability=False):
     if provider=='Tavily':
-        payload={'query':query,'search_depth':'basic','auto_parameters':False,'max_results':8,'topic':'general','time_range':'month','include_answer':False,'include_raw_content':False}
+        payload={'query':query,'search_depth':'basic','auto_parameters':False,'max_results':20,'topic':'general','time_range':'month','include_answer':False,'include_raw_content':True}
+        if availability:payload.pop('time_range',None)
         if linkedin:payload['include_domains']=['linkedin.com']
         text,status=fetcher.request('https://api.tavily.com/search',{'Authorization':'Bearer '+key,'Content-Type':'application/json'},payload)
     else:
-        url='https://api.search.brave.com/res/v1/web/search?'+urllib.parse.urlencode({'q':query,'count':8,'freshness':'pm','country':'IN','search_lang':'en'})
+        url='https://api.search.brave.com/res/v1/web/search?'+urllib.parse.urlencode({'q':query,'count':20,**({} if availability else {'freshness':'pm'}),'country':'IN','search_lang':'en'})
         text,status=fetcher.request(url,{'X-Subscription-Token':key})
     if not text:return None,status
     try:
         body=json.loads(text)
         rows=body.get('results') if provider=='Tavily' else body.get('web',{}).get('results')
         if not isinstance(rows,list):return None,'Invalid search response'
-        return [r for r in rows if isinstance(r,dict)][:8],status
+        return [r for r in rows if isinstance(r,dict)][:20],status
     except (ValueError,TypeError,AttributeError):return None,'Invalid search response'
+
+
+def employer_index_lead(row,hosts,now):
+    url=canonical(row.get('url',''))
+    if not valid_url(url,hosts) or closed_result(row):return None
+    path=urllib.parse.urlsplit(url).path
+    if not re.search(r'/job/[^/]+|/jobs/[^/]+|/[^/]+/\d{6,}',path,re.I):return None
+    title=plain(row.get('title',''));text=listing_text(row);location=result_location(title,text)
+    title=re.sub(r'\s*[|]\s*.*$','',title).strip()
+    if not is_relevant(title,location,text) or re.search(r'@|\+?\d[\d ()-]{8,}',title):return None
+    host=urllib.parse.urlsplit(url).hostname
+    company={'careers.vestas.com':'Vestas','jobs.comcast.com':'Comcast','hp.wd5.myworkdayjobs.com':'HP','apply.hp.com':'HP','flex.wd1.myworkdayjobs.com':'Flex','alliancewd.wd3.myworkdayjobs.com':'Renault Group / RNTBCI','careers.caterpillar.com':'Caterpillar','careers.gevernova.com':'GE Vernova'}.get(host,host)
+    item=extract({'title':title,'jobLocation':{'address':{'addressLocality':location}}},url,company,now)
+    if not item:return None
+    item.update(closesOn=result_deadline(row),verification='indexed',verificationNote='Employer listing found in the search index. Direct availability is not yet confirmed.',summary='Employer job lead. Review the full description and application availability before shortlisting.',sources=[{'label':'Employer listing search result','url':url,'scope':'Search-index discovery; full JD needs review','asOf':now,'checkedOn':now}])
+    return item
+
+
+def discovery_queries(cfg):
+    # Interleave sources so neither LinkedIn nor employers consume the entire budget.
+    li=cfg.get('linkedinQueries',[]);web=cfg.get('queries',[]);out=[]
+    for i in range(max(len(li),len(web))):
+        if i<len(li):out.append((li[i],True))
+        if i<len(web):out.append((web[i],False))
+    return out[:min(16,max(0,cfg.get('maxDiscoveryQueries',16)))]
 
 
 def matches_existing(node,existing,page_url):
@@ -228,32 +289,43 @@ def matches_existing(node,existing,page_url):
 def run(config_path,data_path):
     cfg=json.loads(config_path.read_text());data=json.loads(data_path.read_text());now=dt.datetime.now(dt.timezone.utc).date().isoformat();fetcher=Fetcher(cfg)
     coverage=[];queue=[];known={canonical(j['applyUrl']):j for j in data['jobs']};seen=set();new_count=0;success=0
-    for job in data['jobs']:
-        if not linkedin_url(job['applyUrl']):queue.append((job['applyUrl'],job['company'],True))
+    employer_checks=sorted((j for j in data['jobs'] if not linkedin_url(j['applyUrl']) and j.get('verification')!='closed'),key=lambda j:j.get('checkedOn') or '')
+    for job in employer_checks[:12]:queue.append((job['applyUrl'],job['company'],True))
     for watch in cfg.get('watchPages',[]):queue.append((watch['url'],watch['company'],False))
     provider='Tavily' if os.getenv('TAVILY_API_KEY') else 'Brave'
     key=os.getenv('TAVILY_API_KEY') or os.getenv('BRAVE_SEARCH_API_KEY')
     if key:
-        # LinkedIn queries get a reserved budget. Never use both providers in one run.
-        queries=[(q,True) for q in cfg.get('linkedinQueries',[])[:3]]+[(q,False) for q in cfg.get('queries',[])[:3]]
-        counts={True:0,False:0};indexed=0
-        for q,is_linkedin in queries[:6]:
+        counts={True:0,False:0};indexed=0;closed_count=0;rechecks=0
+        # Recheck oldest indexed listings first; closed records are never reopened by search.
+        candidates=sorted((j for j in data['jobs'] if j.get('verification')=='indexed'),key=lambda j:(j.get('availabilityAttemptedOn',''),j.get('checkedOn') or '',j['id']))
+        for job in candidates[:min(10,max(0,cfg.get('maxAvailabilityQueries',10)))]:
+            li=linkedin_url(job.get('linkedinUrl') or job['applyUrl'])
+            exact=li or canonical(job['applyUrl'])
+            results,status=search_results(fetcher,provider,key,exact, bool(li),availability=True)
+            job['availabilityAttemptedOn']=now;rechecks+=1
+            if results is None:continue
+            for row in results:
+                result_url=linkedin_url(row.get('url','')) if li else canonical(row.get('url',''))
+                if result_url==exact and closed_result(row):mark_index_closed(job,now);closed_count+=1;break
+        for q,is_linkedin in discovery_queries(cfg):
             results,status=search_results(fetcher,provider,key,q,is_linkedin)
             if results is None:
                 coverage.append({'source':'LinkedIn search' if is_linkedin else 'Web search','status':'Failed','detail':provider+': '+status});continue
             counts[is_linkedin]+=1
             for row in results:
-                u=row.get('url','')
-                li=linkedin_url(u)
-                if li:
-                    existing=next((j for j in data['jobs'] if linkedin_url(j.get('linkedinUrl') or j['applyUrl'])==li),None)
-                    if existing:continue  # Preserve reviewed analysis and employer application URL.
-                    item=linkedin_lead(row,now)
-                    if item:
-                        data['jobs'].append(item);known[li]=item;new_count+=1;indexed+=1
-                elif valid_url(u,fetcher.hosts):queue.append((u,urllib.parse.urlsplit(u).hostname,True))
-        coverage.append({'source':'LinkedIn public search index','status':str(counts[True])+' queries completed','detail':f'{provider}: {indexed} new unscored leads. Partial index coverage only; no LinkedIn login, direct scraping or availability verification.'})
-        coverage.append({'source':provider+' web discovery','status':str(counts[False])+' queries completed','detail':'Only approved employer hosts are fetched. New leads require review; matching employer links should be added after verification.'})
+                u=row.get('url','');li=linkedin_url(u)
+                existing=next((j for j in data['jobs'] if li and linkedin_url(j.get('linkedinUrl') or j['applyUrl'])==li),None) if li else known.get(canonical(u))
+                if closed_result(row):
+                    if existing and existing.get('verification')!='closed':mark_index_closed(existing,now);closed_count+=1
+                    continue
+                if existing:continue
+                item=linkedin_lead(row,now) if li else employer_index_lead(row,fetcher.hosts,now)
+                if item and new_count<min(150,cfg.get('maxNewLeadsPerRun',150)) and len(data['jobs'])<950:
+                    data['jobs'].append(item);known[canonical(item['applyUrl'])]=item;new_count+=1;indexed+=bool(li)
+                if not li and valid_url(u,fetcher.hosts):queue.append((u,urllib.parse.urlsplit(u).hostname,True))
+        coverage.append({'source':'LinkedIn public search index','status':str(counts[True])+' queries completed','detail':f'{provider}: {indexed} new unscored leads. Partial coverage; exact-result closure signals checked; no LinkedIn login or direct scraping.'})
+        coverage.append({'source':provider+' web discovery','status':str(counts[False])+' queries completed','detail':'Up to 20 results/query. Relevant employer-indexed leads retained even when structured metadata is missing. New leads require review.'})
+        coverage.append({'source':'Application availability','status':f'{closed_count} closed; {rechecks} rechecked','detail':'Explicit closure signals hide jobs. Oldest indexed leads get up to 10 exact-URL rechecks/run. Missing results or blocked pages are not proof of closure. Search evidence can lag live pages.'})
     else:
         coverage.append({'source':'LinkedIn public search index','status':'Not configured','detail':'Add TAVILY_API_KEY (free plan) or BRAVE_SEARCH_API_KEY in GitHub Actions secrets. No LinkedIn search ran.'})
         coverage.append({'source':'Broad web discovery','status':'Not configured','detail':'No search API secret. Only the employer watchlist and existing employer roles are checked.'})
@@ -267,13 +339,14 @@ def run(config_path,data_path):
             coverage.append({'source':company,'status':status,'detail':url});continue
         page=Page();page.feed(text);nodes=list(job_nodes(page.jsonld));visible=' '.join(page.text)
         if existing:
-            same_job=any(matches_existing(n,existing,url) for n in nodes)
+            same_job=any(matches_existing(n,existing,url) for n in nodes) and not CLOSED.search(visible[:6000])
             if same_job:
                 existing['verification']='live';existing['checkedOn']=now;existing['verificationNote']='Matching employer JobPosting metadata fetched directly. Application submission was not attempted.';success+=1
-            elif re.search(r'this job is no longer available|this position has been filled|this job has expired',visible,re.I):
+            elif CLOSED.search(visible[:6000]):
                 existing['verification']='closed';existing['checkedOn']=now;existing['verificationNote']='Employer page explicitly indicates closure.';success+=1
             else:coverage.append({'source':company,'status':'Unresolved','detail':'Page fetched but exact JobPosting could not be confirmed. Prior evidence retained: '+url})
         for node in nodes:
+            if CLOSED.search(visible[:6000]):continue
             node_url=node.get('url')
             if isinstance(node_url,str):
                 candidate=canonical(urllib.parse.urljoin(url,node_url))
@@ -296,10 +369,10 @@ def run(config_path,data_path):
         if not is_job:
             for href in page.links:
                 candidate=urllib.parse.urljoin(url,href)
-                if valid_url(candidate,fetcher.hosts) and re.search(r'/job/|/jobs/|gh_jid=',candidate,re.I):queue.append((candidate,company,True))
+                if valid_url(candidate,fetcher.hosts) and re.search(r'/job/|/jobs/|gh_jid=',candidate,re.I) and ROLE.search(urllib.parse.unquote(candidate)):queue.append((candidate,company,True))
         coverage.append({'source':company,'status':'Fetched','detail':url+(' - job metadata found' if nodes else ' - no structured job data')})
     coverage.append({'source':'Salary, culture and resume analysis','status':'Human review required','detail':'New leads are unscored. The crawler never invents pay, reviews, candidate achievements or tailored bullets.'})
-    data['updatedAt']=now;data['run']={'status':'completed' if success or (key and any(counts.values())) else 'limited','checkedOn':now,'automaticEnabled':os.getenv('GITHUB_ACTIONS')=='true','note':f'{new_count} new lead(s); {success} job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.','coverage':coverage[:40]}
+    data['updatedAt']=now;data['run']={'status':'completed' if success or (key and any(counts.values())) else 'limited','checkedOn':now,'automaticEnabled':os.getenv('GITHUB_ACTIONS')=='true','note':f'{new_count} new lead(s); {success} job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.','coverage':coverage[:100]}
     temp=data_path.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=True,indent=2)+'\n');temp.replace(data_path)
     print(data['run']['note'])
 

@@ -1115,7 +1115,7 @@
       "discoveredOn": "2026-09-16",
       "checkedOn": "2026-09-16",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "verificationNote": "Hidden pending verification after a report that Hired listings stopped accepting applications. Closure of this exact URL could not be independently confirmed.",
       "analysisStatus": "needs-review",
       "score": [],
       "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
@@ -1157,7 +1157,8 @@
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
         }
-      ]
+      ],
+      "availabilityHold": true
     },
     {
       "id": "linkedin-4455739716",
@@ -1235,7 +1236,7 @@
       "discoveredOn": "2026-09-16",
       "checkedOn": "2026-09-16",
       "verification": "indexed",
-      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "verificationNote": "Hidden pending verification after a report that Hired listings stopped accepting applications. Closure of this exact URL could not be independently confirmed.",
       "analysisStatus": "needs-review",
       "score": [],
       "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
@@ -1277,7 +1278,8 @@
           "asOf": "2026-09-16",
           "checkedOn": "2026-09-16"
         }
-      ]
+      ],
+      "availabilityHold": true
     },
     {
       "id": "linkedin-4467904366",

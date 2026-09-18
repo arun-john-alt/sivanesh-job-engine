@@ -6,9 +6,14 @@
     "Remote India"
   ],
   "queries": [
-    "(\"senior buyer\" OR \"procurement specialist\") Chennai jobs",
-    "(\"material planner\" OR \"supply chain analyst\") Chennai SAP jobs",
-    "(\"strategic sourcing\" OR \"demand planner\") \"India\" remote jobs"
+    "Chennai buyer procurement jobs careers -site:linkedin.com",
+    "Chennai material planner supply chain analyst careers -site:linkedin.com",
+    "Chennai demand planner supply planner careers -site:linkedin.com",
+    "Chennai purchasing sourcing specialist careers -site:linkedin.com",
+    "site:careers.vestas.com/job/ Chennai buyer supply chain",
+    "site:myworkdayjobs.com Chennai buyer planner procurement",
+    "site:jobs.smartrecruiters.com Chennai procurement supply chain",
+    "remote India procurement supply chain planner careers -site:linkedin.com"
   ],
   "watchPages": [
     {
@@ -35,13 +40,25 @@
     "careers.bosch.com",
     "careers.hitachi.com",
     "careers.gevernova.com",
-    "flex.wd1.myworkdayjobs.com"
+    "flex.wd1.myworkdayjobs.com",
+    "hp.wd5.myworkdayjobs.com",
+    "apply.hp.com",
+    "jobs.smartrecruiters.com"
   ],
-  "maxPageFetches": 18,
+  "maxPageFetches": 48,
   "requestDelaySeconds": 1.2,
   "linkedinQueries": [
-    "site:linkedin.com/jobs/view/ (\"buyer\" OR \"procurement\") Chennai",
-    "site:linkedin.com/jobs/view/ (\"supply chain\" OR \"material planner\" OR \"demand planner\") Chennai",
-    "site:linkedin.com/jobs/view/ (\"procurement\" OR \"sourcing\" OR \"supply planner\") \"remote\" \"India\""
-  ]
+    "site:linkedin.com/jobs/view/ buyer procurement Chennai",
+    "site:linkedin.com/jobs/view/ purchasing sourcing Chennai",
+    "site:linkedin.com/jobs/view/ supply chain analyst Chennai",
+    "site:linkedin.com/jobs/view/ material materials planner Chennai",
+    "site:linkedin.com/jobs/view/ demand supply planner Chennai",
+    "site:linkedin.com/jobs/view/ inventory logistics analyst Chennai",
+    "site:linkedin.com/jobs/view/ buyer procurement Sriperumbudur Oragadam",
+    "site:linkedin.com/jobs/view/ procurement supply chain remote India"
+  ],
+  "maxDiscoveryQueries": 16,
+  "maxAvailabilityQueries": 10,
+  "resultsPerQuery": 20,
+  "maxNewLeadsPerRun": 150
 }

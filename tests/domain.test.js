@@ -45,3 +45,4 @@ test('malformed private imports cannot become persistent broken state',()=>{
   for(const mutate of mutations){const w=newWorkspace();mutate(w);assert.throws(()=>validateWorkspace(w));}
 });
 test('optional resume lists normalized for both export formats',async()=>{const w=newWorkspace();w.master={...sampleMaster,education:undefined,certifications:undefined};const {resumePrintHTML}=await import('../site/resume.js');assert.ok(resumePrintHTML(validateWorkspace(w).master).includes('QA Candidate'));});
+test('availability holds hide reported listings without claiming confirmed closure',async()=>{const {isUnavailable}=await import('../site/engine.js');const j={...base,availabilityHold:true,verification:'indexed',closesOn:null};assert.equal(isUnavailable(j),true);assert.equal(isExpired(j),false);const out=validateDataset({...raw,jobs:[j]});assert.equal(out.jobs[0].availabilityHold,true);});
