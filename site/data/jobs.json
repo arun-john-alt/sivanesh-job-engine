@@ -1443,7 +1443,7 @@
     },
     {
       "id": "careerssecom-c931e6902d39",
-      "company": "careers.se.com",
+      "company": "Schneider Electric",
       "title": "Manager - Material Planning in Chennai, India",
       "location": "Chennai, India",
       "workModel": "Not specified",
@@ -1923,8 +1923,8 @@
     },
     {
       "id": "jobssmartrecruiterscom-2fc1677a3460",
-      "company": "jobs.smartrecruiters.com",
-      "title": "Konecranes Specialist, Procurement Controlling",
+      "company": "Konecranes",
+      "title": "Specialist, Procurement Controlling",
       "location": "Chennai, India",
       "workModel": "Not specified",
       "family": "Needs classification",
@@ -2156,6 +2156,190 @@
           "label": "Employer job posting",
           "url": "https://jobs.comcast.com/job/chennai/analyst-3-supply-chain-planning/45483/100718257520",
           "scope": "Public JobPosting metadata",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4454094786",
+      "company": "Buying Simplified",
+      "title": "Senior Buyer \u2014 Procurement Operations",
+      "location": "Chennai, India",
+      "workModel": "Hybrid; evening shift",
+      "family": "Needs classification",
+      "experience": "5\u20139 years",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4454094786",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4454094786",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-18",
+      "checkedOn": "2026-09-18",
+      "verification": "indexed",
+      "verificationNote": "Public source reviewed on 18 September 2026; live application acceptance is not guaranteed.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 25,
+          "reason": "PO and supplier coordination align; independent RFQ and contract ownership need evidence."
+        },
+        {
+          "name": "Tools / analysis",
+          "weight": 20,
+          "points": 14,
+          "reason": "ERP and Excel background helps; client-system proficiency needs confirmation."
+        },
+        {
+          "name": "Relevant experience / seniority",
+          "weight": 20,
+          "points": 16,
+          "reason": "Five-plus years fits the range; client-account ownership is not established."
+        },
+        {
+          "name": "Industry",
+          "weight": 15,
+          "points": 10,
+          "reason": "Automotive/electronics experience transfers; client categories may differ."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "Chennai hybrid matches the geographic preference."
+        }
+      ],
+      "summary": "Own purchasing and sourcing for US client accounts. Chennai hybrid; evening hours. Requires 5\u20139 years. Salary is undisclosed.",
+      "hardGaps": [
+        "Confirm independent sourcing and negotiation ownership.",
+        "Evening shift and hybrid attendance need personal agreement."
+      ],
+      "benefits": [],
+      "risks": [
+        "Confirm current availability and annual CTC before applying."
+      ],
+      "questions": [
+        "What is the annual total CTC and fixed/variable split?"
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "Buying Simplified job description",
+          "url": "https://in.linkedin.com/jobs/view/senior-buyer-%E2%80%94-procurement-operations-at-buying-simplified-4454094786",
+          "scope": "Public JD reviewed against the previously supplied professional profile; match is a heuristic, not an ATS result.",
+          "asOf": "2026-09-18",
+          "checkedOn": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "id": "hp-9f70b7216540",
+      "company": "HP",
+      "title": "Supply Chain Planner",
+      "location": "Chennai, India",
+      "workModel": "Not specified",
+      "family": "Needs classification",
+      "experience": "6\u201310 years; experience gap",
+      "requisition": "3161228",
+      "applyUrl": "https://hp.wd5.myworkdayjobs.com/en-US/ExternalCareerSite/job/Supply-Chain-Planner_3161228",
+      "linkedinUrl": null,
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-18",
+      "checkedOn": "2026-09-18",
+      "verification": "indexed",
+      "verificationNote": "Public source reviewed on 18 September 2026; live application acceptance is not guaranteed.",
+      "analysisStatus": "reviewed",
+      "score": [
+        {
+          "name": "Responsibilities",
+          "weight": 35,
+          "points": 29,
+          "reason": "Demand and material planning align; multi-echelon optimization needs confirmation."
+        },
+        {
+          "name": "Tools / analysis",
+          "weight": 20,
+          "points": 15,
+          "reason": "ERP and analytical tools are relevant; integrated planning-system experience needs checking."
+        },
+        {
+          "name": "Relevant experience / seniority",
+          "weight": 20,
+          "points": 12,
+          "reason": "The JD asks for 6\u201310 years, above the supplied five-plus-year profile."
+        },
+        {
+          "name": "Industry",
+          "weight": 15,
+          "points": 12,
+          "reason": "Electronics and supply-chain experience are relevant to hardware operations."
+        },
+        {
+          "name": "Location",
+          "weight": 10,
+          "points": 10,
+          "reason": "The listing specifies Chennai."
+        }
+      ],
+      "summary": "Demand forecasting, forecast-error analysis and inventory optimization across service-support networks.",
+      "hardGaps": [
+        "Experience is below the stated 6\u201310-year range.",
+        "Confirm forecasting-method and multi-echelon inventory expertise."
+      ],
+      "benefits": [],
+      "risks": [
+        "Confirm current availability and annual CTC before applying."
+      ],
+      "questions": [
+        "What is the annual total CTC and fixed/variable split?"
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "HP job description",
+          "url": "https://hp.wd5.myworkdayjobs.com/en-US/ExternalCareerSite/job/Supply-Chain-Planner_3161228",
+          "scope": "Public JD reviewed against the previously supplied professional profile; match is a heuristic, not an ATS result.",
           "asOf": "2026-09-18",
           "checkedOn": "2026-09-18"
         }

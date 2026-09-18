@@ -47,3 +47,7 @@ class DiscoveryTests(unittest.TestCase):
     def test_expired_explicit_deadline_excludes_result(self):
         row={**ROW,'raw_content':'Senior Buyer Chennai. Job Posting End Date: 2020-08-31 Apply now'}
         self.assertEqual(scan.result_deadline(row),'2020-08-31');self.assertTrue(scan.closed_result(row));self.assertIsNone(scan.linkedin_lead(row,'2026-09-18'))
+
+    def test_company_chennai_office_does_not_override_foreign_linkedin_location(self):
+        row={**ROW,'title':'Example hiring Senior Buyer in London, United Kingdom','raw_content':'Example has offices in Chennai, India. Purchasing and supplier management.'}
+        self.assertIsNone(scan.linkedin_lead(row,'2026-09-18'))

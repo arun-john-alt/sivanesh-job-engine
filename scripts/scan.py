@@ -216,7 +216,9 @@ def linkedin_lead(row,now):
     location=result_location(title,snippet)
     company='Employer to verify'
     match=re.match(r'^(.+?) hiring (.+?)(?: in (.+))?$',title,re.I)
-    if match:company,title=match[1],match[2]
+    if match:
+        company,title=match[1],match[2]
+        if match[3]:location=result_location(match[3],'')
     else:
         match=re.match(r'^(.+?) at (.+?) (?:—|–|in) .+?(?: - LinkedIn)?$',title)
         if match:title,company=match[1],match[2]
@@ -258,6 +260,7 @@ def employer_index_lead(row,hosts,now):
     if not re.search(r'/job/[^/]+|/jobs/[^/]+|/[^/]+/\d{6,}',path,re.I):return None
     title=plain(row.get('title',''));text=listing_text(row);location=result_location(title,text)
     title=re.sub(r'\s*[|]\s*.*$','',title).strip()
+    title=re.sub(r'\s+Job Details$','',title,flags=re.I)
     if not is_relevant(title,location,text) or re.search(r'@|\+?\d[\d ()-]{8,}',title):return None
     host=urllib.parse.urlsplit(url).hostname
     company={'careers.vestas.com':'Vestas','jobs.comcast.com':'Comcast','hp.wd5.myworkdayjobs.com':'HP','apply.hp.com':'HP','flex.wd1.myworkdayjobs.com':'Flex','alliancewd.wd3.myworkdayjobs.com':'Renault Group / RNTBCI','careers.caterpillar.com':'Caterpillar','careers.gevernova.com':'GE Vernova'}.get(host,host)
