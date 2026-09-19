@@ -32,7 +32,7 @@ node scripts/validate.mjs
 python3 scripts/build.py
 # Private data and .env files are both outside the allowlist and ignored.
 git init -b main
-git add site scripts config tests docs .github .gitignore README.md AGENTS.md package.json
+git add site scripts config tests docs .github .gitignore AGENTS.md package.json
 if ! git var GIT_AUTHOR_IDENT >/dev/null 2>&1; then
   printf 'Set your Git author name and email, then commit and publish from Codex. No repository has been created on GitHub.\n'
   exit 1

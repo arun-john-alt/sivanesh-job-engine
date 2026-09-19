@@ -4,7 +4,7 @@
 Help Sivanesh pursue a better-paying job by 31 December 2026. The minimum target is INR 12 lakh annual CTC; current compensation is private and is loaded from the separate private workspace. Never promise a job or invent pipeline activity.
 
 ## First steps
-Read README.md, inspect Git status and remotes, and run the tests before changing code. Preserve uncommitted user work. Ask for the exact destination repository if no remote is configured. Never guess the user's GitHub account. Never force-push or overwrite an existing project. Prefer a reviewable branch for an existing repository.
+Inspect Git status and remotes, and run the tests before changing code. Preserve uncommitted user work. Ask for the exact destination repository if no remote is configured. Never guess the user's GitHub account. Never force-push or overwrite an existing project. Prefer a reviewable branch for an existing repository.
 
 ## Architecture
 - `site/` is the static GitHub Pages client; no backend, third-party scripts or secret-bearing API calls.
