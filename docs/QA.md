@@ -84,3 +84,7 @@ Limits:
 - Daily discovery remains scheduled at 03:30 UTC / 09:00 IST. It discovers/rechecks listings, but does not autonomously score new descriptions. API-key-free employer scan remains distinct from broader key-backed discovery. No availability guarantees or application submissions.
 
 - Scheduled run 35324058208 succeeded on 18 September; began 08:22:38 UTC / 13:52 IST, illustrating best-effort scheduling. Its data commit 811ef8a was merged and all 20 discoveries retained. Six additional active reviewed roles: RRD, Accenture, HP Procurement Operations, Nextpower, Flexing It and MPloyChek.
+
+## Availability safeguards — 23 September 2026
+
+See AVAILABILITY.md for audit evidence, exclusions and regression checks. Mobile preview verified 3 active Nixon roles and 0 active Sivanesh roles; unconfirmed records remain accessible under Sources. No stale open claims were backfilled from old research dates.

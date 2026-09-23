@@ -196,8 +196,12 @@ def closed_result(row):
     deadline=result_deadline(row)
     return bool(CLOSED.search(listing_text(row)[:6000])) or bool(deadline and deadline<dt.datetime.now(dt.timezone.utc).date().isoformat())
 
-def mark_index_closed(job,now):
+def mark_index_closed(job,now,linkedin=False):
+    if linkedin and not linkedin_url(job['applyUrl']):
+        job['linkedinAvailability']='closed'
+        return False
     job.update(verification='closed',availabilityHold=False,checkedOn=now,verificationNote='The exact listing search result reports closure or an expired application deadline. Hidden from active jobs; index evidence can lag the source.')
+    return True
 
 def result_location(title,text):
     # The title/header is stronger evidence than a company overview farther down a JD.
@@ -292,7 +296,7 @@ def matches_existing(node,existing,page_url):
 
 def run(config_path,data_path):
     cfg=json.loads(config_path.read_text());data=json.loads(data_path.read_text());now=dt.datetime.now(dt.timezone.utc).date().isoformat();fetcher=Fetcher(cfg)
-    coverage=[];queue=[];known={canonical(j['applyUrl']):j for j in data['jobs']};seen=set();new_count=0;success=0
+    coverage=[c for c in data.get('run',{}).get('coverage',[]) if c.get('source')=='Direct application availability'];queue=[];known={canonical(j['applyUrl']):j for j in data['jobs']};seen=set();new_count=0;success=0
     employer_checks=sorted((j for j in data['jobs'] if not linkedin_url(j['applyUrl']) and j.get('verification')!='closed'),key=lambda j:j.get('checkedOn') or '')
     for job in employer_checks[:12]:queue.append((job['applyUrl'],job['company'],True))
     for watch in cfg.get('watchPages',[]):queue.append((watch['url'],watch['company'],False))
@@ -310,7 +314,7 @@ def run(config_path,data_path):
             if results is None:continue
             for row in results:
                 result_url=linkedin_url(row.get('url','')) if li else canonical(row.get('url',''))
-                if result_url==exact and closed_result(row):mark_index_closed(job,now);closed_count+=1;break
+                if result_url==exact and closed_result(row):closed_count+=int(mark_index_closed(job,now, bool(li)));break
         for q,is_linkedin in discovery_queries(cfg):
             results,status=search_results(fetcher,provider,key,q,is_linkedin)
             if results is None:
@@ -320,7 +324,7 @@ def run(config_path,data_path):
                 u=row.get('url','');li=linkedin_url(u)
                 existing=next((j for j in data['jobs'] if li and linkedin_url(j.get('linkedinUrl') or j['applyUrl'])==li),None) if li else known.get(canonical(u))
                 if closed_result(row):
-                    if existing and existing.get('verification')!='closed':mark_index_closed(existing,now);closed_count+=1
+                    if existing and existing.get('verification')!='closed':closed_count+=int(mark_index_closed(existing,now, bool(li)))
                     continue
                 if existing:continue
                 item=linkedin_lead(row,now) if li else employer_index_lead(row,fetcher.hosts,now)
