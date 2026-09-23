@@ -1,16 +1,16 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-22",
+  "updatedAt": "2026-09-23",
   "run": {
     "status": "completed",
-    "checkedOn": "2026-09-22",
+    "checkedOn": "2026-09-23",
     "automaticEnabled": true,
-    "note": "3 new lead(s); 2 job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.",
+    "note": "2 new lead(s); 2 job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.",
     "coverage": [
       {
         "source": "LinkedIn public search index",
         "status": "8 queries completed",
-        "detail": "Tavily: 3 new unscored leads. Partial coverage; exact-result closure signals checked; no LinkedIn login or direct scraping."
+        "detail": "Tavily: 2 new unscored leads. Partial coverage; exact-result closure signals checked; no LinkedIn login or direct scraping."
       },
       {
         "source": "Tavily web discovery",
@@ -40,7 +40,7 @@
       {
         "source": "Renault Group / RNTBCI",
         "status": "Fetched",
-        "detail": "https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1 - job metadata found"
+        "detail": "https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1 - no structured job data"
       },
       {
         "source": "HP",
@@ -93,19 +93,14 @@
         "detail": "https://jobs.comcast.com/category/procurement-jobs/45483/8707728/1 - no structured job data"
       },
       {
-        "source": "careers.caterpillar.com",
+        "source": "careers.vestas.com",
         "status": "Fetched",
-        "detail": "https://careers.caterpillar.com/en/jobs/r0000389747/supply-chain-planning-analyst - job metadata found"
+        "detail": "https://careers.vestas.com/job/Chennai-Sr_-Supply-Chain-Analyst-TN-600-117/1418518033 - no structured job data"
       },
       {
         "source": "careers.caterpillar.com",
-        "status": "Fetched",
-        "detail": "https://careers.caterpillar.com/en/jobs/r0000392104/manager-supply-chain-planning - job metadata found"
-      },
-      {
-        "source": "careers.caterpillar.com",
-        "status": "Fetched",
-        "detail": "https://careers.caterpillar.com/en/jobs/r0000394144/demand-orders-analyst - job metadata found"
+        "status": "HTTP 404",
+        "detail": "https://careers.caterpillar.com/en/jobs/r0000394144/demand-orders-analyst"
       },
       {
         "source": "apply.hp.com",
@@ -113,9 +108,9 @@
         "detail": "https://apply.hp.com/careers/job/42704791?domain=hp.com&job_index=4"
       },
       {
-        "source": "careers.vestas.com",
+        "source": "www.careers.ford.com",
         "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Chennai-Sr_-Supply-Chain-Analyst-TN-600-117/1418518033 - no structured job data"
+        "detail": "https://www.careers.ford.com/job/dearborn/supply-chain-program-manager/48560/100689395104 - job metadata found"
       },
       {
         "source": "careers.vestas.com",
@@ -130,27 +125,7 @@
       {
         "source": "careers.vestas.com",
         "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Kitakyushu-shi-Blade-Supervisor-Fuku/1428524833 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Victoria-Dispatcher-Ciud-87230/1427580033 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Sancheville-Technicien-Pale-HF-95/1408904333 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Montrose-Stock-Keeper-Angu/1416767633 - no structured job data"
+        "detail": "https://careers.vestas.com/job/Lockwood-Technician-II-MO/1402001933 - no structured job data"
       },
       {
         "source": "careers.vestas.com",
@@ -160,17 +135,37 @@
       {
         "source": "careers.vestas.com",
         "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Aarhus-N-Control-Engineer-Regi-8200/1435692933 - no structured job data"
+      },
+      {
+        "source": "careers.vestas.com",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Victoria-Dispatcher-Ciud-87230/1427580033 - no structured job data"
+      },
+      {
+        "source": "careers.vestas.com",
+        "status": "Fetched",
         "detail": "https://careers.vestas.com/job/Langres-Service-Technician-52/1417559533 - no structured job data"
       },
       {
         "source": "careers.vestas.com",
         "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Lockwood-Technician-II-MO/1402001933 - no structured job data"
+        "detail": "https://careers.vestas.com/job/Kitakyushu-shi-Blade-Supervisor-Fuku/1428524833 - no structured job data"
       },
       {
         "source": "careers.vestas.com",
         "status": "Fetched",
         "detail": "https://careers.vestas.com/job/Oostende-HSE-Coordinator-VWV-8400/1427377033 - no structured job data"
+      },
+      {
+        "source": "careers.vestas.com",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Sancheville-Technicien-Pale-HF-95/1408904333 - no structured job data"
+      },
+      {
+        "source": "careers.vestas.com",
+        "status": "Fetched",
+        "detail": "https://careers.vestas.com/job/Montrose-Stock-Keeper-Angu/1416767633 - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
@@ -180,17 +175,52 @@
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/Ramboll3/744000149554649-lead-automation-power-systems-energy-chennai - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/WestgateResorts/744000150735739-houseperson - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/Rotork1/744000147513041-global-category-manager-electronics - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/LouisDreyfusCompany/744000148171585-- - no structured job data"
       },
       {
-        "source": "careers.caterpillar.com",
+        "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://careers.caterpillar.com/en/jobs/r0000392104/senior-manager-supply-chain-planning - job metadata found"
+        "detail": "https://jobs.smartrecruiters.com/strersecokgaastrergruppe/744000149543270 - no structured job data"
+      },
+      {
+        "source": "jobs.smartrecruiters.com",
+        "status": "Fetched",
+        "detail": "https://jobs.smartrecruiters.com/NationalVision1/744000143685300-optometrist - no structured job data"
+      },
+      {
+        "source": "jobs.smartrecruiters.com",
+        "status": "Fetched",
+        "detail": "https://jobs.smartrecruiters.com/RaisingCanes/744000149695809-restaurant-manager - no structured job data"
+      },
+      {
+        "source": "jobs.smartrecruiters.com",
+        "status": "Fetched",
+        "detail": "https://jobs.smartrecruiters.com/Aramark/3743990015508016-kitchen-porter - no structured job data"
+      },
+      {
+        "source": "jobs.smartrecruiters.com",
+        "status": "Fetched",
+        "detail": "https://jobs.smartrecruiters.com/Vattenfall/744000150060687-brandskyddssamordnare - no structured job data"
+      },
+      {
+        "source": "jobs.smartrecruiters.com",
+        "status": "Fetched",
+        "detail": "https://jobs.smartrecruiters.com/Primark/744000150713589-retail-assistant - no structured job data"
+      },
+      {
+        "source": "jobs.smartrecruiters.com",
+        "status": "Fetched",
+        "detail": "https://jobs.smartrecruiters.com/GreeneKing/744000148484478-housekeeper - no structured job data"
+      },
+      {
+        "source": "jobs.smartrecruiters.com",
+        "status": "Fetched",
+        "detail": "https://jobs.smartrecruiters.com/NCC/744000150675239-projektchef - no structured job data"
       },
       {
         "source": "Salary, culture and resume analysis",
@@ -1787,7 +1817,7 @@
       "postedOn": null,
       "closesOn": "2027-09-10",
       "discoveredOn": "2026-09-18",
-      "checkedOn": "2026-09-22",
+      "checkedOn": "2026-09-23",
       "verification": "live",
       "verificationNote": "Matching employer JobPosting metadata fetched directly. Application submission was not attempted.",
       "analysisStatus": "reviewed",
@@ -2652,7 +2682,7 @@
       "postedOn": "2026-09-10",
       "closesOn": "2026-09-24",
       "discoveredOn": "2026-09-18",
-      "checkedOn": "2026-09-22",
+      "checkedOn": "2026-09-23",
       "verification": "live",
       "verificationNote": "Matching employer JobPosting metadata fetched directly. Application submission was not attempted.",
       "analysisStatus": "needs-review",
@@ -2893,7 +2923,7 @@
           "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "hp-9f70b7216540",
@@ -3618,7 +3648,7 @@
         }
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
-      "availabilityAttemptedOn": "2026-09-18"
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "linkedin-4457114138",
@@ -5882,7 +5912,8 @@
           "asOf": "2026-09-21",
           "checkedOn": "2026-09-21"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "linkedin-4444923101",
@@ -6064,7 +6095,8 @@
           "asOf": "2026-09-21",
           "checkedOn": "2026-09-21"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "linkedin-4458379224",
@@ -6185,7 +6217,8 @@
           "asOf": "2026-09-21",
           "checkedOn": "2026-09-21"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "linkedin-4469120833",
@@ -6245,7 +6278,8 @@
           "asOf": "2026-09-21",
           "checkedOn": "2026-09-21"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "linkedin-4466054987",
@@ -6671,7 +6705,8 @@
           "asOf": "2026-09-21",
           "checkedOn": "2026-09-21"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "linkedin-4460363806",
@@ -6792,7 +6827,8 @@
           "asOf": "2026-09-22",
           "checkedOn": "2026-09-22"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "linkedin-4466329634",
@@ -6852,7 +6888,8 @@
           "asOf": "2026-09-22",
           "checkedOn": "2026-09-22"
         }
-      ]
+      ],
+      "availabilityAttemptedOn": "2026-09-23"
     },
     {
       "id": "linkedin-4458369147",
@@ -6911,6 +6948,127 @@
           "scope": "Public search index; listing not directly checked",
           "asOf": "2026-09-22",
           "checkedOn": "2026-09-22"
+        }
+      ],
+      "availabilityAttemptedOn": "2026-09-23"
+    },
+    {
+      "id": "linkedin-4470636254",
+      "company": "Employer to verify",
+      "title": "Supply Chain Analyst at Ford Motor Company",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4470636254",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4470636254",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-23",
+      "checkedOn": "2026-09-23",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4470636254",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-23",
+          "checkedOn": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4465620198",
+      "company": "Employer to verify",
+      "title": "Supply Chain AI lead (SCM) at Capgemini",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4465620198",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4465620198",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-23",
+      "checkedOn": "2026-09-23",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4465620198",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-23",
+          "checkedOn": "2026-09-23"
         }
       ]
     }
