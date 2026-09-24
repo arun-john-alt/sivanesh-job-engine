@@ -1,21 +1,21 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-23",
+  "updatedAt": "2026-09-24",
   "run": {
     "status": "completed",
-    "checkedOn": "2026-09-23",
+    "checkedOn": "2026-09-24",
     "automaticEnabled": true,
-    "note": "2 new lead(s); 2 job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.",
+    "note": "7 new lead(s); 2 job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.",
     "coverage": [
       {
         "source": "Direct application availability",
-        "status": "0 confirmed open; 12 closed; 77 unconfirmed; 0 retained within 48h",
+        "status": "0 confirmed open; 13 closed; 76 unconfirmed; 0 retained within 48h",
         "detail": "Every non-closed record attempted before discovery. Blocked or unprovable vacancies stay unconfirmed; only positive exact-vacancy evidence refreshes the 48-hour clock. No application was submitted."
       },
       {
         "source": "LinkedIn public search index",
         "status": "8 queries completed",
-        "detail": "Tavily: 2 new unscored leads. Partial coverage; exact-result closure signals checked; no LinkedIn login or direct scraping."
+        "detail": "Tavily: 6 new unscored leads. Partial coverage; exact-result closure signals checked; no LinkedIn login or direct scraping."
       },
       {
         "source": "Tavily web discovery",
@@ -36,16 +36,6 @@
         "source": "Vestas",
         "status": "Fetched",
         "detail": "https://careers.vestas.com/job/Chennai-Buyer-Sr-Buyer-TN-600-117/1436030333 - no structured job data"
-      },
-      {
-        "source": "Renault Group / RNTBCI",
-        "status": "Unresolved",
-        "detail": "Page fetched but exact JobPosting could not be confirmed. Prior evidence retained: https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1"
-      },
-      {
-        "source": "Renault Group / RNTBCI",
-        "status": "Fetched",
-        "detail": "https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1 - no structured job data"
       },
       {
         "source": "HP",
@@ -100,132 +90,87 @@
       {
         "source": "careers.vestas.com",
         "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Chennai-Sr_-Supply-Chain-Analyst-TN-600-117/1418518033 - no structured job data"
+        "detail": "https://careers.vestas.com/job/Chennai-Operational-Buyer-TN-600-117/1437376433 - no structured job data"
+      },
+      {
+        "source": "www.careers.ford.com",
+        "status": "HTTP 404",
+        "detail": "https://www.careers.ford.com/job/chennai/procurement-analyst-indirect-purchasing/48560/100989223312"
+      },
+      {
+        "source": "careers.gevernova.com",
+        "status": "Fetched",
+        "detail": "https://careers.gevernova.com/jobs - no structured job data"
       },
       {
         "source": "careers.caterpillar.com",
         "status": "HTTP 404",
-        "detail": "https://careers.caterpillar.com/en/jobs/r0000394144/demand-orders-analyst"
-      },
-      {
-        "source": "apply.hp.com",
-        "status": "Skipped: robots disallow or robots could not be checked",
-        "detail": "https://apply.hp.com/careers/job/42704791?domain=hp.com&job_index=4"
-      },
-      {
-        "source": "www.careers.ford.com",
-        "status": "Fetched",
-        "detail": "https://www.careers.ford.com/job/dearborn/supply-chain-program-manager/48560/100689395104 - job metadata found"
+        "detail": "https://careers.caterpillar.com/es/trabajos/r0000394144/demand-orders-analyst"
       },
       {
         "source": "careers.vestas.com",
         "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Chennai-Operational-Buyer-TN-600-117/1437376433 - no structured job data"
+        "detail": "https://careers.vestas.com/job/Chennai-Sr_-Supply-Chain-Analyst-TN-600-117/1418518033 - no structured job data"
       },
       {
-        "source": "careers.vestas.com",
+        "source": "job-boards.greenhouse.io",
         "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Seoul-Purchasing-Manager-Seou-04323/1413558133 - no structured job data"
+        "detail": "https://job-boards.greenhouse.io/shrimpgirlsincdbafishwifetinnedseafoodco/jobs/4414038009 - no structured job data"
       },
       {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Lockwood-Technician-II-MO/1402001933 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Beaver-Technician-II-OK/1428060633 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Aarhus-N-Control-Engineer-Regi-8200/1435692933 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Victoria-Dispatcher-Ciud-87230/1427580033 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Langres-Service-Technician-52/1417559533 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Kitakyushu-shi-Blade-Supervisor-Fuku/1428524833 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Oostende-HSE-Coordinator-VWV-8400/1427377033 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Sancheville-Technicien-Pale-HF-95/1408904333 - no structured job data"
-      },
-      {
-        "source": "careers.vestas.com",
-        "status": "Fetched",
-        "detail": "https://careers.vestas.com/job/Montrose-Stock-Keeper-Angu/1416767633 - no structured job data"
+        "source": "careers.caterpillar.com",
+        "status": "HTTP 404",
+        "detail": "https://careers.caterpillar.com/nl/jobs/r0000391642/associate-purchasing-analyst"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/Konecranes/744000149800099-specialist-procurement-controlling - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/SoftwareMind/744000150701910-administration-specialist - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/WestgateResorts/744000150735739-houseperson - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/AccorHotel/744000150836839-executive-housekeeper - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/LouisDreyfusCompany/744000148171585-- - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/MATHoldings/744000150170459-industrial-engineer - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/strersecokgaastrergruppe/744000149543270 - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/RaisingCanes/744000150785859-restaurant-leader - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/NationalVision1/744000143685300-optometrist - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/TLZDispatchLLC/3743990015206556-delivery-driver - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/RaisingCanes/744000149695809-restaurant-manager - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/AllianceAnimalHealth/744000149703699-veterinary-receptionist- - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/Aramark/3743990015508016-kitchen-porter - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/AFRY/744000150958989-sahkoasiantuntija-projektipaallikko - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/Vattenfall/744000150060687-brandskyddssamordnare - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/CWBellLogisticsLLC/3743990015376137-delivery-driver - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/Primark/744000150713589-retail-assistant - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/Auto1/744000150940119-verniciatore-autohero - no structured job data"
       },
       {
         "source": "jobs.smartrecruiters.com",
         "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/GreeneKing/744000148484478-housekeeper - no structured job data"
-      },
-      {
-        "source": "jobs.smartrecruiters.com",
-        "status": "Fetched",
-        "detail": "https://jobs.smartrecruiters.com/NCC/744000150675239-projektchef - no structured job data"
+        "detail": "https://jobs.smartrecruiters.com/AccorHotel/744000150817600-bartender - no structured job data"
       },
       {
         "source": "Salary, culture and resume analysis",
@@ -396,7 +341,7 @@
         "Which service regions and working hours does this team support?"
       ],
       "availabilityAttemptedOn": "2026-09-19",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
       "availabilityHold": true,
@@ -707,8 +652,8 @@
       "closesOn": "2026-09-23",
       "checkedOn": "2026-09-16",
       "discoveredOn": "2026-09-16",
-      "verification": "indexed",
-      "verificationNote": "Employer-hosted listing found in web search on 16 Sep 2026. A fresh direct page fetch could not be completed; confirm the application form still accepts applications.",
+      "verification": "closed",
+      "verificationNote": "Recorded application deadline has passed",
       "analysisStatus": "reviewed",
       "salary": {
         "kind": "unknown",
@@ -860,10 +805,10 @@
         "What category spend and independent negotiation authority would this position own?"
       ],
       "availabilityAttemptedOn": "2026-09-19",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
-      "availabilityStatus": "unconfirmed",
-      "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
-      "availabilityHold": true,
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
+      "availabilityStatus": "closed",
+      "availabilityReason": "Recorded application deadline has passed",
+      "availabilityHold": false,
       "availabilityEvidenceUrl": "https://alliancewd.wd3.myworkdayjobs.com/en-US/renault-group-careers/job/Chennai/Senior-Buyer---Energy---Logistics--Indirect-Procurement-_JOBREQ_50275099-1"
     },
     {
@@ -967,7 +912,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464513509"
@@ -1211,7 +1156,7 @@
       ],
       "availabilityAttemptedOn": "2026-09-19",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -1315,10 +1260,10 @@
           "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityAttemptedOn": "2026-09-24",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4459927792"
@@ -1384,7 +1329,7 @@
       ],
       "availabilityAttemptedOn": "2026-09-19",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -1558,10 +1503,10 @@
           "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityAttemptedOn": "2026-09-24",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4455739716"
@@ -1737,7 +1682,7 @@
       "availabilityHold": true,
       "availabilityAttemptedOn": "2026-09-18",
       "reviewNote": "Possible duplicate of the reviewed HP Supply Chain Planner; requisition linkage is unconfirmed.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467904366"
@@ -1843,7 +1788,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464838891"
@@ -1862,7 +1807,7 @@
       "postedOn": null,
       "closesOn": "2027-09-10",
       "discoveredOn": "2026-09-18",
-      "checkedOn": "2026-09-23",
+      "checkedOn": "2026-09-24",
       "verification": "live",
       "verificationNote": "Matching employer JobPosting metadata fetched directly. Application submission was not attempted.",
       "analysisStatus": "reviewed",
@@ -1948,7 +1893,7 @@
       "availabilityAttemptedOn": "2026-09-19",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
       "availabilityEvidenceUrl": "https://careers.se.com/jobs/133573?lang=en-us"
@@ -2054,7 +1999,7 @@
       "availabilityAttemptedOn": "2026-09-19",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://apply.hp.com/careers/job/42781415"
@@ -2160,7 +2105,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464811477"
@@ -2226,7 +2171,7 @@
       ],
       "availabilityAttemptedOn": "2026-09-18",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -2329,10 +2274,10 @@
           "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityAttemptedOn": "2026-09-24",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4459685171"
@@ -2398,7 +2343,7 @@
       ],
       "availabilityAttemptedOn": "2026-09-19",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -2574,7 +2519,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4463190467"
@@ -2740,9 +2685,9 @@
           "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityAttemptedOn": "2026-09-24",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -2762,7 +2707,7 @@
       "postedOn": "2026-09-10",
       "closesOn": "2026-09-24",
       "discoveredOn": "2026-09-18",
-      "checkedOn": "2026-09-23",
+      "checkedOn": "2026-09-24",
       "verification": "live",
       "verificationNote": "Matching employer JobPosting metadata fetched directly. Application submission was not attempted.",
       "analysisStatus": "needs-review",
@@ -2809,7 +2754,7 @@
       ],
       "availabilityAttemptedOn": "2026-09-18",
       "reviewNote": "Employer page is available, but omits detailed qualifications and experience requirements. Insufficient evidence for a five-part match score.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
       "availabilityHold": true,
@@ -3009,7 +2954,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -3107,7 +3052,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-19",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
       "availabilityHold": true,
@@ -3206,7 +3151,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4463810106"
@@ -3312,7 +3257,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464864457"
@@ -3484,10 +3429,10 @@
           "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityAttemptedOn": "2026-09-24",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4454948718"
@@ -3592,7 +3537,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4466322625"
@@ -3698,7 +3643,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4462408383"
@@ -3764,7 +3709,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -3837,9 +3782,9 @@
         }
       ],
       "availabilityHold": true,
-      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityAttemptedOn": "2026-09-24",
       "reviewNote": "The recommended apply-by date (15 September 2026) has passed. Still-open status needs confirmation; this is not an explicit closure notice.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4457114138"
@@ -3905,7 +3850,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-09-18",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4009,10 +3954,10 @@
           "checkedOn": "2026-09-18"
         }
       ],
-      "availabilityAttemptedOn": "2026-09-18",
+      "availabilityAttemptedOn": "2026-09-24",
       "availabilityHold": true,
       "reviewNote": "Auryx Industry / Auryx Construction identity requires confirmation; no official company website verified.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4457916425"
@@ -4118,7 +4063,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464520268"
@@ -4183,8 +4128,8 @@
         }
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
-      "availabilityAttemptedOn": "2026-09-18",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityAttemptedOn": "2026-09-24",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4291,7 +4236,7 @@
       "availabilityAttemptedOn": "2026-09-18",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4466034828"
@@ -4467,7 +4412,7 @@
       "availabilityHold": true,
       "availabilityAttemptedOn": "2026-09-18",
       "reviewNote": "Possible duplicate of HP Principal Supply Chain Planning Process Design; requisition linkage unconfirmed.",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464313287"
@@ -4533,7 +4478,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-09-18",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4663,7 +4608,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-09-18",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4730,7 +4675,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-09-18",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4797,7 +4742,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-09-18",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4864,7 +4809,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-09-18",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4930,7 +4875,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4996,7 +4941,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5062,7 +5007,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5128,7 +5073,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5194,7 +5139,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5260,7 +5205,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5326,7 +5271,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5392,7 +5337,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5458,7 +5403,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5524,7 +5469,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5590,7 +5535,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5656,7 +5601,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5722,7 +5667,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5788,7 +5733,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5854,7 +5799,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5920,7 +5865,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5986,7 +5931,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6052,7 +5997,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6118,7 +6063,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6184,7 +6129,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6250,7 +6195,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6316,7 +6261,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6382,7 +6327,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6448,7 +6393,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6514,7 +6459,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6580,7 +6525,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6646,7 +6591,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6712,7 +6657,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6778,7 +6723,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6844,7 +6789,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6910,7 +6855,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6976,7 +6921,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7042,7 +6987,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7108,7 +7053,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7174,7 +7119,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7240,7 +7185,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7306,7 +7251,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7371,11 +7316,12 @@
           "checkedOn": "2026-09-23"
         }
       ],
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
-      "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470636254"
+      "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470636254",
+      "availabilityAttemptedOn": "2026-09-24"
     },
     {
       "id": "linkedin-4465620198",
@@ -7436,11 +7382,432 @@
           "checkedOn": "2026-09-23"
         }
       ],
-      "availabilityCheckedAt": "2026-09-23T11:01:07+00:00",
+      "availabilityCheckedAt": "2026-09-24T08:36:02+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
-      "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4465620198"
+      "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4465620198",
+      "availabilityAttemptedOn": "2026-09-24"
+    },
+    {
+      "id": "linkedin-4458835716",
+      "company": "Employer to verify",
+      "title": "Procurement Specialist at Tech Data APAC",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4458835716",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4458835716",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-24",
+      "checkedOn": "2026-09-24",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4458835716",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-24",
+          "checkedOn": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4468755755",
+      "company": "Employer to verify",
+      "title": "Strategic Sourcing Specialist",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4468755755",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4468755755",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-24",
+      "checkedOn": "2026-09-24",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4468755755",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-24",
+          "checkedOn": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4460293747",
+      "company": "Employer to verify",
+      "title": "Procurement Executive - Logistics, Supplychain & Customs Clearance",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4460293747",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4460293747",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-24",
+      "checkedOn": "2026-09-24",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4460293747",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-24",
+          "checkedOn": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4469859838",
+      "company": "Capgemini",
+      "title": "Supply Planning",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4469859838",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4469859838",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-24",
+      "checkedOn": "2026-09-24",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4469859838",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-24",
+          "checkedOn": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4461718450",
+      "company": "Capgemini",
+      "title": "Associate Supply Planner",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4461718450",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4461718450",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-24",
+      "checkedOn": "2026-09-24",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4461718450",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-24",
+          "checkedOn": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "caterpillar-c2d9e08fc0db",
+      "company": "Caterpillar",
+      "title": "Associate Purchasing Analyst, Chennai, Tamil N\u0101du, India ...",
+      "location": "Chennai, India",
+      "workModel": "Not specified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://careers.caterpillar.com/nl/jobs/r0000391642/associate-purchasing-analyst",
+      "linkedinUrl": null,
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-24",
+      "checkedOn": "2026-09-24",
+      "verification": "closed",
+      "verificationNote": "Employer returned HTTP 404. Confirm before attempting to apply.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "Employer job lead. Review the full description and application availability before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "Employer listing search result",
+          "url": "https://careers.caterpillar.com/nl/jobs/r0000391642/associate-purchasing-analyst",
+          "scope": "Search-index discovery; full JD needs review",
+          "asOf": "2026-09-24",
+          "checkedOn": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-4467851212",
+      "company": "Employer to verify",
+      "title": "E-commerce Inventory Planner at Naidu Hall The Family Store",
+      "location": "Chennai, India",
+      "workModel": "Not verified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4467851212",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/4467851212",
+      "postedOn": null,
+      "closesOn": null,
+      "discoveredOn": "2026-09-24",
+      "checkedOn": "2026-09-24",
+      "verification": "indexed",
+      "verificationNote": "Public search-index result only. LinkedIn was not fetched; availability and employer identity need verification.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "LinkedIn search discovery. Open the listing to confirm the full job description, location and employer before shortlisting.",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "LinkedIn job search result",
+          "url": "https://www.linkedin.com/jobs/view/4467851212",
+          "scope": "Public search index; listing not directly checked",
+          "asOf": "2026-09-24",
+          "checkedOn": "2026-09-24"
+        }
+      ]
     }
   ]
 }
