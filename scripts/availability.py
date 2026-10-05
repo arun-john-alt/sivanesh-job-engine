@@ -61,13 +61,44 @@ def endpoint(url):
         return f'https://api.lever.co/v0/postings/{parts[0]}/{parts[1]}'
     return url
 
+def check_api(job,fetcher,scan,cache):
+    try:
+        from scripts import employers
+    except ModuleNotFoundError:
+        import employers
+    key=employers.exact_key(job['applyUrl'])
+    if not key:return None
+    kind,slug,ident=key;url=employers.api_url(kind,slug,ident)
+    if url not in cache:cache[url]=employers.get_json(fetcher,url)
+    payload,status=cache[url]
+    if payload is None:
+        if kind!='ashby' and status in ('HTTP 404','HTTP 410'):return 'closed','Exact public API vacancy is no longer published',url
+        return 'unconfirmed','Public API could not confirm vacancy: '+status,url
+    if kind=='ashby':
+        if not isinstance(payload,dict) or not isinstance(payload.get('jobs'),list):return 'unconfirmed','Malformed board response',url
+        rows=[r for r in payload['jobs'] if employers.exact_key(r.get('jobUrl',''))==key]
+        if not rows:return 'closed','Exact vacancy absent from the complete published employer board',url
+        row=rows[0]
+        if row.get('isListed') is False:return 'unconfirmed','Vacancy is not publicly listed',url
+        if employers.exact_key(row.get('applyUrl',''))==key:return 'open','Exact published Ashby vacancy and matching application route',url
+    elif kind=='smart':
+        if isinstance(payload,dict) and str(payload.get('id'))==ident:
+            if payload.get('active') is False:return 'closed','Employer recruiting API marks vacancy inactive',url
+            if payload.get('active') is True and employers.exact_key(payload.get('applyUrl',''))==key:return 'open','Exact active SmartRecruiters vacancy with matching application route',url
+    else:
+        state,reason=decision(job,json.dumps(payload),status,url,scan)
+        return state,reason,url
+    return 'unconfirmed','API response did not prove an exact active application route',url
+
+
 def audit(data, config, scan):
     now = dt.datetime.now(dt.timezone.utc)
     stamp = now.isoformat(timespec='seconds')
     cfg = dict(config)
-    cfg['allowedHosts'] = list(set(config['allowedHosts']) | {'www.linkedin.com', 'in.linkedin.com', 'boards-api.greenhouse.io', 'api.lever.co'})
+    cfg['allowedHosts'] = list(set(config['allowedHosts']) | {'www.linkedin.com', 'in.linkedin.com', 'boards-api.greenhouse.io', 'api.lever.co','api.smartrecruiters.com','api.ashbyhq.com'})
     cfg['maxPageFetches'] = max(100, len(data['jobs']) * 2)
     fetcher = scan.Fetcher(cfg)
+    api_cache = {}
     totals = {'confirmed open':0, 'closed':0, 'unconfirmed':0, 'retained within 48h':0}
     for job in sorted(data['jobs'], key=lambda j: j.get('analysisStatus') != 'reviewed'):
         if job.get('verification') == 'closed':
@@ -79,8 +110,11 @@ def audit(data, config, scan):
             state, reason = 'closed', 'Recorded application deadline has passed'
         else:
             target = endpoint(job['applyUrl'])
-            text, status = fetcher.page(target)
-            state, reason = decision(job, text, status, target, scan)
+            api_result = check_api(job,fetcher,scan,api_cache)
+            if api_result: state,reason,target=api_result
+            else:
+                text, status = fetcher.page(target)
+                state, reason = decision(job, text, status, target, scan)
         secondary = job.get('linkedinUrl')
         if secondary and scan.canonical(secondary) != scan.canonical(job['applyUrl']):
             secondary_text, secondary_status = fetcher.page(secondary)
@@ -89,7 +123,7 @@ def audit(data, config, scan):
             job['linkedinAvailability'] = secondary_state
             job['linkedinAvailabilityReason'] = secondary_reason
             # The employer's exact application route takes precedence over LinkedIn.
-        job['availabilityEvidenceUrl'] = endpoint(job['applyUrl'])
+        job['availabilityEvidenceUrl'] = target if not (deadline and deadline < now.date().isoformat()) else job['applyUrl']
         job['availabilityStatus'] = state
         job['availabilityReason'] = reason
         if state == 'open':

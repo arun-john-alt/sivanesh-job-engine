@@ -23,6 +23,10 @@
     {
       "company": "Comcast",
       "url": "https://jobs.comcast.com/category/procurement-jobs/45483/8707728/1"
+    },
+    {
+      "company": "Caterpillar",
+      "url": "https://careers.caterpillar.com/de/jobs/r0000382246/manager-procurement/"
     }
   ],
   "allowedHosts": [
@@ -43,7 +47,12 @@
     "flex.wd1.myworkdayjobs.com",
     "hp.wd5.myworkdayjobs.com",
     "apply.hp.com",
-    "jobs.smartrecruiters.com"
+    "jobs.smartrecruiters.com",
+    "jobs.ashbyhq.com",
+    "api.smartrecruiters.com",
+    "api.ashbyhq.com",
+    "api.lever.co",
+    "boards-api.greenhouse.io"
   ],
   "maxPageFetches": 48,
   "requestDelaySeconds": 1.2,
@@ -60,5 +69,42 @@
   "maxDiscoveryQueries": 16,
   "maxAvailabilityQueries": 10,
   "resultsPerQuery": 20,
-  "maxNewLeadsPerRun": 150
+  "maxNewLeadsPerRun": 150,
+  "employerBoards": [
+    {
+      "kind": "smart",
+      "slug": "Konecranes",
+      "company": "Konecranes"
+    },
+    {
+      "kind": "smart",
+      "slug": "Rotork1",
+      "company": "Rotork"
+    },
+    {
+      "kind": "smart",
+      "slug": "AristaNetworks",
+      "company": "Arista Networks"
+    },
+    {
+      "kind": "smart",
+      "slug": "TurnerTownsend",
+      "company": "Turner & Townsend"
+    },
+    {
+      "kind": "smart",
+      "slug": "BoschGroup",
+      "company": "Bosch Group"
+    },
+    {
+      "kind": "smart",
+      "slug": "RenesasElectronics",
+      "company": "Renesas Electronics"
+    },
+    {
+      "kind": "smart",
+      "slug": "Ramboll3",
+      "company": "Ramboll"
+    }
+  ]
 }

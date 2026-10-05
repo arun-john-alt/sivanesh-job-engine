@@ -10,7 +10,7 @@ test('unknown salary is not a rejection',()=>assert.equal(payGate(base,12),'Budg
 test('low third-party estimate cannot reject a role',()=>assert.equal(payGate({...base,salary:{kind:'third-party',minLpa:9,maxLpa:11,basis:'Annual CTC'}},12),'Budget unknown'));
 test('employer CTC ceiling below target is a gate',()=>assert.equal(payGate({...base,salary:{kind:'employer-disclosed',minLpa:9,maxLpa:11,basis:'Annual CTC'}},12),'Below target'));
 test('base salary is not automatically compared to total CTC',()=>assert.equal(payGate({...base,salary:{kind:'employer-disclosed',minLpa:9,maxLpa:11,basis:'Annual base pay'}},12),'Budget unknown'));
-test('expired deadline removed, closing day itself retained',()=>{assert.equal(isExpired({...base,closesOn:'2026-09-16'},'2026-09-17'),true);assert.equal(isExpired({...base,closesOn:'2026-09-16'},'2026-09-16'),false);});
+test('expired deadline removed, closing day itself retained',()=>{const open={...base,verification:'live',closesOn:'2026-09-16'};assert.equal(isExpired(open,'2026-09-17'),true);assert.equal(isExpired(open,'2026-09-16'),false);});
 test('unsafe link protocols and embedded credentials rejected',()=>{for(const url of ['javascript:alert(1)','data:text/html,test','https://user:pass@example.com'])assert.equal(safeURL(url),'');});
 test('tracking removed but requisition query retained',()=>assert.equal(canonicalURL('https://example.com/jobs?gh_jid=42&utm_source=x#top'),'https://example.com/jobs?gh_jid=42'));
 test('public serializer excludes personal fields',()=>{
