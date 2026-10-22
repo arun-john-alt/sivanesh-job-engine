@@ -92,3 +92,11 @@ See AVAILABILITY.md for audit evidence, exclusions and regression checks. Mobile
 ## Expanded employer coverage — 22 October 2026
 
 See EXPANDED-DISCOVERY.md for current counts, role-review limits, public career-feed support and regression checks. Public build, schema validation and privacy checks pass. The preview confirms the reviewed shortlist and the new More open jobs view.
+
+## Minimum opening target — 22 October 2026
+
+- Target 20 reviewed confirmed openings, buffer 25. Hourly credit-free employer replenishment is separate from the once-daily 9 AM IST search API budget. Approved reserve sources and Chennai-region queries expand automatically; no fit, location, salary or availability rule is relaxed.
+- Fresh expanded sweep: 73 employer sources; 7 reviewed eligible live openings. Target remains unmet. Unscored and unrelated roles do not count. This is a replenishment target, not a guarantee of market supply or GitHub scheduling. Full-description match review remains required.
+- 32 committed Node tests and 62 Python tests pass, along with schema, public-build privacy and whitespace checks. Nixon additionally runs 10 unrelated local scheduler tests successfully; their files are excluded from this release.
+- Real local browser at 390 × 844: 7 cards and 7/20 target status; no horizontal overflow or broken images. Target rendering excludes expired, pending and out-of-scope records and surfaces an overdue refresh.
+- Unit coverage includes overnight replenishment, 45-minute shortfall cooldown, six-hour healthy-buffer checks, paid-search daily cap, manual credit-free retry, reserve escalation, IST deadlines and honest pending-review shortfalls.

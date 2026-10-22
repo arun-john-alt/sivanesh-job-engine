@@ -12,7 +12,7 @@ Inspect Git status and remotes, and run the tests before changing code. Preserve
 - `site/engine.js` validates data and implements match/pay gates and resume approval.
 - `site/resume.js` writes real DOCX files and encrypts explicit private backups.
 - `scripts/scan.py` is conservative public-employer discovery. A search API is optional.
-- `.github/workflows/engine.yml` tests, scans at 03:30 UTC / 09:00 IST, commits public data and deploys only `dist/`.
+- `.github/workflows/engine.yml` runs broad discovery at 09:00 IST and credit-free employer replenishment hourly. `scripts/daily_scan.py` preserves the once-daily API budget; `scripts/opening_pool.py` expands approved sources toward 20 reviewed openings with a buffer of 25. See `docs/SCHEDULING.md`.
 - `scripts/build.py` uses an exact public-file allowlist and a private-field gate.
 - Private records, current CTC, contact details and the master resume are stored only in the browser. They do NOT automatically sync.
 

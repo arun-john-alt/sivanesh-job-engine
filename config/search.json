@@ -421,5 +421,151 @@
       ]
     }
   ],
-  "employerConcurrency": 3
+  "employerConcurrency": 3,
+  "openingPool": {
+    "minimum": 20,
+    "buffer": 25
+  },
+  "reserveEmployerBoards": [
+    {
+      "kind": "ashby",
+      "slug": "kestra",
+      "company": "Kestra"
+    },
+    {
+      "kind": "ashby",
+      "slug": "junipersquare",
+      "company": "Juniper Square"
+    },
+    {
+      "kind": "ashby",
+      "slug": "pod-network",
+      "company": "Pod Network"
+    },
+    {
+      "kind": "ashby",
+      "slug": "rifa",
+      "company": "Rifa AI"
+    },
+    {
+      "kind": "ashby",
+      "slug": "plane",
+      "company": "Plane"
+    },
+    {
+      "kind": "ashby",
+      "slug": "sentry",
+      "company": "Sentry"
+    },
+    {
+      "kind": "ashby",
+      "slug": "linear",
+      "company": "Linear"
+    },
+    {
+      "kind": "ashby",
+      "slug": "posthog",
+      "company": "PostHog"
+    },
+    {
+      "kind": "ashby",
+      "slug": "supabase",
+      "company": "Supabase"
+    },
+    {
+      "kind": "ashby",
+      "slug": "n8n",
+      "company": "n8n"
+    },
+    {
+      "kind": "ashby",
+      "slug": "zapier",
+      "company": "Zapier"
+    },
+    {
+      "kind": "ashby",
+      "slug": "docker",
+      "company": "Docker"
+    },
+    {
+      "kind": "ashby",
+      "slug": "atlan",
+      "company": "Atlan"
+    },
+    {
+      "kind": "ashby",
+      "slug": "vanta",
+      "company": "Vanta"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "zuora",
+      "company": "Zuora"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "druva",
+      "company": "Druva"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "zscaler",
+      "company": "Zscaler"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "rubrik",
+      "company": "Rubrik"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "netskope",
+      "company": "Netskope"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "harnessinc",
+      "company": "Harness"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "gitlab",
+      "company": "GitLab"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "grafanalabs",
+      "company": "Grafana Labs"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "canonical",
+      "company": "Canonical"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "elastic",
+      "company": "Elastic"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "mongodb",
+      "company": "MongoDB"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "cloudflare",
+      "company": "Cloudflare"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "samsara",
+      "company": "Samsara"
+    },
+    {
+      "kind": "greenhouse",
+      "slug": "toast",
+      "company": "Toast"
+    }
+  ]
 }

@@ -11,6 +11,7 @@ class ScannerTests(unittest.TestCase):
         self.assertFalse(scan.valid_url('http://careers.example.com',hosts))
         self.assertFalse(scan.valid_url('https://admin:password@careers.example.com',hosts))
     def test_relevance(self):
+        self.assertFalse(scan.is_relevant('Engineering Manager, SSCS: Supply Chain','Remote India','Software supply chain security, artifact signing and Sigstore.'))
         self.assertTrue(scan.is_relevant('Senior Buyer','Chennai, India','5-7 years'))
         self.assertFalse(scan.is_relevant('SAP MM Implementation Consultant','Chennai, India','5-7 years'))
         self.assertFalse(scan.is_relevant('Buyer','London, UK','5-7 years'))

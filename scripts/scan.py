@@ -121,6 +121,7 @@ def job_nodes(value):
 
 def is_relevant(title,location,description):
     if not ROLE.search(title) or EXCLUDE.search(title):return False
+    if re.search(r'engineering manager|software|security|devsecops',title,re.I) and re.search(r'software supply chain|artifact signing|malicious packages|sigstore',description,re.I):return False
     loc=location.lower();text=(title+' '+description).lower()
     if not re.search(r'chennai|sriperumbudur|oragadam|chengalpattu|thiruvallur|tiruvallur|pallavaram',loc) and not ('india' in loc and 'remote' in loc):return False
     years=re.search(r'(\d+)\s*(?:[-–—]|to)\s*(\d+)\s*(?:years?|yrs?)\b',text)
@@ -382,6 +383,7 @@ def run(config_path,data_path):
                 if valid_url(candidate,fetcher.hosts) and re.search(r'/job/|/jobs/|gh_jid=',candidate,re.I) and ROLE.search(urllib.parse.unquote(candidate)):queue.append((candidate,company,True))
         coverage.append({'source':company,'status':'Fetched','detail':url+(' - job metadata found' if nodes else ' - no structured job data')})
     coverage.append({'source':'Salary, culture and resume analysis','status':'Human review required','detail':'New leads are unscored. The crawler never invents pay, reviews, candidate achievements or tailored bullets.'})
+    pool_report=data.get('run',{}).get('openingPool')
     employer_report=data.get('run',{}).get('employerDiscovery');data['updatedAt']=now;data['run']={'status':'completed' if success or (key and any(counts.values())) else 'limited','checkedOn':now,'automaticEnabled':os.getenv('GITHUB_ACTIONS')=='true','note':f'{new_count} new lead(s); {success} job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.','coverage':coverage[:100]}
     temp=data_path.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=True,indent=2)+'\n');temp.replace(data_path)
     print(data['run']['note'])

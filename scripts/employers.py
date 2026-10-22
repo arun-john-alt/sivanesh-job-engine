@@ -185,7 +185,8 @@ def discover(data,cfg,scan,cache_dir=None):
     return data['run']['employerDiscovery']
 
 if __name__=='__main__':
-    import scan,os
+    import scan,os,argparse
     root=Path(__file__).resolve().parents[1];path=root/'site/data/jobs.json'
-    data=json.loads(path.read_text());print(discover(data,json.loads((root/'config/search.json').read_text()),scan,os.getenv('EMPLOYER_RESEARCH_CACHE')))
+    parser=argparse.ArgumentParser();parser.add_argument('--config',type=Path,default=root/'config/search.json');args=parser.parse_args()
+    data=json.loads(path.read_text());print(discover(data,json.loads(args.config.read_text()),scan,os.getenv('EMPLOYER_RESEARCH_CACHE')))
     path.write_text(json.dumps(data,ensure_ascii=True,indent=2)+'\n')

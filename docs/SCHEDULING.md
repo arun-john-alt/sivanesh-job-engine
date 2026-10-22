@@ -1,0 +1,13 @@
+# Opening replenishment
+
+The target is at least 20 reviewed, relevant and recently confirmed openings, with a buffer of 25. A target is not a guarantee of market supply. Pending match reviews, closed jobs, expired deadlines, stale availability, excluded roles and employer-disclosed annual CTC ceilings below the candidate target do not count. Unknown salary remains unknown.
+
+The broad web and LinkedIn-index search remains once per IST day, starting at 09:00 IST (03:30 UTC), using the existing shared API budget. A recorded daily scan is not repeated by hourly triggers or manual retries. LinkedIn access restrictions remain respected; inaccessible pages never become confirmed openings just to fill the target.
+
+Credit-free employer replenishment triggers hourly at :47 IST, including overnight. When below the 25-role buffer, the controller retries after a 45-minute cooldown. With a healthy buffer, it checks employers every six hours. The original 09:00 scan still runs even if an earlier replenishment occurred. GitHub Actions schedules are best-effort and may be late or missed; they cannot ensure 20 jobs at every instant. Workflow concurrency serializes runs, and checkout reads latest main after the lock.
+
+Search expands automatically within an approved source catalog: level 0 searches the normal boards; level 1 adds up to 12 reserve boards and more Chennai-region queries; level 2 adds all reserve boards and six Chennai-region/remote queries. A deficit of 10 or more immediately selects level 2; three consecutive shortfalls also escalate to level 2. Reaching the buffer resets expansion. Source lists and query scope adapt; code, candidate facts, salary thresholds, location rules and availability standards are not rewritten.
+
+The Sources report and Actions summary show actual reviewed/pending counts, shortfall, source count, expansion level and last replenishment. The main feed recalculates its count from fresh evidence. Full-description match review remains required; the controller does not auto-award percentages or make salary claims. If human review is the bottleneck, adding sources alone cannot satisfy the reviewed target. The controller records that shortfall honestly.
+
+For a retry, dispatch the workflow with scan=true. This forces a credit-free employer refresh, while the broad search still respects the daily cap. A push or scan=false publishes without discovery. A completed scan followed by deployment failure can be recovered with scan=false. Failures before committing the daily record may consume search credits again on retry; no external service quota can be guaranteed by a GitHub workflow alone.

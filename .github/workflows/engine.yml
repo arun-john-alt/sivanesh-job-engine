@@ -13,6 +13,8 @@ on:
   schedule:
     # 03:30 UTC = 09:00 Asia/Kolkata. GitHub scheduling is best-effort.
     - cron: '30 3 * * *'
+    # Credit-free replenishment every hour; broad API search remains once daily.
+    - cron: '17 * * * *'
 permissions:
   contents: read
 concurrency:
@@ -22,40 +24,60 @@ jobs:
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
+    outputs:
+      publish: ${{ steps.daily.outputs.publish }}
     permissions:
       contents: write
       pages: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Read latest committed scan after acquiring the workflow lock.
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check daily search and opening replenishment
+        id: daily
+        env:
+          REQUEST_SCAN: ${{ inputs.scan }}
+        run: python scripts/daily_scan.py
       - uses: actions/setup-node@v4
+        if: steps.daily.outputs.publish == 'true'
         with:
           node-version: '22'
       - name: Unit tests
+        if: steps.daily.outputs.publish == 'true'
         run: |
           node --test tests/*.test.js
           python -m unittest discover -s tests -p 'test_*.py'
+      - name: Plan adaptive employer search
+        if: steps.daily.outputs.replenish == 'true'
+        run: python scripts/opening_pool.py prepare --plan "$RUNNER_TEMP/opening-plan.json"
       - name: Discover and match employer vacancies
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scan == 'true')
-        run: python scripts/employers.py
+        if: steps.daily.outputs.replenish == 'true'
+        run: python scripts/employers.py --config "$RUNNER_TEMP/opening-plan.config.json"
       - name: Verify existing vacancy availability
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scan == 'true')
+        if: steps.daily.outputs.replenish == 'true'
         run: python scripts/availability.py
       - name: Discover and recheck employer jobs
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scan == 'true')
+        if: steps.daily.outputs.scan == 'true'
         env:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
         run: python scripts/scan.py
+      - name: Record opening target and shortfall
+        if: steps.daily.outputs.replenish == 'true'
+        run: python scripts/opening_pool.py record --plan "$RUNNER_TEMP/opening-plan.json"
       - name: Validate resulting public dataset
+        if: steps.daily.outputs.publish == 'true'
         run: node scripts/validate.mjs
       - name: Public-only build and privacy checks
+        if: steps.daily.outputs.publish == 'true'
         run: python scripts/build.py
       - name: Commit updated public research, when changed
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scan == 'true')
+        if: steps.daily.outputs.replenish == 'true'
         run: |
           if ! git diff --quiet -- site/data/jobs.json; then
             git config user.name 'github-actions[bot]'
@@ -65,13 +87,16 @@ jobs:
             git push origin HEAD:main
           fi
       - name: Configure GitHub Pages
+        if: steps.daily.outputs.publish == 'true'
         uses: actions/configure-pages@v5
       - name: Upload public site only
+        if: steps.daily.outputs.publish == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           path: dist
   deploy:
     needs: build
+    if: needs.build.outputs.publish == 'true'
     runs-on: ubuntu-latest
     permissions:
       pages: write
