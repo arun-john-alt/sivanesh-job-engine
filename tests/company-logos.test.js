@@ -5,7 +5,7 @@ import {companyLogo} from '../site/companies.js';
 import {validateDataset,scoreOf,isUnavailable} from '../site/engine.js';
 const data=validateDataset(JSON.parse(fs.readFileSync(new URL('../site/data/jobs.json',import.meta.url))));
 test('every active reviewed company has a bundled authentic logo',()=>{
-  for(const job of data.jobs.filter(j=>scoreOf(j)!==null&&!isUnavailable(j,'2026-09-18'))){
+  for(const job of data.jobs.filter(j=>scoreOf(j)!==null&&!isUnavailable(j))){
     const path=companyLogo(job.company);
     assert.notEqual(path,'assets/companies/company.svg',job.company);
     assert.ok(fs.existsSync(new URL('../site/'+path,import.meta.url)),job.company);

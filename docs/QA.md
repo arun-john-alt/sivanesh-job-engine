@@ -88,3 +88,7 @@ Limits:
 ## Availability safeguards — 23 September 2026
 
 See AVAILABILITY.md for audit evidence, exclusions and regression checks. Mobile preview verified 3 active Nixon roles and 0 active Sivanesh roles; unconfirmed records remain accessible under Sources. No stale open claims were backfilled from old research dates.
+
+## Expanded employer coverage — 22 October 2026
+
+See EXPANDED-DISCOVERY.md for current counts, role-review limits, public career-feed support and regression checks. Public build, schema validation and privacy checks pass. The preview confirms the reviewed shortlist and the new More open jobs view.

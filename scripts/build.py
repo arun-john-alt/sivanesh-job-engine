@@ -7,6 +7,7 @@ import re
 ROOT=Path(__file__).resolve().parents[1]
 source=ROOT/'site';target=ROOT/'dist'
 allowed={'index.html','styles.css','app.js','engine.js','resume.js','favicon.svg','data/jobs.json','companies.js'}
+allowed.update({'assets/companies/'+key+'.png' for key in ['flex','valeo','rotork','turner','caterpillar']})
 allowed.update({
     'assets/companies/rrd.svg',
     'assets/companies/accenture.png',

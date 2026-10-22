@@ -5,6 +5,15 @@ const raw=JSON.parse(fs.readFileSync(new URL('../site/data/jobs.json',import.met
 for(const j of raw.jobs){if(j.analysisStatus==='reviewed'&&j.verification!=='closed'){j.lastConfirmedOpenAt=new Date().toISOString();j.availabilityHold=false;}}
 const code=fs.readFileSync(new URL('../site/app.js',import.meta.url),'utf8').split("document.addEventListener('click'")[0].replace(/^import .*;\n/gm,'');
 function app(){const c=vm.createContext({...engine,companyLogo,document:{},location:{hostname:'localhost'},setTimeout,clearTimeout});vm.runInContext(code+'\nD=validateDataset('+JSON.stringify(raw)+');',c);return c;}
+test('more open jobs shows fresh eligible unreviewed roles without inventing a match',()=>{
+ const c=app();
+ vm.runInContext(`const seed=D.jobs[0];const fresh={...seed,id:'pending-fresh',title:'QA <script>unsafe</script>',analysisStatus:'needs-review',score:[],verification:'live',availabilityHold:false,lastConfirmedOpenAt:new Date().toISOString(),closesOn:null,discoveryEligible:true};D.jobs=[fresh,{...fresh,id:'pending-stale',lastConfirmedOpenAt:'2020-01-01T00:00:00Z'},{...fresh,id:'pending-closed',verification:'closed'},{...fresh,id:'pending-excluded',discoveryEligible:false}];`,c);
+ assert.equal(vm.runInContext("pendingJobs().map(j=>j.id).join(',')",c),'pending-fresh');
+ assert.equal(vm.runInContext('eligible().length',c),0);
+ const html=vm.runInContext('pendingRows()',c);
+ assert.match(html,/Match review pending/);assert.doesNotMatch(html,/\d+% match|<script>/);
+ assert.match(html,/&lt;script&gt;/);
+});
 test('new discoveries never enter recommendations, even with archive filter',()=>{
  const c=app();assert.equal(vm.runInContext('eligible().some(j=>scoreOf(j)===null)',c),false);
  assert.equal(vm.runInContext("filter.archived=true;eligible().some(j=>scoreOf(j)===null)",c),false);

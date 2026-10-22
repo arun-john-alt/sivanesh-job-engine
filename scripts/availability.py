@@ -66,6 +66,7 @@ def check_api(job,fetcher,scan,cache):
         from scripts import employers
     except ModuleNotFoundError:
         import employers
+    if employers.workday.parts(job['applyUrl']):return employers.workday.check(job,fetcher,scan)
     key=employers.exact_key(job['applyUrl'])
     if not key:return None
     kind,slug,ident=key;url=employers.api_url(kind,slug,ident)

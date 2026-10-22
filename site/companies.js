@@ -1,9 +1,11 @@
 // Verified company identities; images are bundled locally (no tracking or API keys).
 const logos = {
+  'Flex':'flex','Valeo':'valeo','Rotork':'rotork','Turner & Townsend':'turner','Caterpillar':'caterpillar',
   'RRD':'rrd', 'Accenture':'accenture', 'Nextpower':'nextpower',
   'Flexing It®':'flexing-it', 'MPloyChek':'mploychek',
   'Vestas':'vestas', 'Comcast':'comcast', 'Ford':'ford',
   'Renault Group / RNTBCI':'renault', 'HP':'hp',
+  'RNTBCI PL':'renault',
   'Buying Simplified':'buying-simplified', 'Capgemini':'capgemini',
   'Gradiant':'gradiant', 'Hitachi Energy':'hitachi-energy',
   'Schneider Electric':'schneider', 'Rockwell Automation':'rockwell',

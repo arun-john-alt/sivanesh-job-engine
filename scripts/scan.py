@@ -25,8 +25,8 @@ from html.parser import HTMLParser
 
 ROOT=Path(__file__).resolve().parents[1]
 AGENT='SivaneshJobEngine/2.0 (public job discovery; no login bypass)'
-ROLE=re.compile(r'procurement|purchasing|\bbuyer\b|supply.?chain|materials?.?plan|demand.?plan|supply.?plan|sourcing|\bpurchase\b|inventory.*(?:analyst|plan)|logistics.*(?:analyst|specialist)|production.?plan',re.I)
-EXCLUDE=re.compile(r'\bintern\b|\binternship\b|\bgraduate trainee\b|\bjunior\b|warehouse|SAP.*(?:consultant|implementation|configuration)|\bvice president\b|\bdirector\b',re.I)
+ROLE=re.compile(r'materials?.*(?:availability|analyst)|(?:order|supplier).*(?:management|fulfillment|analyst)|\b(?:VMI|MRP)\b|procurement|purchasing|\bbuyer\b|supply.?chain|materials?.?plan|demand.?plan|supply.?plan|sourcing|\bpurchase\b|inventory.*(?:analyst|plan)|logistics.*(?:analyst|specialist)|production.?plan',re.I)
+EXCLUDE=re.compile(r'leadership development program|early career|\bintern\b|\binternship\b|\bgraduate trainee\b|\bjunior\b|warehouse|SAP.*(?:consultant|implementation|configuration)|\bvice president\b|\bdirector\b',re.I)
 
 class Page(HTMLParser):
     def __init__(self):
@@ -123,7 +123,9 @@ def is_relevant(title,location,description):
     if not ROLE.search(title) or EXCLUDE.search(title):return False
     loc=location.lower();text=(title+' '+description).lower()
     if not re.search(r'chennai|sriperumbudur|oragadam|chengalpattu|thiruvallur|tiruvallur|pallavaram',loc) and not ('india' in loc and 'remote' in loc):return False
-    years=re.search(r'(\d+)\s*(?:-|to)\s*(\d+)\s*(?:years|yrs)',text)
+    years=re.search(r'(\d+)\s*(?:[-–—]|to)\s*(\d+)\s*(?:years?|yrs?)\b',text)
+    minimum=re.search(r'(\d+)\+\s*(?:years?|yrs?)\s+(?:of\s+)?(?:progressive\s+)?(?:experience|in\s+(?:QA|test|procurement|sourcing))',text,re.I)
+    if minimum and int(minimum[1])>8:return False
     if years and (int(years[1])>8 or int(years[2])<4):return False
     return True
 

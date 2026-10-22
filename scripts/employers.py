@@ -1,9 +1,14 @@
-"""Employer-first discovery through documented, public recruiting APIs.
+"""Employer-first discovery through recruiting APIs and public employer career data.
 
 API GETs use their documented contracts, not HTML scraping or login bypass.
 No application POSTs, authentication, or candidate information are involved.
 """
 import datetime as dt
+from concurrent.futures import ThreadPoolExecutor
+try:
+    from scripts import workday_connector as workday
+except ModuleNotFoundError:
+    import workday_connector as workday
 import hashlib
 import json
 import re
@@ -17,6 +22,8 @@ def norm(value):
     return re.sub(r'[^a-z0-9]+',' ',str(value).casefold()).strip()
 
 def exact_key(url):
+    p=workday.parts(url)
+    if p:return ('workday',p[0],p[1]+p[2])
     u=urllib.parse.urlsplit(url); parts=u.path.strip('/').split('/')
     if u.hostname=='jobs.smartrecruiters.com' and len(parts)==2:
         ident=re.match(r'\d+',parts[1])
@@ -45,7 +52,9 @@ def get_json(fetcher,url):
     except ValueError:return None,'Invalid API JSON'
 
 def normalize(board,row,scan):
-    kind,slug=board['kind'],board['slug'];ident=str(row.get('id',''))
+    kind,slug=board['kind'],board['slug']
+    if kind=='workday':return row if row.get('id') and row.get('url') else None
+    ident=str(row.get('id',''))
     if row.get('active') is False:return None
     title=row.get('name') if kind=='smart' else row.get('text') if kind=='lever' else row.get('title')
     if kind=='smart':
@@ -83,6 +92,7 @@ def relevant(row,scan):
     return True
 
 def read_board(board,fetcher,scan):
+    if board['kind']=='workday':return workday.read_board(board,fetcher,scan)
     rows=[];offset=0;complete=False
     for _ in range(20):
         blob,status=get_json(fetcher,api_url(board['kind'],board['slug'],offset=offset))
@@ -95,30 +105,47 @@ def read_board(board,fetcher,scan):
         offset+=len(batch)
     return rows,complete,'Complete' if complete else 'Page cap reached; absence is not closure'
 
+def application_evidence(board,row,item):
+    kind=board['kind']
+    if kind=='workday':return True  # read_board already requires canApply, posted and exact identity.
+    if kind=='smart':return row.get('active') is True and exact_key(row.get('applyUrl',''))==exact_key(item['url'])
+    if kind=='ashby':return row.get('isListed') is not False and exact_key(row.get('applyUrl',''))==exact_key(item['url'])
+    if kind=='lever':return exact_key(row.get('applyUrl',''))==exact_key(item['url'])
+    return str(row.get('id'))==item['id'] and exact_key(row.get('absolute_url',''))==exact_key(item['url'])
+
+def collect_board(board,cfg,scan):
+    fetcher=scan.Fetcher({**cfg,'allowedHosts':list(set(cfg['allowedHosts'])|API_HOSTS|JOB_HOSTS)})
+    raw,complete,status=read_board(board,fetcher,scan)
+    selected=[]
+    for row in raw:
+        item=normalize(board,row,scan)
+        if not item or not relevant(item,scan):continue
+        if board['kind'] in ('smart','greenhouse'):
+            detail,detail_status=get_json(fetcher,item['api'])
+            if not detail:continue
+            expected=exact_key(item['url'])
+            item=normalize(board,detail,scan)
+            if not item or exact_key(item['url'])!=expected:continue
+            row=detail
+        if item and relevant(item,scan) and item['description'] and application_evidence(board,row,item):selected.append(item)
+    return board,raw,selected,status
+
 def discover(data,cfg,scan,cache_dir=None):
     fetcher=scan.Fetcher({**cfg,'allowedHosts':list(set(cfg['allowedHosts'])|API_HOSTS|JOB_HOSTS)})
     now=dt.datetime.now(dt.timezone.utc);stamp=now.isoformat(timespec='seconds');date=now.date().isoformat()
     reports=[];catalog=[];added=0;linked=0
-    for board in cfg.get('employerBoards',[]):
-        raw,complete,status=read_board(board,fetcher,scan)
-        selected=[]
-        for row in raw:
-            item=normalize(board,row,scan)
-            if not item or not relevant(item,scan):continue
-            if board['kind'] in ('smart','greenhouse'):
-                detail,detail_status=get_json(fetcher,item['api'])
-                if not detail:continue
-                item=normalize(board,detail,scan)
-            if item and relevant(item,scan) and item['description']:
-                selected.append(item);catalog.append(item)
-        reports.append({'source':'Employer feed: '+board['company'],'status':f'{len(raw)} postings examined; {len(selected)} relevant','detail':status+'; documented public '+board['kind']+' API. Full descriptions required before scoring.'})
+    with ThreadPoolExecutor(max_workers=min(4,max(1,cfg.get('employerConcurrency',3)))) as pool:
+        batches=list(pool.map(lambda b:collect_board(b,cfg,scan),cfg.get('employerBoards',[])))
+    for board,raw,selected,status in batches:
+        catalog.extend(selected)
+        reports.append({'source':'Employer feed: '+board['company'],'status':f'{len(raw)} postings examined; {len(selected)} relevant','detail':status+'; public '+board['kind']+' career data. Full descriptions required before scoring.'})
         if cache_dir:Path(cache_dir).mkdir(parents=True,exist_ok=True);(Path(cache_dir)/(board['slug']+'.json')).write_text(json.dumps(selected))
         for item in selected:
             key=exact_key(item['url'])
             matches=[j for j in data['jobs'] if exact_key(j['applyUrl'])==key or (j.get('requisition') and j['requisition']==item['requisition'] and norm(j['company'])==norm(item['company']))]
             if not matches:
                 # A title/location match is a candidate association, not proof of identical JD.
-                matches=[j for j in data['jobs'] if norm(j['company'])==norm(item['company']) and norm(j['title'])==norm(item['title']) and ('chennai' in j['location'].lower())==('chennai' in item['location'].lower())]
+                matches=[j for j in data['jobs'] if (not j.get('requisition') or j['requisition']==item['requisition']) and norm(j['company'])==norm(item['company']) and norm(j['title'])==norm(item['title']) and ('chennai' in j['location'].lower())==('chennai' in item['location'].lower())]
                 if len(matches)==1:
                     matches[0].update(analysisStatus='needs-review',score=[],reviewNote='Employer vacancy matched by company, exact normalized title and location. Re-review the current employer description before restoring a match score.')
                 elif len(matches)>1:matches=[]
@@ -134,9 +161,10 @@ def discover(data,cfg,scan,cache_dir=None):
                         j.setdefault('sources',[]).append({'label':'Previous employer route','url':j['applyUrl'],'scope':'Older route retained for provenance; the current exact API vacancy is used for availability.','asOf':date,'checkedOn':date})
                     j['applyUrl']=item['url'];linked+=1
             else:
-                node={'title':item['title'],'description':item['description'],'hiringOrganization':{'name':item['company']},'identifier':{'value':item['requisition']},'jobLocation':{'address':{'addressLocality':item['location'],'addressCountry':'IN'}}}
+                node={'title':item['title'],'description':item['description'],'hiringOrganization':{'name':item['company']},'identifier':{'value':item['requisition']},'jobLocation':{'address':{'addressLocality':re.sub(r'[, ]*India\b','',item['location'],flags=re.I).strip(', '),'addressCountry':'IN'}}}
                 if item['remote']:
                     node.update(jobLocation=[],jobLocationType='TELECOMMUTE',applicantLocationRequirements={'name':'India'})
+                if item.get('closesOn'):node['validThrough']=item['closesOn']
                 j=scan.extract(node,item['url'],item['company'],date)
                 if not j:continue
                 data['jobs'].append(j);added+=1
@@ -145,6 +173,9 @@ def discover(data,cfg,scan,cache_dir=None):
                 j.update(analysisStatus='needs-review',score=[],reviewNote='Employer description changed; match review required.')
             j['employerDescriptionHash']=digest
             j.update(verification='live',availabilityStatus='open',availabilityHold=False,lastConfirmedOpenAt=stamp,availabilityCheckedAt=stamp,availabilityEvidenceUrl=item['api'],availabilityReason='Exact vacancy published in the employer recruiting API with its application route.',checkedOn=date)
+            if item.get('closesOn'):j['closesOn']=item['closesOn']
+            j['discoveryEligible']=True
+            j['requisition']=item['requisition']
             j['employerPostingId']=item['id'];j['employerBoard']=board
             source={'label':'Employer recruiting API','url':item['url'],'scope':'Exact published vacancy; full description available from employer API','asOf':date,'checkedOn':date}
             if not any(s.get('url')==source['url'] for s in j.get('sources',[])):j.setdefault('sources',[]).append(source)
