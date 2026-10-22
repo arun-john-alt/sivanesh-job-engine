@@ -10,11 +10,11 @@
       {
         "source": "Opening target",
         "status": "7/20 confirmed matches",
-        "detail": "7/20 reviewed, confirmed openings; 0 additional confirmed vacancies awaiting match review. Expansion level 2; 73 employer sources searched. Hourly credit-free checks replenish toward a buffer of 25. Broad search remains once daily at 9 AM IST. No expired, unconfirmed, excluded or unscored role counts toward the minimum. GitHub schedules may be delayed."
+        "detail": "7/20 reviewed, confirmed openings; 1 additional confirmed vacancies awaiting match review. Expansion level 2; 73 employer sources searched. Hourly credit-free checks replenish toward a buffer of 25. Broad search remains once daily at 9 AM IST. No expired, unconfirmed, excluded or unscored role counts toward the minimum. GitHub schedules may be delayed."
       },
       {
         "source": "Direct application availability",
-        "status": "12 confirmed open; 28 closed; 273 unconfirmed; 0 retained within 48h",
+        "status": "13 confirmed open; 28 closed; 273 unconfirmed; 0 retained within 48h",
         "detail": "Every non-closed record attempted before discovery. Blocked or unprovable vacancies stay unconfirmed; only positive exact-vacancy evidence refreshes the 48-hour clock. No application was submitted."
       },
       {
@@ -39,7 +39,7 @@
       },
       {
         "source": "Employer feed: Bosch Group",
-        "status": "639 postings examined; 0 relevant",
+        "status": "638 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "source": "Employer feed: Expeditors",
-        "status": "10 postings examined; 0 relevant",
+        "status": "11 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
@@ -79,7 +79,7 @@
       },
       {
         "source": "Employer feed: Accor",
-        "status": "802 postings examined; 0 relevant",
+        "status": "803 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
@@ -89,7 +89,7 @@
       },
       {
         "source": "Employer feed: Veolia",
-        "status": "79 postings examined; 0 relevant",
+        "status": "71 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
@@ -104,7 +104,7 @@
       },
       {
         "source": "Employer feed: Avery Dennison",
-        "status": "27 postings examined; 0 relevant",
+        "status": "28 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
@@ -124,17 +124,17 @@
       },
       {
         "source": "Employer feed: Enviri",
-        "status": "45 postings examined; 0 relevant",
+        "status": "44 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Louis Dreyfus Company",
-        "status": "17 postings examined; 0 relevant",
+        "status": "18 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: NielsenIQ",
-        "status": "60 postings examined; 0 relevant",
+        "status": "63 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
@@ -144,7 +144,7 @@
       },
       {
         "source": "Employer feed: Egis",
-        "status": "243 postings examined; 0 relevant",
+        "status": "242 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
@@ -159,7 +159,7 @@
       },
       {
         "source": "Employer feed: MicroStrategy",
-        "status": "12 postings examined; 0 relevant",
+        "status": "11 postings examined; 0 relevant",
         "detail": "Complete; public smart career data. Full descriptions required before scoring."
       },
       {
@@ -174,7 +174,7 @@
       },
       {
         "source": "Employer feed: Flex",
-        "status": "10 postings examined; 1 relevant",
+        "status": "11 postings examined; 2 relevant",
         "detail": "Search complete; public workday career data. Full descriptions required before scoring."
       },
       {
@@ -284,22 +284,22 @@
       },
       {
         "source": "Employer feed: Supabase",
-        "status": "58 postings examined; 0 relevant",
+        "status": "59 postings examined; 0 relevant",
         "detail": "Complete; public ashby career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: n8n",
-        "status": "42 postings examined; 0 relevant",
+        "status": "40 postings examined; 0 relevant",
         "detail": "Complete; public ashby career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Zapier",
-        "status": "13 postings examined; 0 relevant",
+        "status": "12 postings examined; 0 relevant",
         "detail": "Complete; public ashby career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Docker",
-        "status": "70 postings examined; 0 relevant",
+        "status": "68 postings examined; 0 relevant",
         "detail": "Complete; public ashby career data. Full descriptions required before scoring."
       },
       {
@@ -314,32 +314,32 @@
       },
       {
         "source": "Employer feed: Zuora",
-        "status": "31 postings examined; 0 relevant",
+        "status": "29 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Druva",
-        "status": "33 postings examined; 0 relevant",
+        "status": "32 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Zscaler",
-        "status": "362 postings examined; 0 relevant",
+        "status": "358 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Rubrik",
-        "status": "145 postings examined; 0 relevant",
+        "status": "147 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Netskope",
-        "status": "129 postings examined; 0 relevant",
+        "status": "127 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Harness",
-        "status": "67 postings examined; 0 relevant",
+        "status": "65 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
@@ -349,37 +349,37 @@
       },
       {
         "source": "Employer feed: Grafana Labs",
-        "status": "145 postings examined; 0 relevant",
+        "status": "142 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Canonical",
-        "status": "310 postings examined; 0 relevant",
+        "status": "311 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Elastic",
-        "status": "386 postings examined; 0 relevant",
+        "status": "388 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: MongoDB",
-        "status": "386 postings examined; 0 relevant",
+        "status": "387 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Cloudflare",
-        "status": "442 postings examined; 0 relevant",
+        "status": "441 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Samsara",
-        "status": "267 postings examined; 0 relevant",
+        "status": "274 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
         "source": "Employer feed: Toast",
-        "status": "320 postings examined; 0 relevant",
+        "status": "318 postings examined; 0 relevant",
         "detail": "Complete; public greenhouse career data. Full descriptions required before scoring."
       },
       {
@@ -654,25 +654,25 @@
       }
     ],
     "employerDiscovery": {
-      "checkedAt": "2026-10-22T11:19:35+00:00",
+      "checkedAt": "2026-10-22T17:17:56+00:00",
       "boards": 73,
-      "newLeads": 0,
+      "newLeads": 1,
       "linkedEmployerRoutes": 0,
-      "relevantPostings": 6
+      "relevantPostings": 7
     },
     "openingPool": {
       "minimum": 20,
       "buffer": 25,
       "reviewedOpen": 7,
-      "pendingOpen": 0,
+      "pendingOpen": 1,
       "shortfall": 13,
       "bufferShortfall": 18,
       "expansionLevel": 2,
       "boardsPlanned": 73,
-      "lastReplenishedAt": "2026-10-22T11:21:27+00:00",
-      "consecutiveShortfalls": 2,
+      "lastReplenishedAt": "2026-10-22T17:19:53+00:00",
+      "consecutiveShortfalls": 3,
       "status": "shortfall",
-      "nextCheckAfter": "2026-10-22T12:06:27+00:00"
+      "nextCheckAfter": "2026-10-22T18:04:53+00:00"
     }
   },
   "jobs": [
@@ -1408,7 +1408,7 @@
       "availabilityAttemptedOn": "2026-10-21",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464513509"
@@ -1652,7 +1652,7 @@
       ],
       "availabilityAttemptedOn": "2026-10-22",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -1759,7 +1759,7 @@
       "availabilityAttemptedOn": "2026-10-20",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4459927792"
@@ -1825,7 +1825,7 @@
       ],
       "availabilityAttemptedOn": "2026-10-22",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -2002,7 +2002,7 @@
       "availabilityAttemptedOn": "2026-10-16",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4455739716"
@@ -2178,7 +2178,7 @@
       "availabilityHold": true,
       "availabilityAttemptedOn": "2026-10-22",
       "reviewNote": "Possible duplicate of the reviewed HP Supply Chain Planner; requisition linkage is unconfirmed.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467904366"
@@ -2284,7 +2284,7 @@
       "availabilityAttemptedOn": "2026-10-21",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464838891"
@@ -2389,7 +2389,7 @@
       "availabilityAttemptedOn": "2026-09-19",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
       "availabilityEvidenceUrl": "https://careers.se.com/jobs/133573?lang=en-us"
@@ -2495,7 +2495,7 @@
       "availabilityAttemptedOn": "2026-10-22",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://apply.hp.com/careers/job/42781415"
@@ -2601,7 +2601,7 @@
       "availabilityAttemptedOn": "2026-10-21",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464811477"
@@ -2667,7 +2667,7 @@
       ],
       "availabilityAttemptedOn": "2026-10-20",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -2773,7 +2773,7 @@
       "availabilityAttemptedOn": "2026-10-20",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4459685171"
@@ -2839,7 +2839,7 @@
       ],
       "availabilityAttemptedOn": "2026-10-22",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -3015,7 +3015,7 @@
       "availabilityAttemptedOn": "2026-10-20",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4463190467"
@@ -3201,7 +3201,7 @@
       ],
       "availabilityAttemptedOn": "2026-10-20",
       "reviewNote": "Full description for this exact listing could not be retrieved on 18 Sep 2026; no defensible match score yet. This does not prove closure.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -3468,7 +3468,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -3566,7 +3566,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-19",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Employer career data unavailable: HTTP 403",
       "availabilityHold": true,
@@ -3665,7 +3665,7 @@
       "availabilityAttemptedOn": "2026-10-20",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4463810106"
@@ -3771,7 +3771,7 @@
       "availabilityAttemptedOn": "2026-10-21",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464864457"
@@ -3946,7 +3946,7 @@
       "availabilityAttemptedOn": "2026-10-16",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4454948718"
@@ -4051,7 +4051,7 @@
       "availabilityAttemptedOn": "2026-10-22",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4466322625"
@@ -4157,7 +4157,7 @@
       "availabilityAttemptedOn": "2026-10-20",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4462408383"
@@ -4223,7 +4223,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4298,7 +4298,7 @@
       "availabilityHold": true,
       "availabilityAttemptedOn": "2026-10-18",
       "reviewNote": "The recommended apply-by date (15 September 2026) has passed. Still-open status needs confirmation; this is not an explicit closure notice.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4457114138"
@@ -4364,7 +4364,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-10-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4471,7 +4471,7 @@
       "availabilityAttemptedOn": "2026-10-19",
       "availabilityHold": true,
       "reviewNote": "Auryx Industry / Auryx Construction identity requires confirmation; no official company website verified.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4457916425"
@@ -4577,7 +4577,7 @@
       "availabilityAttemptedOn": "2026-10-21",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464520268"
@@ -4643,7 +4643,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-10-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -4750,7 +4750,7 @@
       "availabilityAttemptedOn": "2026-10-21",
       "availabilityHold": true,
       "reviewNote": "",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4466034828"
@@ -4926,7 +4926,7 @@
       "availabilityHold": true,
       "availabilityAttemptedOn": "2026-10-21",
       "reviewNote": "Possible duplicate of HP Principal Supply Chain Planning Process Design; requisition linkage unconfirmed.",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464313287"
@@ -4992,7 +4992,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-10-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5122,7 +5122,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-10-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5189,7 +5189,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-10-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5256,7 +5256,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-10-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5323,7 +5323,7 @@
       ],
       "reviewNote": "Exact full description or employer identity could not be verified during this review; kept out of recommendations until there is enough evidence to score.",
       "availabilityAttemptedOn": "2026-10-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5389,7 +5389,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5455,7 +5455,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5521,7 +5521,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5587,7 +5587,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5653,7 +5653,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5719,7 +5719,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5785,7 +5785,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5851,7 +5851,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5917,7 +5917,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -5983,7 +5983,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6049,7 +6049,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6115,7 +6115,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6181,7 +6181,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-20",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6313,7 +6313,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6379,7 +6379,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6445,7 +6445,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6511,7 +6511,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6577,7 +6577,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-21",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6643,7 +6643,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6709,7 +6709,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6775,7 +6775,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6841,7 +6841,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6907,7 +6907,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -6973,7 +6973,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7039,7 +7039,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7105,7 +7105,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7171,7 +7171,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7237,7 +7237,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7303,7 +7303,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7369,7 +7369,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7435,7 +7435,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7501,7 +7501,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7567,7 +7567,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-22",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7633,7 +7633,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7699,7 +7699,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7765,7 +7765,7 @@
         }
       ],
       "availabilityAttemptedOn": "2026-09-23",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7830,7 +7830,7 @@
           "checkedOn": "2026-09-23"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -7896,7 +7896,7 @@
           "checkedOn": "2026-09-23"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
       "availabilityHold": true,
@@ -8004,8 +8004,8 @@
       ],
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://api.smartrecruiters.com/v1/companies/rotork1/postings/744000131039441",
       "availabilityReason": "Exact active SmartRecruiters vacancy with matching application route",
       "employerPostingId": "744000131039441",
@@ -8121,8 +8121,8 @@
       ],
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://api.smartrecruiters.com/v1/companies/turnertownsend/postings/744000148175609",
       "availabilityReason": "Exact active SmartRecruiters vacancy with matching application route",
       "employerPostingId": "744000148175609",
@@ -8196,7 +8196,7 @@
           "checkedOn": "2026-09-24"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4458835716",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8262,7 +8262,7 @@
           "checkedOn": "2026-09-24"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4468755755",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8328,7 +8328,7 @@
           "checkedOn": "2026-09-24"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4460293747",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8394,7 +8394,7 @@
           "checkedOn": "2026-09-24"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469859838",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8460,7 +8460,7 @@
           "checkedOn": "2026-09-24"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4461718450",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8586,7 +8586,7 @@
           "checkedOn": "2026-09-24"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467851212",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8717,7 +8717,7 @@
           "checkedOn": "2026-09-25"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470468372",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8783,7 +8783,7 @@
           "checkedOn": "2026-09-25"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4457483305",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8849,7 +8849,7 @@
           "checkedOn": "2026-09-25"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4460963007",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8915,7 +8915,7 @@
           "checkedOn": "2026-09-25"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467542595",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -8981,7 +8981,7 @@
           "checkedOn": "2026-09-25"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464518622",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9047,7 +9047,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4458091380",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9113,7 +9113,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4454615202",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9179,7 +9179,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472019154",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9245,7 +9245,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467952569",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9311,7 +9311,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469903680",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9377,7 +9377,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471407776",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9443,7 +9443,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469097059",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9509,7 +9509,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471131085",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9575,7 +9575,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4460931999",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9707,7 +9707,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472030783",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9773,7 +9773,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469422323",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9839,7 +9839,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469345332",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9905,7 +9905,7 @@
           "checkedOn": "2026-09-26"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467337351",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -9971,7 +9971,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4468727170",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10037,7 +10037,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471476427",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10103,7 +10103,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471005167",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10169,7 +10169,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4463048295",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10235,7 +10235,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469078844",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10367,7 +10367,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4468004467",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10433,7 +10433,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469670392",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10499,7 +10499,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471440560",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10565,7 +10565,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470517033",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10631,7 +10631,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4468757798",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10697,7 +10697,7 @@
           "checkedOn": "2026-09-27"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472038806",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10763,7 +10763,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470090917",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10829,7 +10829,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470978604",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10895,7 +10895,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470746297",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -10961,7 +10961,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470418202",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11027,7 +11027,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4424407370",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11159,7 +11159,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4459935386",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11225,7 +11225,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471419432",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11291,7 +11291,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469734745",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11357,7 +11357,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469222157",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11423,7 +11423,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472402152",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11489,7 +11489,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4466076253",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11555,7 +11555,7 @@
           "checkedOn": "2026-09-28"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470792633",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11621,7 +11621,7 @@
           "checkedOn": "2026-09-29"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4466187920",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11753,7 +11753,7 @@
           "checkedOn": "2026-09-29"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470979183",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11819,7 +11819,7 @@
           "checkedOn": "2026-09-29"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472715119",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11885,7 +11885,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4468242556",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -11951,7 +11951,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473270120",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12017,7 +12017,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://apply.hp.com/careers/job/44530536",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12083,7 +12083,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://apply.hp.com/careers/job/44530535",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12149,7 +12149,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/job/Chennai-Tamil-Nadu-India/Supply-Chain-Planner_3167691-1",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Employer career data unavailable: HTTP 403",
@@ -12275,7 +12275,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471570574",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12341,7 +12341,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472714183",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12407,7 +12407,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473291227",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12473,7 +12473,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471311927",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12539,7 +12539,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471608684",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12605,7 +12605,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469011086",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12671,7 +12671,7 @@
           "checkedOn": "2026-09-30"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://careers.vestas.com/job/Pasay-Procurement-Administrator-(French-Speaker)-00-1300/1417085433",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
@@ -12737,7 +12737,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473097136",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12803,7 +12803,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471990838",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12869,7 +12869,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472325997",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -12935,7 +12935,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473538457",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13001,7 +13001,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472720425",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13067,7 +13067,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471482983",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13133,7 +13133,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472150532",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13199,7 +13199,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472122502",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13265,7 +13265,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472173163",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13331,7 +13331,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473707578",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13397,7 +13397,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473729041",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13528,7 +13528,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473257591",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13594,7 +13594,7 @@
           "checkedOn": "2026-10-01"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4462296033",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13790,7 +13790,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4474268070",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13856,7 +13856,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473484978",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13922,7 +13922,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473852835",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -13988,7 +13988,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4465195337",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14054,7 +14054,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4474326244",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14120,7 +14120,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476166367",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14251,7 +14251,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473129374",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14317,7 +14317,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475155129",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14383,7 +14383,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471514058",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14449,7 +14449,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476188410",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14515,7 +14515,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473205083",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14581,7 +14581,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472546708",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14647,7 +14647,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471370857",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14713,7 +14713,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471996462",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14779,7 +14779,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4454101982",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14845,7 +14845,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475108500",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14911,7 +14911,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473842445",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -14977,7 +14977,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476166041",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15043,7 +15043,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471858146",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15109,7 +15109,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467541387",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15175,7 +15175,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4474699304",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15241,7 +15241,7 @@
           "checkedOn": "2026-10-07"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472143436",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15307,7 +15307,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473606170",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15373,7 +15373,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475406650",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15439,7 +15439,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4463856344",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15505,7 +15505,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476789339",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15571,7 +15571,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4474091230",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15637,7 +15637,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472552586",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15703,7 +15703,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475188837",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15769,7 +15769,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475405688",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15835,7 +15835,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4429239811",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15901,7 +15901,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475401275",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -15967,7 +15967,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467801712",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16033,7 +16033,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://careers.hitachi.com/strategic-sourcing-experienced-professional/job/R0141918",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
@@ -16099,7 +16099,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://jobs.comcast.com/job/chennai/supply-chain-data-scientist-3/45483/99024766688",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
@@ -16165,7 +16165,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475401494",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16231,7 +16231,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471896048",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16297,7 +16297,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4470319272",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16363,7 +16363,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475165355",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16429,7 +16429,7 @@
           "checkedOn": "2026-10-08"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4444906876",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16495,7 +16495,7 @@
           "checkedOn": "2026-10-09"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475744259",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16561,7 +16561,7 @@
           "checkedOn": "2026-10-10"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475332933",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16627,7 +16627,7 @@
           "checkedOn": "2026-10-10"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464517268",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16693,7 +16693,7 @@
           "checkedOn": "2026-10-10"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477669335",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16759,7 +16759,7 @@
           "checkedOn": "2026-10-10"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475991395",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -16865,12 +16865,12 @@
           "checkedOn": "2026-10-10"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://alliancewd.wd3.myworkdayjobs.com/wday/cxs/alliancewd/renault-group-careers/job/Chennai/Senior-Buyer---Mechanisms_JOBREQ_50280446-1",
       "availabilityStatus": "open",
       "availabilityReason": "Exact employer career record explicitly permits applications",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
       "roleLevel": "individual",
       "locationEligibility": "chennai",
       "discoveryEligible": true,
@@ -16935,7 +16935,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4461591025",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17001,7 +17001,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476270244",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17067,7 +17067,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477174058",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17133,7 +17133,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4474260738",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17199,7 +17199,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477821567",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17265,7 +17265,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://apply.hp.com/careers/job/43773604",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17331,7 +17331,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476582032",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17397,7 +17397,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476846991",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17463,7 +17463,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477421010",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17529,7 +17529,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4442977110",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17595,7 +17595,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472755274",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17661,7 +17661,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477417138",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17727,7 +17727,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476882716",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17793,7 +17793,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473843350",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17859,7 +17859,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472787542",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17925,7 +17925,7 @@
           "checkedOn": "2026-10-11"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477415214",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -17991,7 +17991,7 @@
           "checkedOn": "2026-10-12"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4478049967",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18057,7 +18057,7 @@
           "checkedOn": "2026-10-12"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4478063637",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18123,7 +18123,7 @@
           "checkedOn": "2026-10-12"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4469208923",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18189,7 +18189,7 @@
           "checkedOn": "2026-10-12"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477280076",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18303,7 +18303,7 @@
           "checkedOn": "2026-10-22"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://flextronics.wd1.myworkdayjobs.com/wday/cxs/flextronics/Careers/job/India-Chennai/Senior-Analyst---Procurement_WD231157",
       "availabilityStatus": "open",
       "availabilityReason": "Exact employer career record explicitly permits applications",
@@ -18311,7 +18311,7 @@
       "availabilityAttemptedOn": "2026-10-14",
       "reviewNote": "Full current employer description reviewed against candidate-supplied resume evidence on 22 October 2026. Match is a weighted evidence heuristic, not an ATS score or hiring probability.",
       "employerDescriptionHash": "d11e9b9c6f96dbea0c1a0512348e18a3185451309702d8800bcf4deaf4f52926",
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
       "employerPostingId": "WD231157",
       "employerBoard": {
         "kind": "workday",
@@ -18395,7 +18395,7 @@
           "checkedOn": "2026-10-12"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473204610",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18461,7 +18461,7 @@
           "checkedOn": "2026-10-13"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477664662",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18527,7 +18527,7 @@
           "checkedOn": "2026-10-13"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4464842865",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18593,7 +18593,7 @@
           "checkedOn": "2026-10-13"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477412308",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18659,11 +18659,11 @@
           "checkedOn": "2026-10-13"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://api.smartrecruiters.com/v1/companies/rexel1/postings/744000154993199",
       "availabilityStatus": "open",
       "availabilityReason": "Exact active SmartRecruiters vacancy with matching application route",
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
       "availabilityHold": false,
       "discoveryEligible": false,
       "discoveryExclusion": "Exact employer description requires 15+ years of sourcing experience."
@@ -18727,7 +18727,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477981062",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18793,7 +18793,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4473487958",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18859,7 +18859,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476824034",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18925,7 +18925,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479054072",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -18991,7 +18991,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4478515186",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19057,7 +19057,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477578662",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19123,7 +19123,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476850771",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19189,7 +19189,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4478757872",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19255,7 +19255,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477906702",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19321,7 +19321,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479001550",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19387,7 +19387,7 @@
           "checkedOn": "2026-10-14"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472892124",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19453,7 +19453,7 @@
           "checkedOn": "2026-10-15"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475460232",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19519,7 +19519,7 @@
           "checkedOn": "2026-10-15"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472827428",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19585,7 +19585,7 @@
           "checkedOn": "2026-10-15"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4467922094",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19651,7 +19651,7 @@
           "checkedOn": "2026-10-15"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477981153",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19717,7 +19717,7 @@
           "checkedOn": "2026-10-15"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4472518488",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19783,7 +19783,7 @@
           "checkedOn": "2026-10-15"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476631879",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19849,7 +19849,7 @@
           "checkedOn": "2026-10-15"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479275123",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -19980,7 +19980,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479877455",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20046,7 +20046,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479539605",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20112,7 +20112,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479807861",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20178,7 +20178,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476417650",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20244,7 +20244,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477235874",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20310,7 +20310,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4466845856",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20376,7 +20376,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://careers.caterpillar.com/en/jobs/r0000383492/material-planning-analyst",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
@@ -20442,7 +20442,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://apply.hp.com/careers/job/44854794?hl=zh-CN&domain=hp.com",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20508,7 +20508,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479258965",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20574,7 +20574,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4478445384",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20640,7 +20640,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4478440303",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20706,7 +20706,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479716899",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20772,7 +20772,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://apply.hp.com/careers/job/44854794?hl=fr-CA&domain=hp.com",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20838,7 +20838,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4475540158",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20904,7 +20904,7 @@
           "checkedOn": "2026-10-16"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4478439832",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -20970,7 +20970,7 @@
           "checkedOn": "2026-10-17"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479347744",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21036,7 +21036,7 @@
           "checkedOn": "2026-10-17"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4447558219",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21102,7 +21102,7 @@
           "checkedOn": "2026-10-17"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477345784",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21168,7 +21168,7 @@
           "checkedOn": "2026-10-17"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4478186697",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21234,7 +21234,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479662725",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21300,7 +21300,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477309312",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21366,7 +21366,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479831171",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21432,7 +21432,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479666413",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21498,7 +21498,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479807696",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21564,7 +21564,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4476424381",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21630,7 +21630,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4477701624",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21696,7 +21696,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://careers.se.com/jobs/138795?lang=en-us",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient",
@@ -21762,7 +21762,7 @@
           "checkedOn": "2026-10-18"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4451669425",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21828,7 +21828,7 @@
           "checkedOn": "2026-10-19"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4471711954",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21894,7 +21894,7 @@
           "checkedOn": "2026-10-20"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4480976372",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -21960,7 +21960,7 @@
           "checkedOn": "2026-10-21"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4480867630",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -22026,7 +22026,7 @@
           "checkedOn": "2026-10-21"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://alliancewd.wd3.myworkdayjobs.com/wday/cxs/alliancewd/renault-group-careers/job/BOP-Purchasing---Manager_JOBREQ_50276175-1",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Exact employer vacancy identity could not be established",
@@ -22091,7 +22091,7 @@
           "checkedOn": "2026-10-22"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4480763024",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -22156,7 +22156,7 @@
           "checkedOn": "2026-10-22"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4479913383",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -22221,7 +22221,7 @@
           "checkedOn": "2026-10-22"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4481587829",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -22286,7 +22286,7 @@
           "checkedOn": "2026-10-22"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4482048810",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -22351,7 +22351,7 @@
           "checkedOn": "2026-10-22"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4481254892",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -22416,7 +22416,7 @@
           "checkedOn": "2026-10-22"
         }
       ],
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://www.linkedin.com/jobs/view/4466695195",
       "availabilityStatus": "unconfirmed",
       "availabilityReason": "Skipped: robots disallow or robots could not be checked",
@@ -22484,8 +22484,8 @@
       "employerDescriptionHash": "e59415d2ea45a84db39525ff239d27826f43c27807955148d0d638e7d37fbf6b",
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://flextronics.wd1.myworkdayjobs.com/wday/cxs/flextronics/Careers/job/India-Chennai/Analyst---Procurement_WD229701",
       "availabilityReason": "Exact employer career record explicitly permits applications",
       "employerPostingId": "WD229701",
@@ -22567,8 +22567,8 @@
       "employerDescriptionHash": "97a40ca8e5c400394a5f6d4f0a54a9ee4262e989f06050606aa924a5f69082d9",
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://flextronics.wd1.myworkdayjobs.com/wday/cxs/flextronics/Careers/job/India-Chennai/Analyst---Procurement_WD231748",
       "availabilityReason": "Exact employer career record explicitly permits applications",
       "employerPostingId": "WD231748",
@@ -22689,8 +22689,8 @@
       "employerDescriptionHash": "e4212b6245d6a0b9ef0d03643c62dc100fe8e3298fa4d48c94a861eb6ee57f1c",
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://valeo.wd3.myworkdayjobs.com/wday/cxs/valeo/valeo_jobs/job/Chennai/Senior-Engineer---Purchase-PTM_REQ2025066151",
       "availabilityReason": "Exact employer career record explicitly permits applications",
       "employerPostingId": "REQ2025066151",
@@ -22778,8 +22778,8 @@
       "employerDescriptionHash": "b94ea3c35cca514d4e1862f00a08f8d01a36f4234bfe1865a19a87a150312459",
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://rockwellautomation.wd1.myworkdayjobs.com/wday/cxs/rockwellautomation/External_Rockwell_Automation/job/Chennai-India/Leadership-Development-Program---Integrated-Supply-Chain_R26-7489",
       "availabilityReason": "Exact employer career record explicitly permits applications",
       "employerPostingId": "R26-7489",
@@ -22903,8 +22903,8 @@
       "employerDescriptionHash": "98473b1a7eb1a2c2553b3e0f970e1be0231e914491814de2ac9c170e2a913789",
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://cat.wd5.myworkdayjobs.com/wday/cxs/cat/CaterpillarCareers/job/Chennai-Tamil-Nadu/Material-Availability-Analyst_R0000396249",
       "availabilityReason": "Exact employer career record explicitly permits applications",
       "discoveryEligible": true,
@@ -23046,8 +23046,8 @@
       "employerDescriptionHash": "c1fb505576afc58e32093a92cf8ae8cad5790312e3644ab9afa8fcea5b32ae47",
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://cat.wd5.myworkdayjobs.com/wday/cxs/cat/CaterpillarCareers/job/Thiruvallur-Tamil-Nadu/Product-Procurement-Engineer_R0000400297",
       "availabilityReason": "Exact employer career record explicitly permits applications",
       "discoveryEligible": true,
@@ -23133,8 +23133,8 @@
       "employerDescriptionHash": "d5398e779f76852a3244373cf0375e7569134eec7e5d8bed41355e7a647ca313",
       "availabilityStatus": "open",
       "availabilityHold": false,
-      "lastConfirmedOpenAt": "2026-10-22T11:20:46+00:00",
-      "availabilityCheckedAt": "2026-10-22T11:20:46+00:00",
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
       "availabilityEvidenceUrl": "https://boards-api.greenhouse.io/v1/boards/gitlab/jobs/8478405002",
       "availabilityReason": "Exact vacancy is published by the employer recruiting API with an application URL",
       "discoveryEligible": false,
@@ -23145,6 +23145,92 @@
         "company": "GitLab"
       },
       "discoveryExclusion": "Software supply-chain security engineering management; not physical procurement or supply-chain operations."
+    },
+    {
+      "id": "flex-32a4d286f9de",
+      "company": "Flex",
+      "title": "Specialist - VMI",
+      "location": "Chennai, India",
+      "workModel": "Not specified",
+      "family": "Needs classification",
+      "experience": "Review full JD",
+      "requisition": "WD226803",
+      "applyUrl": "https://flextronics.wd1.myworkdayjobs.com/Careers/job/India-Chennai/Specialist---VMI_WD226803",
+      "linkedinUrl": null,
+      "postedOn": null,
+      "closesOn": "2026-10-24",
+      "discoveredOn": "2026-10-22",
+      "checkedOn": "2026-10-22",
+      "verification": "live",
+      "verificationNote": "Exact employer career record explicitly permits applications. Application submission was not attempted.",
+      "analysisStatus": "needs-review",
+      "score": [],
+      "summary": "Flex is the diversified manufacturing partner of choice that helps market-leading brands design, build and deliver innovative products that improve the world. A career at Flex offers the opportunity to make a difference and invest in your growth in a respectful, inclusive, and collaborative environment. If you are excited about a role but don't meet every bullet point, we encourage you to apply and join us to create the extraordinary. Job Summary To support our extraordinary teams who build great products and contribute to our growth, we\u2019re looking to add",
+      "hardGaps": [
+        "Full JD and candidate evidence require review before scoring."
+      ],
+      "benefits": [],
+      "risks": [
+        "Compensation and team conditions unverified."
+      ],
+      "questions": [
+        "Confirm role level, salary budget, work model and required experience."
+      ],
+      "salary": {
+        "kind": "unknown",
+        "minLpa": null,
+        "maxLpa": null,
+        "basis": "Unknown",
+        "confidence": "Unknown",
+        "note": "No defensible salary estimate generated. Ask for the annual fixed/variable split and total CTC.",
+        "sources": []
+      },
+      "culture": {
+        "summary": "Not researched; no review claims generated.",
+        "signals": [],
+        "sources": []
+      },
+      "ats": {
+        "supported": [],
+        "confirm": [],
+        "unsupported": []
+      },
+      "resumeEdits": [],
+      "sources": [
+        {
+          "label": "Employer job posting",
+          "url": "https://flextronics.wd1.myworkdayjobs.com/Careers/job/India-Chennai/Specialist---VMI_WD226803",
+          "scope": "Public JobPosting metadata",
+          "asOf": "2026-10-22",
+          "checkedOn": "2026-10-22"
+        }
+      ],
+      "employerDescriptionHash": "a85abba2ccfea093fda7e6c14176f20388b015705320974913bfa89087e23b83",
+      "availabilityStatus": "open",
+      "availabilityHold": false,
+      "lastConfirmedOpenAt": "2026-10-22T17:19:09+00:00",
+      "availabilityCheckedAt": "2026-10-22T17:19:09+00:00",
+      "availabilityEvidenceUrl": "https://flextronics.wd1.myworkdayjobs.com/wday/cxs/flextronics/Careers/job/India-Chennai/Specialist---VMI_WD226803",
+      "availabilityReason": "Exact employer career record explicitly permits applications",
+      "discoveryEligible": true,
+      "employerPostingId": "WD226803",
+      "employerBoard": {
+        "kind": "workday",
+        "slug": "flextronics",
+        "site": "Careers",
+        "host": "flextronics.wd1.myworkdayjobs.com",
+        "company": "Flex",
+        "total": 52,
+        "evidenceUrl": "https://flextronics.wd1.myworkdayjobs.com/Careers",
+        "searchTerms": [
+          "Chennai",
+          "remote India",
+          "Sriperumbudur",
+          "Oragadam",
+          "Thiruvallur",
+          "Chengalpattu"
+        ]
+      }
     }
   ]
 }
