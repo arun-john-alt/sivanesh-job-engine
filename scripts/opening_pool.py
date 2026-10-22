@@ -89,7 +89,7 @@ def record(data, cfg, planned, now=None):
     run['openingPool'] = report
     detail = (f"{counts['reviewedOpen']}/{counts['minimum']} reviewed, confirmed openings; "
               f"{counts['pendingOpen']} additional confirmed vacancies awaiting match review. "
-              f"Expansion level {report['expansionLevel']}; {report['boardsPlanned']} employer sources searched. "
+              f"Expansion level {report['expansionLevel']}; {report['boardsPlanned']} employer sources planned. "
               'Hourly credit-free checks replenish toward a buffer of 25. Broad search remains once daily at 9 AM IST. '
               'No expired, unconfirmed, excluded or unscored role counts toward the minimum. GitHub schedules may be delayed.')
     run['coverage'] = [{'source': 'Opening target', 'status': f"{counts['reviewedOpen']}/{counts['minimum']} confirmed matches", 'detail': detail}] + [c for c in run.get('coverage', []) if c.get('source') != 'Opening target']

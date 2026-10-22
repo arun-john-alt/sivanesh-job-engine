@@ -55,7 +55,7 @@ def read_board(board,fetcher,scan):
                 if path in seen or not path.startswith('/job/') or not scan.ROLE.search(title) or scan.EXCLUDE.search(title):continue
                 seen.add(path)
                 # Pre-filter location; full role eligibility is checked after detail retrieval.
-                if not re.search(r'chennai|sriperumbudur|oragadam|chengalpattu|thiruvallur|tiruvallur|pallavaram|remote|india',loc,re.I):continue
+                if not re.search(r'chennai|sriperumbudur|oragadam|chengalpattu|thiruvallur|tiruvallur|pallavaram|remote|india|\d+ locations|multiple locations',loc,re.I):continue
                 detail,ds=read(fetcher,f'https://{host}/wday/cxs/{tenant}/{site}{path}')
                 if not isinstance(detail,dict):continue
                 info=detail.get('jobPostingInfo',{})

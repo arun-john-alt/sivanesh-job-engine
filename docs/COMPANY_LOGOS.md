@@ -26,3 +26,8 @@ Local image copies retrieved 18 September 2026. Used only to identify job poster
 - **mploychek**: [company](https://www.mploychek.com); [asset](https://www.mploychek.com/assets/mploychek-logo.png).
 
 Added 22 October 2026: Flex — https://flex.com/wp-content/themes/flex-main/images/icon.png ; Valeo — https://www.valeo.com/wp-content/themes/valeo/images/favicons/apple-touch-icon.png . Rotork (rotork.com), Turner & Townsend (turnerandtownsend.com) and Caterpillar (www.caterpillar.com) use the Google cached domain favicon, bundled locally. RNTBCI PL uses the existing verified Renault mark.
+
+Added 22 October 2026 during the replenishment review:
+- Grundfos (www.grundfos.com), Nordex Group (www.nordex-online.com), DXC Technology (dxc.com), Stark Future (starkfuture.com), and TD SYNNEX (www.tdsynnex.com): Google cached domain favicons, bundled locally using the same retrieval method as the existing marks.
+- Equiniti: https://equiniti.com/media/6052/eq-logo-128.png
+- JLL: https://www.jll.com/content/dam/tech-resources/android-chrome-192x192.png

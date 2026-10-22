@@ -1,5 +1,6 @@
 // Verified company identities; images are bundled locally (no tracking or API keys).
 const logos = {
+  'Grundfos':'grundfos', 'Nordex Group':'nordex', 'DXC Technology':'dxc', 'Stark Future':'stark', 'Equiniti':'equiniti', 'JLL':'jll', 'TD SYNNEX':'tdsynnex',
   'Flex':'flex','Valeo':'valeo','Rotork':'rotork','Turner & Townsend':'turner','Caterpillar':'caterpillar',
   'RRD':'rrd', 'Accenture':'accenture', 'Nextpower':'nextpower',
   'Flexing It®':'flexing-it', 'MPloyChek':'mploychek',

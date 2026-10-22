@@ -48,3 +48,14 @@ class WorkdayTests(unittest.TestCase):
     def test_singular_year_and_unicode_ranges_are_understood(self):
         self.assertFalse(scan.is_relevant('Procurement Analyst' if 'Sivanesh' in scan.AGENT else 'QA Engineer','Chennai','Experience: 0 to 2 Year'))
         self.assertFalse(scan.is_relevant('Procurement Analyst' if 'Sivanesh' in scan.AGENT else 'QA Engineer','Chennai','Experience: 0–2 years'))
+
+    def test_multi_location_preview_fetches_full_location(self):
+        title='Procurement Analyst' if 'Sivanesh' in scan.AGENT else 'QA Engineer'
+        path='/job/India-Chennai/Senior-Analyst_WD123'
+        board={'kind':'workday','host':'flextronics.wd1.myworkdayjobs.com','slug':'flextronics','site':'Careers','company':'Example','searchTerms':['Chennai']}
+        search={'jobPostings':[{'title':title,'locationsText':'2 Locations','externalPath':path}],'total':1}
+        detail={'jobPostingInfo':{'title':title,'externalUrl':self.url,'jobReqId':'WD123','canApply':True,'posted':True,'location':'Bengaluru','additionalLocations':['Chennai'],'jobDescription':'Relevant experience required.'}}
+        with patch.object(workday_connector,'read',side_effect=[(search,'HTTP 200'),(detail,'HTTP 200')]):
+            rows,complete,status=workday_connector.read_board(board,None,scan)
+        self.assertEqual(len(rows),1)
+        self.assertIn('Chennai',rows[0]['location'])

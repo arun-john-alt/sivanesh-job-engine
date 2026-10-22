@@ -27,6 +27,42 @@
     {
       "company": "Caterpillar",
       "url": "https://careers.caterpillar.com/de/jobs/r0000382246/manager-procurement/"
+    },
+    {
+      "company": "Vestas",
+      "url": "https://careers.vestas.com/job/Chennai-Supply-Chain-Professional-TN-600-117/1449795433/"
+    },
+    {
+      "company": "Grundfos",
+      "url": "https://jobs.grundfos.com/job/Associate-Planning-Specialist/77569-en_GB/"
+    },
+    {
+      "company": "Grundfos",
+      "url": "https://jobs.grundfos.com/job/Planning-Specialist/77568-en_GB/"
+    },
+    {
+      "company": "Nordex Group",
+      "url": "https://jobs.nordex-online.com/job/Chennai-Specialist-Tactical-Buyer-TN-600119/1416644633/"
+    },
+    {
+      "company": "Nordex Group",
+      "url": "https://jobs.nordex-online.com/job/Chennai-Senior-Engineer-Material-Planner-TN-600119/1440867233/"
+    },
+    {
+      "company": "Vestas",
+      "url": "https://careers.vestas.com/job/Chennai-Supply-Chain-Planning-Specialist-TN-600-117/1424161133/"
+    },
+    {
+      "company": "DXC Technology",
+      "url": "https://careers.dxc.com/job/23961228/associate-manager-procurement-and-supply-chain-chennai-in/"
+    },
+    {
+      "company": "Stark Future",
+      "url": "https://careers.starkfuture.com/jobs/8495691-buyer-senior-buyer-electromechanical-components"
+    },
+    {
+      "company": "Hitachi Energy",
+      "url": "https://careers.hitachi.com/scm-tt-l-transport-logistics-specialist/job/R0138249"
     }
   ],
   "allowedHosts": [
@@ -64,7 +100,14 @@
     "logitech.wd5.myworkdayjobs.com",
     "kla.wd1.myworkdayjobs.com",
     "trimble.wd1.myworkdayjobs.com",
-    "gevernova.wd5.myworkdayjobs.com"
+    "gevernova.wd5.myworkdayjobs.com",
+    "jobs.grundfos.com",
+    "jobs.nordex-online.com",
+    "careers.dxc.com",
+    "careers.starkfuture.com",
+    "equiniti.wd3.myworkdayjobs.com",
+    "jll.wd1.myworkdayjobs.com",
+    "synnex.wd5.myworkdayjobs.com"
   ],
   "maxPageFetches": 48,
   "requestDelaySeconds": 1.2,
@@ -418,6 +461,36 @@
       "searchTerms": [
         "Chennai",
         "remote India"
+      ]
+    },
+    {
+      "company": "Equiniti",
+      "kind": "workday",
+      "slug": "equiniti",
+      "host": "equiniti.wd3.myworkdayjobs.com",
+      "site": "Opportunities",
+      "searchTerms": [
+        "Chennai"
+      ]
+    },
+    {
+      "company": "JLL",
+      "kind": "workday",
+      "slug": "jll",
+      "host": "jll.wd1.myworkdayjobs.com",
+      "site": "jllcareers",
+      "searchTerms": [
+        "Chennai"
+      ]
+    },
+    {
+      "company": "TD SYNNEX",
+      "kind": "workday",
+      "slug": "synnex",
+      "host": "synnex.wd5.myworkdayjobs.com",
+      "site": "tdsynnexcareers",
+      "searchTerms": [
+        "Chennai"
       ]
     }
   ],

@@ -46,7 +46,8 @@ def decision(job, text, status, url, scan):
     # Metadata alone is insufficient: require application controls on the same page.
     controls = bool(re.search(r'<(?:a|button)\b[^>]*>\s*(?:<[^>]+>\s*)*(?:apply(?:\s+(?:now|for this job))?|submit application)\b', text, re.I))
     form = bool(re.search(r'<form\b', text, re.I) and re.search(r'resume|curriculum vitae|upload cv', primary, re.I))
-    if matched and (controls or form):
+    usable = [n for n in matched if n.get('_applicationRoute') or '_applicationRoute' not in n and (controls or form)]
+    if usable:
         return 'open', 'Matching exact JobPosting and application control found on the employer page'
     return 'unconfirmed', 'No matching vacancy plus usable application evidence; metadata or page fetch alone is insufficient'
 

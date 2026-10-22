@@ -100,3 +100,9 @@ See EXPANDED-DISCOVERY.md for current counts, role-review limits, public career-
 - 32 committed Node tests and 62 Python tests pass, along with schema, public-build privacy and whitespace checks. Nixon additionally runs 10 unrelated local scheduler tests successfully; their files are excluded from this release.
 - Real local browser at 390 × 844: 7 cards and 7/20 target status; no horizontal overflow or broken images. Target rendering excludes expired, pending and out-of-scope records and surfaces an overdue refresh.
 - Unit coverage includes overnight replenishment, 45-minute shortfall cooldown, six-hour healthy-buffer checks, paid-search daily cap, manual credit-free retry, reserve escalation, IST deadlines and honest pending-review shortfalls.
+
+## Employer replenishment verification — 23 October 2026
+
+Added reviewed employer vacancies to bring the confirmed, scored opening pool to 20. Full descriptions and exact application evidence were checked; salary remains unknown where undisclosed. Added SuccessFactors microdata support, identity-bound application controls and visible application deadlines. Workday multi-location previews now retrieve full location details. Company-history tenure and shorter leadership tenure no longer incorrectly reject otherwise eligible roles.
+
+Validation: Node and Python suites passed, dataset validation passed, and the public allowlist build/privacy gate passed. No UI layout changes were made. New company marks are bundled locally with source attribution. Hourly employer replenishment and 9 AM IST broader discovery remain configured. The minimum is a replenishment target; employer closures and access restrictions can still cause a shortfall requiring review.

@@ -25,12 +25,21 @@ from html.parser import HTMLParser
 
 ROOT=Path(__file__).resolve().parents[1]
 AGENT='SivaneshJobEngine/2.0 (public job discovery; no login bypass)'
-ROLE=re.compile(r'materials?.*(?:availability|analyst)|(?:order|supplier).*(?:management|fulfillment|analyst)|\b(?:VMI|MRP)\b|procurement|purchasing|\bbuyer\b|supply.?chain|materials?.?plan|demand.?plan|supply.?plan|sourcing|\bpurchase\b|inventory.*(?:analyst|plan)|logistics.*(?:analyst|specialist)|production.?plan',re.I)
+ROLE=re.compile(r'\bSCM\b|planning specialist|material master|logistics.*(?:engineer|coordinator|executive)|materials?.*(?:availability|analyst)|(?:order|supplier).*(?:management|fulfillment|analyst)|\b(?:VMI|MRP)\b|procurement|purchasing|\bbuyer\b|supply.?chain|materials?.?plan|demand.?plan|supply.?plan|sourcing|\bpurchase\b|inventory.*(?:analyst|plan)|logistics.*(?:analyst|specialist)|production.?plan',re.I)
 EXCLUDE=re.compile(r'leadership development program|early career|\bintern\b|\binternship\b|\bgraduate trainee\b|\bjunior\b|warehouse|SAP.*(?:consultant|implementation|configuration)|\bvice president\b|\bdirector\b',re.I)
+
+try:
+    from scripts.career_microdata import read as read_microdata
+except ModuleNotFoundError:
+    from career_microdata import read as read_microdata
 
 class Page(HTMLParser):
     def __init__(self):
         super().__init__();self.text=[];self.links=[];self.jsonld=[];self.capture=False;self.buf=[];self.skip=0
+    def feed(self,source):
+        super().feed(source)
+        node=read_microdata(source)
+        if node:self.jsonld.append(node)
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         if tag=='script':
@@ -124,6 +133,8 @@ def is_relevant(title,location,description):
     if re.search(r'engineering manager|software|security|devsecops',title,re.I) and re.search(r'software supply chain|artifact signing|malicious packages|sigstore',description,re.I):return False
     loc=location.lower();text=(title+' '+description).lower()
     if not re.search(r'chennai|sriperumbudur|oragadam|chengalpattu|thiruvallur|tiruvallur|pallavaram',loc) and not ('india' in loc and 'remote' in loc):return False
+    # Company-history tenure (e.g. Vestas' 40+ years) is not candidate experience.
+    text=re.split(r'\babout (?:vestas|hcltech)\b',text,maxsplit=1)[0]
     years=re.search(r'(\d+)\s*(?:[-–—]|to)\s*(\d+)\s*(?:years?|yrs?)\b',text)
     minimum=re.search(r'(\d+)\+\s*(?:years?|yrs?)\s+(?:of\s+)?(?:progressive\s+)?(?:experience|in\s+(?:QA|test|procurement|sourcing))',text,re.I)
     if minimum and int(minimum[1])>8:return False
