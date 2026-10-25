@@ -81,7 +81,7 @@ def record(data, cfg, planned, now=None):
     run = data.setdefault('run', {})
     previous = run.get('openingPool', {})
     report = {**counts, 'expansionLevel': planned.get('expansionLevel', 0),
-              'boardsPlanned': planned.get('boardsPlanned', 0),
+              'boardsPlanned': run.get('sharedPipeline', {}).get('boards', planned.get('boardsPlanned', 0)),
               'lastReplenishedAt': now.isoformat(timespec='seconds'),
               'consecutiveShortfalls': int(previous.get('consecutiveShortfalls', 0))+1 if counts['shortfall'] else 0,
               'status': 'shortfall' if counts['shortfall'] else 'target-met',
