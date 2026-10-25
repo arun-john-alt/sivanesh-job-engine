@@ -11,3 +11,17 @@ The GitHub engine runs at 9 AM IST with hourly replenishment. A separate hourly 
 `run.reliability` retains seven days of actual observations with source failures, opening counts and shortfalls. The Sources page exposes progress. Seven successful calendar days cannot be certified on deployment day. Review the recorded history after seven days, including Actions deployment outcomes and simulated connector-failure tests. The code already tests failure isolation and conservative scoring.
 
 Career Ops remains a supplemental independent assessment. Its Mac-based deep review is no longer required for routine discovery, basic matching or publication. Its strict recommendations can still overlap; unique additions must be reported honestly.
+
+## Expanded directory and retirement policy — 25 October 2026
+
+The company directory now includes 698 research targets compiled from the existing employer registry, a pinned Chennai community directory and publicly displayed Chennai startup company records. Public company names, domains and career links are retained with attribution; recruiter emails, contacts and source instructions are not imported. Homepage entries follow actual employer-owned career links, never guessed paths. Public network/robots checks and job-level eligibility still determine actual coverage. Directory size is never presented as the number of verified openings.
+
+Company probes run in parallel with a per-company page budget and isolated errors. Unchecked employers take priority over rechecks. Below 20 confirmed assessments, 60 directory targets are attempted per replenishment; below the 35-role buffer, 40; otherwise 20. A larger initial sweep can be run with --directory-limit. Source registry entries learned from actual career links persist in public research state.
+
+Made Card's public posting API returns 404 and its employer-linked public embed explicitly reports jobBoard=null. The invalid feed has been retired from active vacancy polling, with primary evidence recorded; its official careers page remains watched. A daily API check can restore the source if its public feed returns. This does not imply that individual roles were filled.
+
+The user reaffirmed no new login on 25 October. No authenticated external cloud host is connected, so no new hosting account or external scheduler was created. GitHub recovery remains active; the existing Codex follow-up was expanded to check both sites hourly from 09:45 through 14:45 IST. That supplemental check requires the Mac/app running. Routine cloud discovery and publication do not.
+
+Reliability observations use contiguous real IST calendar days. Missing dates, opening shortfalls and source errors remain visible. Fault simulations test recovery today but never count as elapsed production history.
+
+The recovery watchdog now checks actual research freshness and live/repository agreement, including JSON datasets above 1 MiB. Successful publish-only workflows cannot hide overdue discovery. Operator dispatches are distinct from automatic recovery, which retains its own three-attempt budget and 25-minute cooldown. The watchdog uses the same policy in cloud and supplemental local execution. Lowercase Workday locale segments are normalized before selecting a board, and newly learned Workday hosts enter the approved public host set before any request.

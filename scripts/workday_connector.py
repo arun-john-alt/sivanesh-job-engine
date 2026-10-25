@@ -11,7 +11,7 @@ def parts(url):
     except (ValueError,TypeError):return None
     if u.scheme!='https' or not re.fullmatch(r'[a-z0-9-]+\.wd\d+\.myworkdayjobs\.com',u.hostname or '') or u.username or u.password or port not in (None,443):return None
     path=u.path.strip('/').split('/')
-    if path and re.fullmatch(r'[a-z]{2}-[A-Z]{2}',path[0]):path=path[1:]
+    if path and re.fullmatch(r'[a-z]{2}-[a-z]{2}',path[0],re.I):path=path[1:]
     if len(path)<3 or path[1]!='job' or path[-1]=='apply':return None
     return u.hostname,path[0],'/'+ '/'.join(path[1:])
 

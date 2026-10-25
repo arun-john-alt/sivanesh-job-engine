@@ -1,4 +1,5 @@
 name: Job engine - scan, test and publish
+run-name: ${{ inputs.recovery == 'true' && 'Recovery · engine' || 'Engine' }}
 on:
   push:
     branches: [main]
@@ -8,6 +9,12 @@ on:
         description: 'Discover new jobs before publishing (new leads require review)'
         required: true
         default: 'true'
+        type: choice
+        options: ['true', 'false']
+      recovery:
+        description: 'Automatic recovery attempt (separate retry budget)'
+        required: false
+        default: 'false'
         type: choice
         options: ['true', 'false']
   schedule:

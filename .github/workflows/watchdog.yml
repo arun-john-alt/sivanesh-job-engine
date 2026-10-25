@@ -13,25 +13,14 @@ jobs:
   recover:
     runs-on: ubuntu-latest
     steps:
-      - name: Retry a missing or failed engine run
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: arun-john-alt/nixon-job-engine
+          ref: main
+          path: .shared-engine
+          persist-credentials: false
+      - name: Recover stale discovery or publishing
         env:
           GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-        run: |
-          python3 - <<'PY'
-          import datetime as dt,json,os,subprocess
-          repo=os.environ['REPO']
-          def gh(*args):return subprocess.check_output(['gh',*args],text=True)
-          runs=json.loads(gh('api',f'repos/{repo}/actions/workflows/engine.yml/runs?per_page=30'))['workflow_runs']
-          if any(r['status'] in ('queued','in_progress','waiting','pending') for r in runs):
-              print('Engine already active; no duplicate dispatch.');raise SystemExit()
-          now=dt.datetime.now(dt.timezone.utc)
-          successful=next((r for r in runs if r['conclusion']=='success'),None)
-          age=(now-dt.datetime.fromisoformat(successful['updated_at'].replace('Z','+00:00'))).total_seconds() if successful else float('inf')
-          retries=[r for r in runs if r['event']=='workflow_dispatch' and (now-dt.datetime.fromisoformat(r['created_at'].replace('Z','+00:00'))).total_seconds()<86400]
-          if len(retries)>=3:
-              raise SystemExit('Three manual/recovery attempts in 24h; investigate Actions logs instead of retrying indefinitely.')
-          if age>7200 or (runs and runs[0]['conclusion']=='failure'):
-              gh('workflow','run','engine.yml','--repo',repo,'-f','scan=true');print('Recovery dispatched; paid daily search retains its existing daily cap.')
-          else:print('Recent successful workflow; no recovery required.')
-          PY
+        run: python .shared-engine/shared/watchdog.py --repo "${{ github.repository }}"
