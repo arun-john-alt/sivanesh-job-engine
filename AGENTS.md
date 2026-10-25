@@ -12,7 +12,7 @@ Inspect Git status and remotes, and run the tests before changing code. Preserve
 - `site/engine.js` validates data and implements match/pay gates and resume approval.
 - `site/resume.js` writes real DOCX files and encrypts explicit private backups.
 - `scripts/scan.py` is conservative public-employer discovery. A search API is optional.
-- `.github/workflows/engine.yml` runs broad discovery at 09:00 IST and credit-free employer replenishment hourly. `scripts/daily_scan.py` preserves the once-daily API budget; `scripts/opening_pool.py` expands approved sources toward 20 reviewed openings with a buffer of 25. See `docs/SCHEDULING.md`.
+- `.github/workflows/engine.yml` runs broad discovery at 09:00 IST and credit-free employer replenishment hourly. `scripts/daily_scan.py` preserves the once-daily API budget; `scripts/opening_pool.py` expands approved sources toward 20 reviewed openings with a buffer of 35. See `docs/SCHEDULING.md`.
 - `scripts/build.py` uses an exact public-file allowlist and a private-field gate.
 - Private records, current CTC, contact details and the master resume are stored only in the browser. They do NOT automatically sync.
 
@@ -43,3 +43,6 @@ node scripts/validate.mjs
 python3 scripts/build.py
 ```
 Run browser tests on a real local server where the environment permits it. The initial build additionally had offline DOM tests because browser navigation was restricted; see docs/QA.md. Preserve these limitations rather than claiming full end-to-end deployment validation.
+
+## Shared runtime
+Both sites use the canonical shared/ discovery engine in arun-john-alt/nixon-job-engine. Read docs/SHARED-ENGINE.md. Automated scoring requires full descriptions and confirmed profile facts; retain method disclosure, gaps and original evidence times. Never inflate counts or invent missing skills.

@@ -1,0 +1,13 @@
+# Shared discovery and reliability
+
+Both sites consume the canonical `shared/` implementation and source registry from Nixon's repository. Candidate facts, targets and role/location restrictions remain in each site's own config. Supported employer boards are learned from actual vacancy links and the rotating career directory. The registry is a research source list, not a claim of current hiring or location eligibility.
+
+Every replenishment performs source discovery, full-description evidence assessment, availability checks, shortfall accounting, validation and a public-only build. The working buffer is 35 with a minimum target of 20; job supply is not guaranteed. Failing connectors retry once and report independently. A source error never establishes that a vacancy is closed. Scores require at least 100 words of employer description plus relevant responsibility evidence. Rules compare confirmed candidate facts against job text; they are disclosed heuristics, not AI judgment or an ATS score. Unknown salary does not exclude a role. Existing human assessments survive unchanged descriptions. New scores retain unconfirmed skills as gaps, and low-fit automated results are excluded from the active count.
+
+Public recruiting GET responses are cached for at most 45 minutes. Nixon uploads the cache as an artifact retained one day; Sivanesh attempts reuse and falls back to live requests. Cached data retains the original evidence timestamp. No credentials or private candidate data enter this cache. Workday uses direct requests. Both websites remain static; shared runtime and cache are excluded from public builds.
+
+The GitHub engine runs at 9 AM IST with hourly replenishment. A separate hourly recovery workflow checks for a missing/failed run, avoids dispatching while an engine run is active and caps retries at three per 24 hours. This recovers individual workflow failures, but a GitHub-wide outage or dropped schedules can affect both workflows. An independently hosted trigger would need a separate execution service; none has been provisioned or claimed.
+
+`run.reliability` retains seven days of actual observations with source failures, opening counts and shortfalls. The Sources page exposes progress. Seven successful calendar days cannot be certified on deployment day. Review the recorded history after seven days, including Actions deployment outcomes and simulated connector-failure tests. The code already tests failure isolation and conservative scoring.
+
+Career Ops remains a supplemental independent assessment. Its Mac-based deep review is no longer required for routine discovery, basic matching or publication. Its strict recommendations can still overlap; unique additions must be reported honestly.

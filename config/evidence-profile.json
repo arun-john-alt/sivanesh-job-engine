@@ -1,0 +1,38 @@
+{
+  "years": 5,
+  "peopleManager": false,
+  "responsibilities": [
+    "procurement",
+    "purchase orders",
+    "supplier management",
+    "supplier performance",
+    "inventory management",
+    "material planning",
+    "supply chain",
+    "order management",
+    "sourcing",
+    "purchasing"
+  ],
+  "tools": [
+    "sap",
+    "sap mm",
+    "excel",
+    "p2p",
+    "reporting"
+  ],
+  "domains": [
+    "automotive",
+    "manufacturing",
+    "electronics",
+    "aftermarket"
+  ],
+  "unconfirmed": [
+    "sap configuration",
+    "abap",
+    "people management",
+    "category strategy",
+    "capital expenditure",
+    "german",
+    "japanese"
+  ]
+}

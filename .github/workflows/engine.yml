@@ -55,9 +55,34 @@ jobs:
       - name: Plan adaptive employer search
         if: steps.daily.outputs.replenish == 'true'
         run: python scripts/opening_pool.py prepare --plan "$RUNNER_TEMP/opening-plan.json"
-      - name: Discover and match employer vacancies
+      - name: Load shared discovery engine
         if: steps.daily.outputs.replenish == 'true'
-        run: python scripts/employers.py --config "$RUNNER_TEMP/opening-plan.config.json"
+        uses: actions/checkout@v4
+        with:
+          repository: arun-john-alt/nixon-job-engine
+          ref: main
+          path: .shared-engine
+          persist-credentials: false
+      - name: Restore public employer response cache
+        if: steps.daily.outputs.replenish == 'true'
+        uses: actions/cache@v4
+        with:
+          path: /tmp/job-engine-public-cache
+          key: employer-public-${{ github.run_id }}
+          restore-keys: employer-public-
+      - name: Reuse recent shared public employer responses
+        if: steps.daily.outputs.replenish == 'true'
+        continue-on-error: true
+        timeout-minutes: 2
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/job-engine-public-cache
+          gh run download --repo arun-john-alt/nixon-job-engine --name public-employer-cache --dir /tmp/shared-public-download
+          cp /tmp/shared-public-download/*.json /tmp/job-engine-public-cache/
+      - name: Discover and assess employer vacancies
+        if: steps.daily.outputs.replenish == 'true'
+        run: python .shared-engine/shared/pipeline.py --root .
       - name: Verify existing vacancy availability
         if: steps.daily.outputs.replenish == 'true'
         run: python scripts/availability.py
@@ -70,6 +95,9 @@ jobs:
       - name: Record opening target and shortfall
         if: steps.daily.outputs.replenish == 'true'
         run: python scripts/opening_pool.py record --plan "$RUNNER_TEMP/opening-plan.json"
+      - name: Record daily reliability observations
+        if: steps.daily.outputs.replenish == 'true'
+        run: python .shared-engine/shared/health.py --root .
       - name: Validate resulting public dataset
         if: steps.daily.outputs.publish == 'true'
         run: node scripts/validate.mjs
@@ -86,6 +114,13 @@ jobs:
             git commit -m 'data: refresh employer-job discovery and coverage'
             git push origin HEAD:main
           fi
+      - name: Save diagnostic data on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-diagnostics-${{ github.run_id }}
+          path: site/data/jobs.json
+          retention-days: 7
       - name: Configure GitHub Pages
         if: steps.daily.outputs.publish == 'true'
         uses: actions/configure-pages@v5

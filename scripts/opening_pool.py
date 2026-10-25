@@ -27,7 +27,7 @@ def inventory(data, cfg, now=None):
     seen = set()
     for job in data.get('jobs', []):
         last = timestamp(job.get('lastConfirmedOpenAt'))
-        if job.get('discoveryEligible') is False or job.get('verification') == 'closed' or job.get('availabilityHold') is True:
+        if job.get('assessmentTier') == 'weak' or job.get('discoveryEligible') is False or job.get('verification') == 'closed' or job.get('availabilityHold') is True:
             continue
         if not last or not 0 <= (now-last).total_seconds() < 48*3600:
             continue
@@ -90,7 +90,7 @@ def record(data, cfg, planned, now=None):
     detail = (f"{counts['reviewedOpen']}/{counts['minimum']} reviewed, confirmed openings; "
               f"{counts['pendingOpen']} additional confirmed vacancies awaiting match review. "
               f"Expansion level {report['expansionLevel']}; {report['boardsPlanned']} employer sources planned. "
-              'Hourly credit-free checks replenish toward a buffer of 25. Broad search remains once daily at 9 AM IST. '
+              'Hourly credit-free checks replenish toward a buffer of 35. Broad search remains once daily at 9 AM IST. '
               'No expired, unconfirmed, excluded or unscored role counts toward the minimum. GitHub schedules may be delayed.')
     run['coverage'] = [{'source': 'Opening target', 'status': f"{counts['reviewedOpen']}/{counts['minimum']} confirmed matches", 'detail': detail}] + [c for c in run.get('coverage', []) if c.get('source') != 'Opening target']
     if os.getenv('GITHUB_STEP_SUMMARY'):

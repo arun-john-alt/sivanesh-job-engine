@@ -497,7 +497,7 @@
   "employerConcurrency": 3,
   "openingPool": {
     "minimum": 20,
-    "buffer": 25
+    "buffer": 35
   },
   "reserveEmployerBoards": [
     {
