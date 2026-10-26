@@ -394,8 +394,11 @@ def run(config_path,data_path):
                 if valid_url(candidate,fetcher.hosts) and re.search(r'/job/|/jobs/|gh_jid=',candidate,re.I) and ROLE.search(urllib.parse.unquote(candidate)):queue.append((candidate,company,True))
         coverage.append({'source':company,'status':'Fetched','detail':url+(' - job metadata found' if nodes else ' - no structured job data')})
     coverage.append({'source':'Salary, culture and resume analysis','status':'Human review required','detail':'New leads are unscored. The crawler never invents pay, reviews, candidate achievements or tailored bullets.'})
-    pool_report=data.get('run',{}).get('openingPool')
-    employer_report=data.get('run',{}).get('employerDiscovery');data['updatedAt']=now;data['run']={'status':'completed' if success or (key and any(counts.values())) else 'limited','checkedOn':now,'automaticEnabled':os.getenv('GITHUB_ACTIONS')=='true','note':f'{new_count} new lead(s); {success} job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.','coverage':coverage[:100]}
+    # Broad search owns its result summary, not other stages' operational state.
+    previous_run=data.get('run',{})
+    new_sources={c.get('source') for c in coverage}
+    coverage += [c for c in previous_run.get('coverage',[]) if c.get('source') not in new_sources]
+    data['updatedAt']=now;data['run']={**previous_run,'status':'completed' if success or (key and any(counts.values())) else 'limited','checkedOn':now,'automaticEnabled':os.getenv('GITHUB_ACTIONS')=='true','note':f'{new_count} new lead(s); {success} job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.','coverage':coverage[:200]}
     temp=data_path.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=True,indent=2)+'\n');temp.replace(data_path)
     print(data['run']['note'])
 

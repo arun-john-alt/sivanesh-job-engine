@@ -120,3 +120,9 @@ The directory audit attempted all 698 research targets for each profile. Learned
 Real watchdog execution detected overdue research and dispatched the recovery workflow with recovery=true. Recovery run https://github.com/arun-john-alt/sivanesh-job-engine/actions/runs/40174440949 successfully scanned, assessed, tested and deployed. Live browser verification showed 28 Nixon openings and 27 Sivanesh openings, 121 working feeds per site and zero active-feed failures. Both live mobile pages had no JavaScript errors or horizontal overflow. Retired/unavailable feeds and unsupported career pages remain explicit coverage outcomes; 698 directory entries do not imply 698 working feeds or hiring employers.
 
 The user reaffirmed no new login. No independent cloud-host account was created; the existing Codex/Mac follow-up supplements GitHub recovery and requires the Mac/app running. Seven-day monitoring is collecting real IST days and has one observed day; no seven-day uptime claim has been made.
+
+
+## 26 October 2026 — monitoring state retention
+
+Daily broad search now preserves shared source-health, company-discovery and reliability state. Restored actual prior observations from committed history, keeping original evidence timestamps; two IST days observed, not a completed seven-day reliability trial. Regression test reproduces a broad scan and verifies operational state survives. 32 Node tests and 71 Python tests passed; dataset validation and public-only privacy build passed.
+Shared watchdog fix is consumed from Nixon’s canonical runtime.
