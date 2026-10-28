@@ -126,3 +126,8 @@ The user reaffirmed no new login. No independent cloud-host account was created;
 
 Daily broad search now preserves shared source-health, company-discovery and reliability state. Restored actual prior observations from committed history, keeping original evidence timestamps; two IST days observed, not a completed seven-day reliability trial. Regression test reproduces a broad scan and verifies operational state survives. 32 Node tests and 71 Python tests passed; dataset validation and public-only privacy build passed.
 Shared watchdog fix is consumed from Nixon’s canonical runtime.
+
+
+## 28 October 2026 — oversized web-search payload
+
+The morning Nixon search reported Tavily: Response too large because requesting full raw pages for up to 20 search results exceeded the crawler’s 2 MB response guard. Both profiles now request indexed excerpts for discovery; exact employer descriptions and application checks remain independent prerequisites for scoring and confirmed availability. Added an oversized-page regression with snippet-only results kept unscored/indexed. The size guard, basic-search budget, once-daily paid cap and recovery limits are unchanged. No paid search was rerun to validate the change. Paytm’s separate transient timeout remains recorded as a source failure, not a vacancy closure.

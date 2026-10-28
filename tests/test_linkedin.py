@@ -38,9 +38,23 @@ class LinkedInTests(unittest.TestCase):
         self.assertEqual(rows,[ROW])
         self.assertEqual(f.payload['search_depth'],'basic')
         self.assertFalse(f.payload['auto_parameters'])
-        self.assertTrue(f.payload['include_raw_content'])
+        self.assertFalse(f.payload['include_raw_content'])
         self.assertEqual(f.payload['max_results'],20)
         self.assertEqual(f.payload['include_domains'],['linkedin.com'])
+
+    def test_large_indexed_page_does_not_break_discovery(self):
+        class Fake:
+            def request(self,url,headers,payload):
+                row=dict(ROW)
+                if payload.get('include_raw_content'):row['raw_content']='x'*2_000_001
+                body=json.dumps({'results':[row]})
+                return (None,'Response too large') if len(body)>2_000_000 else (body,'HTTP 200')
+        rows,status=scan.search_results(Fake(),'Tavily','test-only','test role',True)
+        self.assertEqual(status,'HTTP 200')
+        self.assertEqual(rows,[ROW])
+        lead=scan.linkedin_lead(rows[0],'2026-10-28')
+        self.assertEqual(lead['verification'],'indexed')
+        self.assertEqual(lead['score'],[])
 
     def test_invalid_search_responses(self):
         class Fake:

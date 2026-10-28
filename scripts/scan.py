@@ -256,7 +256,9 @@ def linkedin_lead(row,now):
 
 def search_results(fetcher,provider,key,query,linkedin=False,availability=False):
     if provider=='Tavily':
-        payload={'query':query,'search_depth':'basic','auto_parameters':False,'max_results':20,'topic':'general','time_range':'month','include_answer':False,'include_raw_content':True}
+        # Discovery needs indexed excerpts; full pages can exceed the 2 MB guard.
+        # Employer descriptions and availability are checked independently.
+        payload={'query':query,'search_depth':'basic','auto_parameters':False,'max_results':20,'topic':'general','time_range':'month','include_answer':False,'include_raw_content':False}
         if availability:payload.pop('time_range',None)
         if linkedin:payload['include_domains']=['linkedin.com']
         text,status=fetcher.request('https://api.tavily.com/search',{'Authorization':'Bearer '+key,'Content-Type':'application/json'},payload)
