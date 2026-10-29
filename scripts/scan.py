@@ -398,7 +398,8 @@ def run(config_path,data_path):
     coverage.append({'source':'Salary, culture and resume analysis','status':'Human review required','detail':'New leads are unscored. The crawler never invents pay, reviews, candidate achievements or tailored bullets.'})
     # Broad search owns its result summary, not other stages' operational state.
     previous_run=data.get('run',{})
-    new_sources={c.get('source') for c in coverage}
+    # A completed search replaces old search errors; other stages retain history.
+    new_sources={c.get('source') for c in coverage} | {'Web search','LinkedIn search'}
     coverage += [c for c in previous_run.get('coverage',[]) if c.get('source') not in new_sources]
     data['updatedAt']=now;data['run']={**previous_run,'status':'completed' if success or (key and any(counts.values())) else 'limited','checkedOn':now,'automaticEnabled':os.getenv('GITHUB_ACTIONS')=='true','note':f'{new_count} new lead(s); {success} job metadata / closure check(s). Failed or unresolved checks do not establish availability. See coverage for LinkedIn and employer search results. Search-index leads are not confirmed live vacancies.','coverage':coverage[:200]}
     temp=data_path.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=True,indent=2)+'\n');temp.replace(data_path)

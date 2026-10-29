@@ -131,3 +131,8 @@ Shared watchdog fix is consumed from Nixon’s canonical runtime.
 ## 28 October 2026 — oversized web-search payload
 
 The morning Nixon search reported Tavily: Response too large because requesting full raw pages for up to 20 search results exceeded the crawler’s 2 MB response guard. Both profiles now request indexed excerpts for discovery; exact employer descriptions and application checks remain independent prerequisites for scoring and confirmed availability. Added an oversized-page regression with snippet-only results kept unscored/indexed. The size guard, basic-search budget, once-daily paid cap and recovery limits are unchanged. No paid search was rerun to validate the change. Paytm’s separate transient timeout remains recorded as a source failure, not a vacancy closure.
+
+
+## 29 October 2026 — replace obsolete search errors
+
+Confirmed the smaller Tavily request works in real daily runs. Nixon completed both planned LinkedIn queries and both planned employer-web queries. Its old Web search / Response too large row was retained by the operational-state merge even though all current discovery requests succeeded. Daily scan now replaces prior Web search and LinkedIn search errors while retaining other stages’ health/history; current failures still remain visible. Regression verifies stale search errors are removed and reliability/source state survives. Removed only the proved-obsolete Nixon coverage row; vacancy records were unchanged. All Node/Python tests, validation and privacy builds passed. No paid search was repeated for the fix.
