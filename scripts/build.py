@@ -6,7 +6,7 @@ import shutil
 import re
 ROOT=Path(__file__).resolve().parents[1]
 source=ROOT/'site';target=ROOT/'dist'
-allowed={'index.html','styles.css','app.js','engine.js','resume.js','favicon.svg','data/jobs.json','companies.js'}
+allowed={'index.html','styles.css','app.js','engine.js','resume.js','favicon.svg','data/jobs.json','companies.js','celebration.js'}
 allowed.update({'assets/companies/'+key+'.png' for key in ['grundfos', 'nordex', 'dxc', 'stark', 'equiniti', 'jll', 'tdsynnex']})
 allowed.update({'assets/companies/'+key+'.png' for key in ['flex','valeo','rotork','turner','caterpillar']})
 allowed.update({

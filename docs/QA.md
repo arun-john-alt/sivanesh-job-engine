@@ -148,3 +148,8 @@ All 32 Node and 73 Python tests passed, along with dataset validation and the pu
 ## 10 November 2026: search completed
 
 The user confirmed Sivanesh joined Applied Materials and asked to stop the engine. Added a congratulations banner and labelled previous research as an archive. Removed daily discovery and hourly replenishment/watchdog schedules. The Mac monitor now checks Nixon only. Watchdog and key-transfer workflows were disabled; the publishing workflow will be disabled after this banner deployment is verified. Existing research and browser workspace features remain available. All 32 Node and 73 Python tests, validation and privacy build passed. Chrome at 1440px and 390px showed the banner without page errors or horizontal overflow.
+
+
+## 10 November 2026: placement celebration
+
+Replaced the small placement notice with a navy-and-gold celebration card, an animated entrance, a placement seal and canvas confetti. Confetti runs on arrival, stops after seven seconds and can be replayed with the button or keyboard. Reduced-motion mode disables the entrance and confetti. No external scripts or dependencies were added. Chrome at 1440px, 390px and 320px verified visible confetti, replay, no horizontal overflow and no page errors. A separate reduced-motion check verified no confetti or CSS animations; a timed check verified automatic stopping and keyboard replay. All 32 Node and 73 Python tests, dataset validation and public-only privacy build passed. Only the publishing workflow is temporarily enabled for deployment; discovery schedules and watchdog remain stopped.
