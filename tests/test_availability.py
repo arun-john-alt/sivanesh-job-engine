@@ -53,3 +53,34 @@ class AvailabilityTests(unittest.TestCase):
         self.assertFalse(scan.mark_index_closed(job,'2026-09-23',linkedin=True))
         self.assertEqual(job['verification'],'live')
         self.assertEqual(job['linkedinAvailability'],'closed')
+
+    def test_truncated_response_keeps_job_unconfirmed_and_checks_next_job(self):
+        import http.client
+        from unittest.mock import MagicMock, patch
+
+        old = '2026-01-01T00:00:00+00:00'
+        interrupted = {**self.job, 'verification': 'live', 'lastConfirmedOpenAt': old}
+        next_url = 'https://careers.example.com/job/456'
+        next_job = {**self.job, 'id': '456', 'requisition': '456', 'applyUrl': next_url}
+        posting = {'@type': 'JobPosting', 'title': 'QA Lead', 'url': next_url,
+                   'identifier': {'value': '456'}}
+        html = '<script type="application/ld+json">' + json.dumps(posting) + '</script><button>Apply now</button>'
+        truncated = MagicMock()
+        truncated.__enter__.return_value = truncated
+        truncated.read.side_effect = http.client.IncompleteRead(b'No longer accepting applications')
+        complete = MagicMock(status=200)
+        complete.__enter__.return_value = complete
+        complete.read.return_value = html.encode()
+        opener = MagicMock()
+        opener.open.side_effect = [truncated, complete]
+        with patch.object(scan, 'valid_url', return_value=True), \
+             patch.object(scan.Fetcher, 'allowed', return_value=True), \
+             patch.object(scan.urllib.request, 'build_opener', return_value=opener):
+            availability.audit({'jobs': [interrupted, next_job]},
+                               {'allowedHosts': ['careers.example.com'], 'requestDelaySeconds': 0}, scan)
+        self.assertEqual(interrupted['availabilityStatus'], 'unconfirmed')
+        self.assertEqual(interrupted['lastConfirmedOpenAt'], old)
+        self.assertEqual(interrupted['verification'], 'live')
+        self.assertIn('IncompleteRead', interrupted['availabilityReason'])
+        self.assertEqual(next_job['availabilityStatus'], 'open')
+        self.assertEqual(next_job['verification'], 'live')

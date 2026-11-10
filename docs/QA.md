@@ -136,3 +136,10 @@ The morning Nixon search reported Tavily: Response too large because requesting 
 ## 29 October 2026 — replace obsolete search errors
 
 Confirmed the smaller Tavily request works in real daily runs. Nixon completed both planned LinkedIn queries and both planned employer-web queries. Its old Web search / Response too large row was retained by the operational-state merge even though all current discovery requests succeeded. Daily scan now replaces prior Web search and LinkedIn search errors while retaining other stages’ health/history; current failures still remain visible. Regression verifies stale search errors are removed and reliability/source state survives. Removed only the proved-obsolete Nixon coverage row; vacancy records were unchanged. All Node/Python tests, validation and privacy builds passed. No paid search was repeated for the fix.
+
+
+## 10 November 2026: interrupted employer responses
+
+Nixon workflow 42665162893 failed during availability checking on 9 November because a chunked HTTP response ended early. Fetcher now records HTTP protocol errors as failed checks, discards partial content and continues. The regression reproduces the uncaught IncompleteRead before the fix, then verifies the affected vacancy stays unconfirmed with its previous open timestamp and the next vacancy is checked normally. No closure or fresh evidence is inferred from partial response text.
+
+All 32 Node and 73 Python tests passed, along with dataset validation and the public-only privacy build. The fix does not change the scoring, search budget or 48-hour availability rule. The canonical policy dispatched the due recovery; existing opening shortfalls remain recorded.

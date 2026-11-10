@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
+import http.client
 import ipaddress
 import json
 import os
@@ -99,7 +100,7 @@ class Fetcher:
                 if len(raw)>2_000_000:return None,'Response too large'
                 return raw.decode('utf-8',errors='replace'),'HTTP '+str(res.status)
         except urllib.error.HTTPError as e:return None,'HTTP '+str(e.code)
-        except (urllib.error.URLError,TimeoutError,ValueError,OSError) as e:return None,type(e).__name__
+        except (urllib.error.URLError,http.client.HTTPException,TimeoutError,ValueError,OSError) as e:return None,type(e).__name__
     def allowed(self,url):
         u=urllib.parse.urlsplit(url);base=u.scheme+'://'+u.netloc
         if base not in self.robot_cache:
