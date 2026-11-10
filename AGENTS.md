@@ -1,5 +1,8 @@
 # Sivanesh Job Engine: instructions for Codex
 
+## Current status
+Sivanesh has found a job at Applied Materials, confirmed by the user on 10 November 2026. The search is stopped. Keep the congratulations banner public and previous research as an archive. Do not scan, recover or re-enable workflows unless the user explicitly asks to resume. Nixon continues separately.
+
 ## Mission
 Help Sivanesh pursue a better-paying job by 31 December 2026. The minimum target is INR 12 lakh annual CTC; current compensation is private and is loaded from the separate private workspace. Never promise a job or invent pipeline activity.
 

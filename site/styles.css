@@ -12,3 +12,10 @@ body.dark{--bg:#171820;--paper:#20212c;--ink:#eeeef6;--muted:#a1a3b4;--line:#323
 .detail-header .job-meta{padding-right:72px}
 
 .stats{flex-wrap:wrap;row-gap:8px}.pending-opening{margin-top:16px}.pending-opening .section-head{align-items:flex-start;gap:12px}.pending-opening .section-head h3{margin:6px 0 0}.pending-opening .tag{white-space:normal;text-align:center}#pendingSearch{padding-left:14px}
+
+.placement-banner{margin:24px 0 8px;padding:30px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(120deg,var(--accent-soft),var(--paper));max-width:100%;overflow-wrap:anywhere}
+.placement-label{display:inline-block;color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.placement-banner h2{font-size:clamp(25px,4vw,38px);margin-bottom:10px;line-height:1.15}
+.placement-banner p{font-size:18px;margin-bottom:12px}.placement-banner strong{color:var(--accent)}
+.placement-note{display:block;color:var(--muted);font-size:13px;max-width:620px}
+@media(max-width:600px){.placement-banner{padding:23px 20px;margin-top:18px}.placement-banner p{font-size:16px}}

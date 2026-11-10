@@ -1,7 +1,5 @@
 name: Recovery watchdog
 on:
-  schedule:
-    - cron: '43 * * * *'
   workflow_dispatch:
 permissions:
   actions: write

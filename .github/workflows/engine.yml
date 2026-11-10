@@ -8,7 +8,7 @@ on:
       scan:
         description: 'Discover new jobs before publishing (new leads require review)'
         required: true
-        default: 'true'
+        default: 'false'
         type: choice
         options: ['true', 'false']
       recovery:
@@ -17,11 +17,6 @@ on:
         default: 'false'
         type: choice
         options: ['true', 'false']
-  schedule:
-    # 03:30 UTC = 09:00 Asia/Kolkata. GitHub scheduling is best-effort.
-    - cron: '30 3 * * *'
-    # Credit-free replenishment every hour; broad API search remains once daily.
-    - cron: '17 * * * *'
 permissions:
   contents: read
 concurrency:

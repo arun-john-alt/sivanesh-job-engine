@@ -27,11 +27,11 @@ test('active counts and recommendations agree; salary unknown remains eligible',
  assert.equal(vm.runInContext("eligible().some(j=>payGate(j)==='Budget unknown')",c),true);
 });
 
-test('opening target excludes pending, expired and out-of-scope roles and reports overdue checks',()=>{
+test('completed search labels research as archived without claiming scheduled refreshes',()=>{
  const c=app();vm.runInContext(`const seed=D.jobs[0];const live={...seed,closesOn:null,verification:'live',availabilityHold:false,discoveryEligible:true,lastConfirmedOpenAt:new Date().toISOString(),salary:{kind:'unknown'},analysisStatus:'reviewed',score:[{points:10},{points:10},{points:10},{points:10},{points:10}]};D.jobs=[live,{...live,analysisStatus:'needs-review',score:[]},{...live,discoveryEligible:false},{...live,verification:'closed'}];D.run.openingPool={lastReplenishedAt:new Date().toISOString()};`,c);
- assert.match(vm.runInContext('openingTarget()',c),/1 \/ 20/);
- assert.match(vm.runInContext('openingTarget()',c),/Hourly search/);
+ assert.match(vm.runInContext('openingTarget()',c),/Archived research/);
+ assert.doesNotMatch(vm.runInContext('openingTarget()',c),/Hourly|\/ 20|expanding sources/);
  vm.runInContext("D.run.openingPool.lastReplenishedAt='2020-01-01T00:00:00Z'",c);
- assert.match(vm.runInContext('openingTarget()',c),/Replenishment overdue/);
+ assert.match(vm.runInContext('openingTarget()',c),/no longer refreshed or checked/);
  assert.equal(vm.runInContext('activeJobs().length',c),1);
 });

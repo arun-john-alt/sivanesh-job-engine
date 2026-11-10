@@ -143,3 +143,8 @@ Confirmed the smaller Tavily request works in real daily runs. Nixon completed b
 Nixon workflow 42665162893 failed during availability checking on 9 November because a chunked HTTP response ended early. Fetcher now records HTTP protocol errors as failed checks, discards partial content and continues. The regression reproduces the uncaught IncompleteRead before the fix, then verifies the affected vacancy stays unconfirmed with its previous open timestamp and the next vacancy is checked normally. No closure or fresh evidence is inferred from partial response text.
 
 All 32 Node and 73 Python tests passed, along with dataset validation and the public-only privacy build. The fix does not change the scoring, search budget or 48-hour availability rule. The canonical policy dispatched the due recovery; existing opening shortfalls remain recorded.
+
+
+## 10 November 2026: search completed
+
+The user confirmed Sivanesh joined Applied Materials and asked to stop the engine. Added a congratulations banner and labelled previous research as an archive. Removed daily discovery and hourly replenishment/watchdog schedules. The Mac monitor now checks Nixon only. Watchdog and key-transfer workflows were disabled; the publishing workflow will be disabled after this banner deployment is verified. Existing research and browser workspace features remain available. All 32 Node and 73 Python tests, validation and privacy build passed. Chrome at 1440px and 390px showed the banner without page errors or horizontal overflow.
