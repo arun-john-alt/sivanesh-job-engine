@@ -170,8 +170,8 @@
       }
     ],
     "review": {
-      "status": "pending",
-      "scope": "Revised desktop/mobile render review and deployment verification."
+      "status": "ship",
+      "scope": "Fresh review of all five settled widths, dark/reduced/no-JS states and in-motion still; source and supplied browser results. Deployment tracked separately."
     }
   },
   "components": [
@@ -202,7 +202,7 @@
   ],
   "narrative": {
     "northStar": "A party for Sivanesh",
-    "overview": "A bright yellow party poster celebrates Sivanesh joining Applied Materials. Burgundy lettering, red emphasis, balloon clusters, hanging flags and scattered paper make the scene celebratory after the animation stops. The user's feedback rejects a restrained career-announcement treatment for this banner.\n\nThis document governs the celebration component only. The archive retains its purple accent, navigation, cards, typography and theme behavior. Source authority is `site/styles.css`, `site/index.html` and `site/celebration.js`; product and direction context live in `PRODUCT.md` and `docs/design/celebration.md`. The revised desktop/mobile render review and deployment verification are pending.",
+    "overview": "A bright yellow party poster celebrates Sivanesh joining Applied Materials. Burgundy lettering, red emphasis, balloon clusters, hanging flags and scattered paper make the scene celebratory after the animation stops. The user's feedback rejects a restrained career-announcement treatment for this banner.\n\nThis document governs the celebration component only. The archive retains its purple accent, navigation, cards, typography and theme behavior. Source authority is `site/styles.css`, `site/index.html` and `site/celebration.js`; product and direction context live in `PRODUCT.md` and `docs/design/celebration.md`. The fresh desktop/mobile render review returned a ship verdict. Deployment is tracked by the separate celebration-only Pages workflow.",
     "keyCharacteristics": [
       "Yellow poster with burgundy lettering and blue, red and pink party decorations.",
       "Centered two-line congratulations in locally hosted Archivo Black.",
@@ -224,7 +224,7 @@
     "donts": [
       "Don't apply the banner palette or Archivo Black to archive screens.",
       "Don't make animation necessary to understand the announcement.",
-      "Don't describe the pending render review or deployment verification as complete."
+      "Don't treat a static preview as proof of live motion or deployment."
     ]
   }
 }

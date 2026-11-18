@@ -26,4 +26,4 @@ Archivo Black is self-hosted under the OFL license. Source: https://github.com/g
 
 ## Review
 
-Pending the revised desktop/mobile render review and deployment verification.
+Fresh independent review returned ship: no material visual blocker across all five widths, dark/reduced/no-JS states and the in-motion capture. All 105 tests, validation, build and privacy checks passed. Browser checks confirmed finite motion, replay and no overflow. Deployment is tracked separately by the celebration-only Pages workflow. No shipping rasters were added.
