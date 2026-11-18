@@ -34,6 +34,7 @@ allowed.update({
     'assets/companies/trifast.png',
     'assets/companies/vestas.png',
 })
+allowed.update({'assets/fonts/archivo-black.ttf','assets/fonts/OFL-ArchivoBlack.txt'})
 actual={p.relative_to(source).as_posix() for p in source.rglob('*') if p.is_file()}
 extra=actual-allowed
 if extra:raise SystemExit('Unexpected public files: '+', '.join(sorted(extra)))

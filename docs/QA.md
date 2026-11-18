@@ -153,3 +153,14 @@ The user confirmed Sivanesh joined Applied Materials and asked to stop the engin
 ## 10 November 2026: placement celebration
 
 Replaced the small placement notice with a navy-and-gold celebration card, an animated entrance, a placement seal and canvas confetti. Confetti runs on arrival, stops after seven seconds and can be replayed with the button or keyboard. Reduced-motion mode disables the entrance and confetti. No external scripts or dependencies were added. Chrome at 1440px, 390px and 320px verified visible confetti, replay, no horizontal overflow and no page errors. A separate reduced-motion check verified no confetti or CSS animations; a timed check verified automatic stopping and keyboard replay. All 32 Node and 73 Python tests, dataset validation and public-only privacy build passed. Only the publishing workflow is temporarily enabled for deployment; discovery schedules and watchdog remain stopped.
+
+
+## 19 November 2026: celebration banner redesign
+
+Installed and applied pbakaus/impeccable and LottieFiles/motion-design-skill. Replaced the celebration component with locally hosted Archivo Black, a personal two-line headline, Applied Materials placement, a semiconductor-wafer SVG and a keyboard-accessible replay button. The reveal uses primary type, secondary geometry and a single ambient sweep, with confetti ending after 4.4 seconds. Reduced motion skips spatial animation; content remains visible without animation. Hidden pages, resize and page exit cancel the sequence. No new runtime dependency or remote asset requests are needed. Font provenance and SIL OFL are included.
+
+All 32 Node and 73 Python tests passed, along with validation and the public-only privacy build. Chrome at 1440, 1024, 768, 390 and 320px checked no horizontal/title overflow and zero running animations at rest. Enter on replay produced visible confetti; reduced motion had zero animations; the archive anchor and actual dark-theme switch worked without page errors. Banner body, footer and button contrast measured 6.2:1 or better.
+
+Impeccable's independent reviewer found no material banner visual or motion issue and scored its two documentation fixes resolved with a ship verdict. The detector reported only inherited archive/navigation 10px text and 4.3:1 muted contrast; those remain outside this component's scope. The context launcher initially lacked executable permission after installation; that permission was repaired and the detector ran successfully. Design records capture the banner scope and motion rules.
+
+A separate celebration-only Pages workflow builds the public allowlist and deploys static files. It has no schedule, discovery, availability checking, search API keys or recovery steps. The existing job engine, key transfer and watchdog workflows remain disabled. No job data or private workspace was changed.

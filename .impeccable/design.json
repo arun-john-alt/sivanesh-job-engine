@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T19:34:56.434009+00:00",
+  "title": "Design System: Sivanesh Job Engine \u2014 Celebration",
+  "extensions": {
+    "colorMeta": {
+      "celebration-ink": {
+        "role": "neutral",
+        "displayName": "Celebration ink",
+        "tonalRamp": [
+          "oklch(15% 0.0022 196.6)",
+          "oklch(27% 0.0047 196.6)",
+          "oklch(39% 0.0069 196.6)",
+          "oklch(51% 0.0086 196.6)",
+          "oklch(63% 0.0086 196.6)",
+          "oklch(75% 0.0069 196.6)",
+          "oklch(87% 0.0039 196.6)",
+          "oklch(95% 0.0013 196.6)"
+        ]
+      },
+      "celebration-orange": {
+        "role": "primary",
+        "displayName": "Celebration orange",
+        "tonalRamp": [
+          "oklch(15% 0.0485 35.5)",
+          "oklch(27% 0.1067 35.5)",
+          "oklch(39% 0.1551 35.5)",
+          "oklch(51% 0.1939 35.5)",
+          "oklch(63% 0.1939 35.5)",
+          "oklch(75% 0.1551 35.5)",
+          "oklch(87% 0.0873 35.5)",
+          "oklch(95% 0.0291 35.5)"
+        ]
+      },
+      "headline-orange": {
+        "role": "primary",
+        "displayName": "Headline orange",
+        "tonalRamp": [
+          "oklch(15% 0.0395 34.4)",
+          "oklch(27% 0.0868 34.4)",
+          "oklch(39% 0.1263 34.4)",
+          "oklch(51% 0.1578 34.4)",
+          "oklch(63% 0.1578 34.4)",
+          "oklch(75% 0.1263 34.4)",
+          "oklch(87% 0.0710 34.4)",
+          "oklch(95% 0.0237 34.4)"
+        ]
+      },
+      "warm-paper": {
+        "role": "neutral",
+        "displayName": "Warm paper",
+        "tonalRamp": [
+          "oklch(15% 0.0017 88.6)",
+          "oklch(27% 0.0038 88.6)",
+          "oklch(39% 0.0056 88.6)",
+          "oklch(51% 0.0070 88.6)",
+          "oklch(63% 0.0070 88.6)",
+          "oklch(75% 0.0056 88.6)",
+          "oklch(87% 0.0031 88.6)",
+          "oklch(95% 0.0010 88.6)"
+        ]
+      },
+      "footer-paper": {
+        "role": "neutral",
+        "displayName": "Footer paper",
+        "tonalRamp": [
+          "oklch(15% 0.0024 93.6)",
+          "oklch(27% 0.0053 93.6)",
+          "oklch(39% 0.0076 93.6)",
+          "oklch(51% 0.0096 93.6)",
+          "oklch(63% 0.0096 93.6)",
+          "oklch(75% 0.0076 93.6)",
+          "oklch(87% 0.0043 93.6)",
+          "oklch(95% 0.0014 93.6)"
+        ]
+      },
+      "supporting-ink": {
+        "role": "neutral",
+        "displayName": "Supporting ink",
+        "tonalRamp": [
+          "oklch(15% 0.0035 153.3)",
+          "oklch(27% 0.0077 153.3)",
+          "oklch(39% 0.0111 153.3)",
+          "oklch(51% 0.0139 153.3)",
+          "oklch(63% 0.0139 153.3)",
+          "oklch(75% 0.0111 153.3)",
+          "oklch(87% 0.0063 153.3)",
+          "oklch(95% 0.0021 153.3)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "tonalRamp": [
+          "oklch(15% 0.0024 100.0)",
+          "oklch(27% 0.0053 100.0)",
+          "oklch(39% 0.0077 100.0)",
+          "oklch(51% 0.0096 100.0)",
+          "oklch(63% 0.0096 100.0)",
+          "oklch(75% 0.0077 100.0)",
+          "oklch(87% 0.0043 100.0)",
+          "oklch(95% 0.0014 100.0)"
+        ]
+      },
+      "button-hover": {
+        "role": "neutral",
+        "displayName": "Button hover",
+        "tonalRamp": [
+          "oklch(15% 0.0044 168.3)",
+          "oklch(27% 0.0098 168.3)",
+          "oklch(39% 0.0142 168.3)",
+          "oklch(51% 0.0177 168.3)",
+          "oklch(63% 0.0177 168.3)",
+          "oklch(75% 0.0142 168.3)",
+          "oklch(87% 0.0080 168.3)",
+          "oklch(95% 0.0027 168.3)"
+        ]
+      },
+      "button-label": {
+        "role": "neutral",
+        "displayName": "Button label",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.9)",
+          "oklch(27% 0.0000 89.9)",
+          "oklch(39% 0.0000 89.9)",
+          "oklch(51% 0.0000 89.9)",
+          "oklch(63% 0.0000 89.9)",
+          "oklch(75% 0.0000 89.9)",
+          "oklch(87% 0.0000 89.9)",
+          "oklch(95% 0.0000 89.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Congratulations",
+        "purpose": "Two-line headline inside the celebration only."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "entrance",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Headline 600ms; wafer 800ms; arrow 500ms; sweep 1800ms; employer 450ms. Finite sequence; reduced motion skips it."
+      },
+      {
+        "name": "control-transition",
+        "value": "120ms ease-out",
+        "purpose": "Replay background and transform; disabled for reduced motion."
+      },
+      {
+        "name": "confetti-end",
+        "value": "4400ms",
+        "purpose": "Canvas clears and all tracked animations cancel."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile",
+        "value": "700px"
+      },
+      {
+        "name": "narrow-mobile",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Celebration banner",
+      "kind": "custom",
+      "refersTo": "celebration-banner",
+      "description": "Static announcement with original SVG and archive handoff. Font preview requires the shipped local /assets/fonts/archivo-black.ttf asset to be served at its source path. Runtime confetti is not executed.",
+      "html": "<section class=\"ds-banner\"><div class=\"ds-content\"><div><h1 class=\"ds-title\"><span>Sivanesh.</span><span>You're hired.</span></h1><p class=\"ds-copy\">The next chapter looks good on you.</p><div class=\"ds-destination\"><span>Congratulations on joining</span><strong>Applied Materials</strong></div><button class=\"ds-replay\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M5 8a8 8 0 1 1-1 7M5 3v5h5\"/></svg>One more celebration</button></div><div class=\"ds-art\" aria-hidden=\"true\"><svg class=\"ds-wafer\" viewBox=\"0 0 320 320\" fill=\"none\">\n          <defs><pattern id=\"ds-wafer-dies\" width=\"24\" height=\"24\" patternUnits=\"userSpaceOnUse\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" fill=\"#faf8f3\" stroke=\"#252a2a\" stroke-width=\".6\"/></pattern><clipPath id=\"ds-wafer-edge\"><path d=\"M160 20a140 140 0 0 1 12 279l-12-12-12 12A140 140 0 0 1 160 20Z\"/></clipPath></defs>\n          <circle class=\"ds-wafer-halo\" cx=\"160\" cy=\"160\" r=\"157\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"2 9\"/>\n          <g class=\"ds-wafer-body\"><path d=\"M160 20a140 140 0 0 1 12 279l-12-12-12 12A140 140 0 0 1 160 20Z\" fill=\"url(#ds-wafer-dies)\" stroke=\"#252a2a\" stroke-width=\"1.2\"/><g clip-path=\"url(#ds-wafer-edge)\"><path class=\"ds-wafer-sweep\" d=\"M-40 220 220-40\" stroke=\"#ec552d\" stroke-width=\"64\" opacity=\".18\"/></g></g>\n          <g class=\"ds-arrow\"><circle cx=\"231\" cy=\"86\" r=\"62\" fill=\"#ec552d\"/><path d=\"M206 111 254 63m-43 0h43v43\" stroke=\"#202626\" stroke-width=\"8\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/></g>\n        </svg><span class=\"ds-caption\">A well-earned next move.</span></div></div><div class=\"ds-footer\"><span>Here's to what comes next.</span><a class=\"ds-archive\" href=\"#archive-start\">Explore the archive <svg viewBox=\"0 0 20 20\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a></div></section>",
+      "css": "@font-face{font-family:\"Archivo Black\";src:url(\"/assets/fonts/archivo-black.ttf\") format(\"truetype\");font-style:normal;font-weight:400;font-display:swap}.ds-banner{--celebration-ink:#202626;--celebration-orange:#ec552d;position:relative;isolation:isolate;overflow:hidden;margin:24px 0 12px;background:#faf8f3;color:var(--celebration-ink);border:1px solid #d3d2cb;border-radius:16px;font:14px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-content{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(200px,1fr);gap:24px;align-items:center;padding:52px 44px 44px}.ds-title{font-family:\"Archivo Black\",sans-serif;font-weight:400;font-size:clamp(42px,5.5vw,88px);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px;text-wrap:balance}.ds-title span{display:block;white-space:nowrap}.ds-title span:last-child{color:#a93418}.ds-copy{font-size:16px;line-height:1.5;margin:0 0 34px;color:#515953}.ds-destination{display:flex;flex-direction:column;gap:7px;margin:0 0 30px}.ds-destination>span{font-size:13px;line-height:1.5;color:#515953}.ds-destination>strong{font-size:clamp(26px,2.5vw,36px);line-height:1.15;letter-spacing:-.025em;font-weight:650}.ds-art{position:relative;text-align:center;color:#9b4d35;min-width:0}.ds-wafer{display:block;width:100%;max-width:320px;margin:auto;overflow:visible}.ds-caption{display:block;font-size:12px;color:#515953;margin-top:24px}.ds-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 44px;background:#f0eee7;border-top:1px solid #d3d2cb;font-size:12px;color:#515953}@media(max-width:1100px){.ds-content{padding:40px 30px;grid-template-columns:minmax(0,1.7fr) minmax(145px,1fr);gap:18px}.ds-title{font-size:clamp(38px,5.2vw,64px)}.ds-footer{padding-inline:30px}}@media(max-width:700px){.ds-content{display:block;position:relative;padding:32px 24px}.ds-title{font-size:clamp(34px,8.5vw,56px);line-height:1.08;margin-bottom:18px}.ds-copy{font-size:14px;max-width:27ch;margin-bottom:32px}.ds-destination{max-width:65%;margin-bottom:28px;min-height:72px}.ds-destination>span{font-size:12px}.ds-destination>strong{font-size:24px}.ds-art{position:absolute;right:15px;bottom:92px;width:116px;pointer-events:none}.ds-caption{display:none}.ds-footer{padding:15px 24px;align-items:flex-start;gap:6px;flex-direction:column}.ds-replay{font-size:12px}.ds-banner{margin-top:18px}}@media(max-width:380px){.ds-content{padding:28px 20px}.ds-title{font-size:32px}.ds-art{width:90px;right:12px;bottom:100px}.ds-destination{max-width:67%}.ds-destination>strong{font-size:23px}.ds-footer{padding-inline:20px}}.ds-replay{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 18px;background:var(--celebration-ink,#202626);color:#fff;border:1px solid var(--celebration-ink,#202626);border-radius:6px;font:600 13px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;cursor:pointer;transition:background 120ms ease-out,transform 120ms ease-out}.ds-replay:hover{background:#394540;transform:translateY(-2px)}.ds-replay:active{transform:translateY(0) scale(.98)}.ds-replay:focus-visible{outline:3px solid #a93418;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-replay{transition:none}.ds-replay:hover,.ds-replay:active{transform:none}}.ds-archive{display:inline-flex;align-items:center;gap:8px;color:var(--celebration-ink,#202626);text-decoration:none;min-height:32px;font:12px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-archive:hover{text-decoration:underline}.ds-archive:focus-visible{outline:3px solid #a93418;outline-offset:5px}@media(max-width:700px){.ds-archive{min-height:36px}}"
+    },
+    {
+      "name": "Replay",
+      "kind": "button",
+      "refersTo": "replay",
+      "description": "Native keyboard-accessible replay control; preview demonstrates styles only.",
+      "html": "<button class=\"ds-replay\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M5 8a8 8 0 1 1-1 7M5 3v5h5\"/></svg>One more celebration</button>",
+      "css": ".ds-replay{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 18px;background:var(--celebration-ink,#202626);color:#fff;border:1px solid var(--celebration-ink,#202626);border-radius:6px;font:600 13px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;cursor:pointer;transition:background 120ms ease-out,transform 120ms ease-out}.ds-replay:hover{background:#394540;transform:translateY(-2px)}.ds-replay:active{transform:translateY(0) scale(.98)}.ds-replay:focus-visible{outline:3px solid #a93418;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-replay{transition:none}.ds-replay:hover,.ds-replay:active{transform:none}}"
+    },
+    {
+      "name": "Archive handoff",
+      "kind": "custom",
+      "refersTo": "archive-link",
+      "description": "Footer navigation to the preserved archive; preview destination requires its host page.",
+      "html": "<a class=\"ds-archive\" href=\"#archive-start\">Explore the archive <svg viewBox=\"0 0 20 20\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a>",
+      "css": ".ds-archive{display:inline-flex;align-items:center;gap:8px;color:var(--celebration-ink,#202626);text-decoration:none;min-height:32px;font:12px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-archive:hover{text-decoration:underline}.ds-archive:focus-visible{outline:3px solid #a93418;outline-offset:5px}@media(max-width:700px){.ds-archive{min-height:36px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A well-earned next move",
+    "overview": "A warm, personal placement announcement inside the existing job archive. The congratulations and employer carry the message; an original wafer diagram and rising arrow connect the moment to semiconductor work. This document governs the celebration component only. The archive retains its existing purple accent, navigation, cards, typography and theme behavior.\n\nThe north star uses the shipped illustration caption. It describes this component, not a replacement identity for the archive. Source authority is `site/styles.css`, `site/index.html` and `site/celebration.js`; product and direction context live in `PRODUCT.md` and `docs/design/celebration.md`.",
+    "keyCharacteristics": [
+      "Warm paper, dark ink and two distinct orange roles.",
+      "Archivo Black for the two-line congratulations; inherited system type for supporting text.",
+      "Flat surfaces, precise SVG geometry and a finite celebration that settles into stillness."
+    ],
+    "rules": [
+      {
+        "name": "The Component Boundary Rule",
+        "body": "These colors govern the celebration only; the archive keeps its incumbent identity.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do preserve the archive identity outside the celebration component.",
+      "Do keep the name, placement and replay control legible without JavaScript.",
+      "Do use burnt orange for the headline emphasis and bright orange for geometry.",
+      "Do honor reduced motion and stop active motion when the page is hidden, resized or exited."
+    ],
+    "donts": [
+      "Don't apply the banner palette or Archivo Black to archive screens.",
+      "Don't treat the original wafer illustration as an Applied Materials logo.",
+      "Don't make animation necessary to understand the announcement."
+    ]
+  }
+}
