@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-18T19:44:38.536785+00:00",
+  "generatedAt": "2026-11-18T19:57:32.119760+00:00",
   "title": "Design System: Sivanesh Job Engine Celebration",
   "extensions": {
     "colorMeta": {
@@ -44,20 +44,6 @@
           "oklch(75% 0.1106 93.9)",
           "oklch(87% 0.0622 93.9)",
           "oklch(95% 0.0207 93.9)"
-        ]
-      },
-      "footer-yellow": {
-        "role": "primary",
-        "displayName": "Footer yellow",
-        "tonalRamp": [
-          "oklch(15% 0.0359 90.2)",
-          "oklch(27% 0.0789 90.2)",
-          "oklch(39% 0.1148 90.2)",
-          "oklch(51% 0.1435 90.2)",
-          "oklch(63% 0.1435 90.2)",
-          "oklch(75% 0.1148 90.2)",
-          "oklch(87% 0.0646 90.2)",
-          "oklch(95% 0.0215 90.2)"
         ]
       },
       "party-blue": {
@@ -115,20 +101,6 @@
           "oklch(87% 0.0444 48.6)",
           "oklch(95% 0.0148 48.6)"
         ]
-      },
-      "button-hover": {
-        "role": "primary",
-        "displayName": "Replay hover",
-        "tonalRamp": [
-          "oklch(15% 0.0338 14.8)",
-          "oklch(27% 0.0744 14.8)",
-          "oklch(39% 0.1083 14.8)",
-          "oklch(51% 0.1354 14.8)",
-          "oklch(63% 0.1354 14.8)",
-          "oklch(75% 0.1083 14.8)",
-          "oklch(87% 0.0609 14.8)",
-          "oklch(95% 0.0203 14.8)"
-        ]
       }
     },
     "typographyMeta": {
@@ -140,19 +112,24 @@
     "shadows": [],
     "motion": [
       {
-        "name": "entrance",
-        "value": "cubic-bezier(.16,1,.3,1)",
-        "purpose": "Headline 650/800ms, flags 700ms, balloons 1800ms, employer 500ms; reduced motion skips the sequence."
+        "name": "balloon-loop",
+        "value": "2400ms + 330ms per index; alternate infinite ease-in-out",
+        "purpose": "Automatic 5px to -9px bob and -3deg to 3deg rotation."
       },
       {
-        "name": "control-transition",
-        "value": "120ms ease-out",
-        "purpose": "Replay background and transform; disabled for reduced motion."
+        "name": "flag-loop",
+        "value": "1900ms + 180ms per index; alternate infinite ease-in-out",
+        "purpose": "Automatic -2.5deg to 2.5deg sway."
       },
       {
-        "name": "confetti-end",
-        "value": "4800ms",
-        "purpose": "Canvas clears and tracked animations cancel."
+        "name": "paper-loop",
+        "value": "2700ms + 220ms per index; alternate infinite ease-in-out",
+        "purpose": "Static SVG paper drifts -3px to 5px and rotates -1deg to 1deg."
+      },
+      {
+        "name": "confetti-loop",
+        "value": "32-76px/s; 55 particles below 600px, otherwise 105; DPR cap 2",
+        "purpose": "Continuous recirculating canvas paper with text exclusion; reduced motion clears it. Hidden and offscreen states pause all motion."
       }
     ],
     "breakpoints": [
@@ -170,8 +147,8 @@
       }
     ],
     "review": {
-      "status": "ship",
-      "scope": "Fresh review of all five settled widths, dark/reduced/no-JS states and in-motion still; source and supplied browser results. Deployment tracked separately."
+      "status": "approved",
+      "scope": "Fresh motion reviewer approved normal and reduced-motion seven-frame filmstrips, five viewport widths and reduced-motion screenshots. Browser sampling: 15 running loops after 7.5s, zero offscreen, 15 resumed, zero reduced; canvas pixels followed active/still states; no browser errors. Motion-capture CLI failed the pre-interaction rest gate for normal and reduced captures; matched Playwright sampling used unchanged source. Frame-rate smoothness is not established. Deployment verification tracked separately."
     }
   },
   "components": [
@@ -179,34 +156,19 @@
       "name": "Celebration banner",
       "kind": "custom",
       "refersTo": "celebration-banner",
-      "description": "Static yellow party poster with actual inline SVG decorations. Font preview requires /assets/fonts/archivo-black.ttf. Runtime confetti does not execute.",
-      "html": "<section class=\"ds-placement-banner\" aria-labelledby=\"ds-placement-title\">\n    \n    <div class=\"ds-party-decoration\" aria-hidden=\"true\">\n      <svg class=\"ds-party-flags\" viewBox=\"0 0 1200 160\" preserveAspectRatio=\"xMidYMin slice\" fill=\"none\"><path d=\"M-20 10Q260 210 550 0M650 0Q940 210 1220 10\" stroke=\"#8a4b27\" stroke-width=\"2\"/><g fill=\"#ad2d41\"><path d=\"m38 45 45 23-43 35Z\"/><path d=\"m1015 75 47-16-10 59Z\"/></g><g fill=\"#2852a8\"><path d=\"m130 85 48 14-37 45Z\"/><path d=\"m1110 39 44-25 3 59Z\"/></g><g fill=\"#fff8e5\"><path d=\"m230 107 50-2-23 53Z\"/><path d=\"m809 79 45 23-43 35Z\"/></g><g fill=\"#e98295\"><path d=\"m335 86 45-21-3 58Z\"/><path d=\"m913 102 50-2-23 53Z\"/></g><g fill=\"#ad2d41\"><path d=\"m429 42 41-28 5 58Z\"/><path d=\"m726 29 39 31-53 21Z\"/></g></svg>\n      <svg class=\"ds-party-balloons ds-balloons-left\" viewBox=\"0 0 230 390\" fill=\"none\"><g class=\"ds-balloon ds-balloon-back\"><path d=\"M146 157c-36 41 27 59 0 99s22 75 3 124\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"148\" cy=\"96\" rx=\"57\" ry=\"69\" transform=\"rotate(16 148 96)\" fill=\"#2852a8\"/><path d=\"m143 162 9 2-6-13Z\" fill=\"#2852a8\"/><path d=\"M121 49c-12 7-19 19-21 30\" stroke=\"#fff8e5\" stroke-opacity=\".6\" stroke-width=\"6\" stroke-linecap=\"round\"/></g><g class=\"ds-balloon ds-balloon-front\"><path d=\"M69 221c31 33-16 45 4 78s-12 46 1 83\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"64\" cy=\"148\" rx=\"60\" ry=\"76\" transform=\"rotate(-15 64 148)\" fill=\"#ad2d41\"/><path d=\"m65 223 11-1-8-12Z\" fill=\"#ad2d41\"/><path d=\"M38 99c-12 10-17 24-16 35\" stroke=\"#fff8e5\" stroke-opacity=\".65\" stroke-width=\"6\" stroke-linecap=\"round\"/></g></svg>\n      <svg class=\"ds-party-balloons ds-balloons-right\" viewBox=\"0 0 230 390\" fill=\"none\"><g class=\"ds-balloon ds-balloon-back\"><path d=\"M72 168c-30 37 27 64 0 99s20 68 1 111\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"73\" cy=\"99\" rx=\"57\" ry=\"71\" transform=\"rotate(-15 73 99)\" fill=\"#e98295\"/><path d=\"m68 170 11-1-7-13Z\" fill=\"#e98295\"/><path d=\"M46 52c-12 9-18 21-18 32\" stroke=\"#fff8e5\" stroke-opacity=\".75\" stroke-width=\"6\" stroke-linecap=\"round\"/></g><g class=\"ds-balloon ds-balloon-front\"><path d=\"M166 236c-32 39 19 47-3 79s11 45-1 67\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"168\" cy=\"160\" rx=\"59\" ry=\"76\" transform=\"rotate(15 168 160)\" fill=\"#2852a8\"/><path d=\"m159 236 12 2-4-14Z\" fill=\"#2852a8\"/><path d=\"M143 110c-12 8-18 20-19 32\" stroke=\"#fff8e5\" stroke-opacity=\".6\" stroke-width=\"6\" stroke-linecap=\"round\"/></g></svg>\n      <svg class=\"ds-party-sprinkles\" viewBox=\"0 0 1200 650\" preserveAspectRatio=\"none\" fill=\"none\"><g stroke=\"#ad2d41\" stroke-width=\"7\"><path d=\"m210 226 13 19m811 108 14 18M353 554l-14 13M904 189l11-17M99 471l17 7\"/></g><g stroke=\"#2852a8\" stroke-width=\"7\"><path d=\"m303 185-8 22m685 356 18 10M1005 254l18-7M176 562l9-19M1110 505l-19 9\"/></g><g stroke=\"#fff8e5\" stroke-width=\"8\"><path d=\"m243 437 11 21m680-35 17-10M421 130l5 19M763 559l6 17\"/></g><g fill=\"#ad2d41\"><circle cx=\"276\" cy=\"332\" r=\"5\"/><circle cx=\"1041\" cy=\"548\" r=\"5\"/></g><g fill=\"#2852a8\"><circle cx=\"400\" cy=\"586\" r=\"5\"/><circle cx=\"845\" cy=\"151\" r=\"5\"/></g><g stroke=\"#ad2d41\" stroke-width=\"3\"><path d=\"m279 501 7-18 6 18 18 6-18 6-6 18-7-18-18-6Z\"/><path d=\"m983 158 5-13 5 13 13 5-13 5-5 13-5-13-13-5Z\"/></g></svg>\n    </div>\n    <div class=\"ds-placement-content\">\n      <div class=\"ds-placement-copy\">\n        <h1 id=\"ds-placement-title\"><span>You did it,</span><span>Sivanesh!</span></h1>\n        <div class=\"ds-placement-destination\"><span>Congratulations on joining</span><strong>Applied Materials</strong></div>\n        <p class=\"ds-placement-congrats\">Here's to you and your next big chapter.</p>\n        <button class=\"ds-celebrate-button\" id=\"ds-celebrate-again\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"m4 20 4-12 8 8-12 4Zm7-14 2-3m3 6 5-1m-4 5 3 2M9 4 7 2m11 3 2-3\"/></svg>Celebrate again</button>\n      </div>\n    </div>\n    <div class=\"ds-placement-footer\"><span>A new job. A very good reason to celebrate.</span><a href=\"#archive-start\">View the job-search archive <svg viewBox=\"0 0 20 20\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a></div>\n    <p id=\"celebration-status\" class=\"ds-sr-only\" role=\"status\"></p>\n  </section>",
-      "css": "@font-face{font-family:\"Archivo Black\";src:url(\"/assets/fonts/archivo-black.ttf\") format(\"truetype\");font-style:normal;font-weight:400;font-display:swap}\n.ds-placement-banner{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;line-height:1.6}.ds-placement-banner button{font-family:inherit}\n\n.ds-placement-banner{--celebration-ink:#632731;--celebration-red:#ad2d41;position:relative;isolation:isolate;overflow:hidden;margin:24px 0 12px;background:#ffdf6c;color:var(--celebration-ink);border:0;border-radius:16px}\n.ds-placement-content{position:relative;display:grid;place-items:center;min-height:640px;padding:130px 24px 52px}\n.ds-placement-copy{position:relative;z-index:2;min-width:0;text-align:center;max-width:660px}\n.ds-placement-banner h1{font-family:\"Archivo Black\",sans-serif;font-weight:400;font-size:clamp(48px,6.2vw,88px);line-height:1.08;letter-spacing:-.035em;margin:0 0 30px;text-wrap:balance}\n.ds-placement-banner h1 span{display:block;white-space:nowrap}\n.ds-placement-banner h1 span:last-child{color:var(--celebration-red)}\n.ds-placement-destination{display:flex;flex-direction:column;gap:8px;margin:0 0 20px}\n.ds-placement-destination>span{font-size:15px;line-height:1.5}\n.ds-placement-destination>strong{font-size:clamp(28px,3vw,38px);line-height:1.2;letter-spacing:-.025em;font-weight:750;text-decoration:underline;text-decoration-color:#fff8e5;text-decoration-thickness:9px;text-underline-offset:3px;text-decoration-skip-ink:none}\n.ds-placement-congrats{font-size:15px;line-height:1.6;margin:0 0 28px}\n.ds-celebrate-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;background:var(--celebration-red);color:#fff8e5;border:0;border-radius:8px;font-size:14px;font-weight:650;transition:background 120ms ease-out,transform 120ms ease-out;cursor:pointer}\n.ds-celebrate-button:hover{background:#862134;transform:translateY(-2px)}\n.ds-celebrate-button:active{transform:translateY(0) scale(.97)}\n.ds-placement-banner :focus-visible{outline:3px solid #2852a8;outline-offset:5px}\n.ds-party-decoration{position:absolute;inset:0;pointer-events:none}\n.ds-party-flags{position:absolute;top:0;left:0;width:100%;height:160px}\n.ds-party-balloons{position:absolute;width:clamp(135px,18vw,220px);top:175px;overflow:visible}\n.ds-balloons-left{left:18px;transform:rotate(-8deg)}\n.ds-balloons-right{right:18px;transform:rotate(8deg)}\n.ds-balloon{transform-origin:center;transform-box:fill-box}\n.ds-party-sprinkles{position:absolute;inset:0;width:100%;height:100%}\n.ds-placement-footer{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 28px;background:#fbd25a;font-size:12px;color:var(--celebration-ink)}\n.ds-placement-footer a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:underline;text-underline-offset:4px;min-height:32px}\n.ds-placement-footer a:hover{text-decoration-thickness:2px}\n.ds-placement-banner ::selection{background:#632731;color:#fff8e5}\n#placement-confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}\n.ds-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}\n@media(min-width:901px) and (max-width:1200px){.ds-party-balloons{width:145px;top:230px}.ds-balloons-left{left:-34px}.ds-balloons-right{right:-34px}.ds-placement-banner h1{font-size:64px}.ds-placement-content{min-height:650px;padding-inline:74px}}\n@media(max-width:700px){.ds-placement-banner{margin-top:18px}.ds-placement-content{min-height:560px;padding:172px 18px 42px;align-items:start}.ds-placement-banner h1{font-size:clamp(38px,10vw,58px);line-height:1.12;margin-bottom:26px}.ds-placement-destination{gap:8px;margin-bottom:18px}.ds-placement-destination>span{font-size:13px}.ds-placement-destination>strong{font-size:27px;text-decoration-thickness:7px}.ds-placement-congrats{font-size:13px;margin-bottom:24px}.ds-party-flags{height:110px;width:190%;left:-45%}.ds-party-balloons{width:80px;top:52px}.ds-balloons-left{left:5px;transform:rotate(-14deg)}.ds-balloons-right{right:5px;transform:rotate(14deg)}.ds-party-sprinkles{opacity:.8}.ds-placement-copy{width:100%}.ds-placement-footer{padding:15px 20px;align-items:center;text-align:center;gap:5px;flex-direction:column}.ds-placement-footer>a{min-height:40px}.ds-celebrate-button{min-height:50px}}\n@media(max-width:380px){.ds-placement-banner h1{font-size:35px}.ds-placement-content{padding-inline:14px;min-height:550px}.ds-placement-destination>strong{font-size:24px}.ds-placement-congrats{max-width:25ch;margin-inline:auto}.ds-party-balloons{width:70px}}\n@media(prefers-reduced-motion:reduce){.ds-celebrate-button{transition:none}.ds-celebrate-button:hover,.ds-celebrate-button:active{transform:none}}\n"
-    },
-    {
-      "name": "Replay button",
-      "kind": "button",
-      "refersTo": "replay",
-      "description": "Native replay control with hover, active and keyboard focus states.",
-      "html": "<div class=\"ds-control\"><button class=\"ds-celebrate-button\" id=\"ds-celebrate-again\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"m4 20 4-12 8 8-12 4Zm7-14 2-3m3 6 5-1m-4 5 3 2M9 4 7 2m11 3 2-3\"/></svg>Celebrate again</button></div>",
-      "css": ".ds-control{--celebration-ink:#632731;--celebration-red:#ad2d41;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;line-height:1.6}.ds-control button{font-family:inherit}.ds-control :focus-visible{outline:3px solid #2852a8;outline-offset:5px}.ds-celebrate-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;background:var(--celebration-red);color:#fff8e5;border:0;border-radius:8px;font-size:14px;font-weight:650;transition:background 120ms ease-out,transform 120ms ease-out;cursor:pointer}.ds-celebrate-button:hover{background:#862134;transform:translateY(-2px)}.ds-celebrate-button:active{transform:translateY(0) scale(.97)}@media(prefers-reduced-motion:reduce){.ds-celebrate-button{transition:none}.ds-celebrate-button:hover,.ds-celebrate-button:active{transform:none}}"
-    },
-    {
-      "name": "Archive handoff",
-      "kind": "custom",
-      "refersTo": "archive-link",
-      "description": "Yellow footer with underlined archive link and inline arrow.",
-      "html": "<div class=\"ds-control\"><div class=\"ds-placement-footer\"><span>A new job. A very good reason to celebrate.</span><a href=\"#archive-start\">View the job-search archive <svg viewBox=\"0 0 20 20\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a></div></div>",
-      "css": ".ds-control{--celebration-ink:#632731;--celebration-red:#ad2d41;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;line-height:1.6}.ds-control button{font-family:inherit}.ds-control :focus-visible{outline:3px solid #2852a8;outline-offset:5px}.ds-placement-footer{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 28px;background:#fbd25a;font-size:12px;color:var(--celebration-ink)}.ds-placement-footer a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:underline;text-underline-offset:4px;min-height:32px}.ds-placement-footer a:hover{text-decoration-thickness:2px}@media(max-width:700px){.ds-placement-footer{padding:15px 20px;text-align:center;gap:5px;flex-direction:column}.ds-placement-footer>a{min-height:40px}}"
+      "description": "Current title-and-employer party poster with actual inline SVG decoration and empty canvas. Font preview requires /assets/fonts/archivo-black.ttf. Static preview; continuous motion runs in celebration.js.",
+      "html": "<section class=\"ds-placement-banner\" aria-labelledby=\"ds-placement-title\">\n    <canvas id=\"ds-placement-confetti\" aria-hidden=\"true\"></canvas>\n    <div class=\"ds-party-decoration\" aria-hidden=\"true\">\n      <svg class=\"ds-party-flags\" viewBox=\"0 0 1200 160\" preserveAspectRatio=\"xMidYMin slice\" fill=\"none\"><path d=\"M-20 10Q260 210 550 0M650 0Q940 210 1220 10\" stroke=\"#8a4b27\" stroke-width=\"2\"/><g fill=\"#ad2d41\"><path d=\"m38 45 45 23-43 35Z\"/><path d=\"m1015 75 47-16-10 59Z\"/></g><g fill=\"#2852a8\"><path d=\"m130 85 48 14-37 45Z\"/><path d=\"m1110 39 44-25 3 59Z\"/></g><g fill=\"#fff8e5\"><path d=\"m230 107 50-2-23 53Z\"/><path d=\"m809 79 45 23-43 35Z\"/></g><g fill=\"#e98295\"><path d=\"m335 86 45-21-3 58Z\"/><path d=\"m913 102 50-2-23 53Z\"/></g><g fill=\"#ad2d41\"><path d=\"m429 42 41-28 5 58Z\"/><path d=\"m726 29 39 31-53 21Z\"/></g></svg>\n      <svg class=\"ds-party-balloons ds-balloons-left\" viewBox=\"0 0 230 390\" fill=\"none\"><g class=\"ds-balloon ds-balloon-back\"><path d=\"M146 157c-36 41 27 59 0 99s22 75 3 124\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"148\" cy=\"96\" rx=\"57\" ry=\"69\" transform=\"rotate(16 148 96)\" fill=\"#2852a8\"/><path d=\"m143 162 9 2-6-13Z\" fill=\"#2852a8\"/><path d=\"M121 49c-12 7-19 19-21 30\" stroke=\"#fff8e5\" stroke-opacity=\".6\" stroke-width=\"6\" stroke-linecap=\"round\"/></g><g class=\"ds-balloon ds-balloon-front\"><path d=\"M69 221c31 33-16 45 4 78s-12 46 1 83\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"64\" cy=\"148\" rx=\"60\" ry=\"76\" transform=\"rotate(-15 64 148)\" fill=\"#ad2d41\"/><path d=\"m65 223 11-1-8-12Z\" fill=\"#ad2d41\"/><path d=\"M38 99c-12 10-17 24-16 35\" stroke=\"#fff8e5\" stroke-opacity=\".65\" stroke-width=\"6\" stroke-linecap=\"round\"/></g></svg>\n      <svg class=\"ds-party-balloons ds-balloons-right\" viewBox=\"0 0 230 390\" fill=\"none\"><g class=\"ds-balloon ds-balloon-back\"><path d=\"M72 168c-30 37 27 64 0 99s20 68 1 111\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"73\" cy=\"99\" rx=\"57\" ry=\"71\" transform=\"rotate(-15 73 99)\" fill=\"#e98295\"/><path d=\"m68 170 11-1-7-13Z\" fill=\"#e98295\"/><path d=\"M46 52c-12 9-18 21-18 32\" stroke=\"#fff8e5\" stroke-opacity=\".75\" stroke-width=\"6\" stroke-linecap=\"round\"/></g><g class=\"ds-balloon ds-balloon-front\"><path d=\"M166 236c-32 39 19 47-3 79s11 45-1 67\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"168\" cy=\"160\" rx=\"59\" ry=\"76\" transform=\"rotate(15 168 160)\" fill=\"#2852a8\"/><path d=\"m159 236 12 2-4-14Z\" fill=\"#2852a8\"/><path d=\"M143 110c-12 8-18 20-19 32\" stroke=\"#fff8e5\" stroke-opacity=\".6\" stroke-width=\"6\" stroke-linecap=\"round\"/></g></svg>\n      <svg class=\"ds-party-sprinkles\" viewBox=\"0 0 1200 650\" preserveAspectRatio=\"none\" fill=\"none\"><g stroke=\"#ad2d41\" stroke-width=\"7\"><path d=\"m210 226 13 19m811 108 14 18M353 554l-14 13M904 189l11-17M99 471l17 7\"/></g><g stroke=\"#2852a8\" stroke-width=\"7\"><path d=\"m303 185-8 22m685 356 18 10M1005 254l18-7M176 562l9-19M1110 505l-19 9\"/></g><g stroke=\"#fff8e5\" stroke-width=\"8\"><path d=\"m243 437 11 21m680-35 17-10M421 130l5 19M763 559l6 17\"/></g><g fill=\"#ad2d41\"><circle cx=\"276\" cy=\"332\" r=\"5\"/><circle cx=\"1041\" cy=\"548\" r=\"5\"/></g><g fill=\"#2852a8\"><circle cx=\"400\" cy=\"586\" r=\"5\"/><circle cx=\"845\" cy=\"151\" r=\"5\"/></g><g stroke=\"#ad2d41\" stroke-width=\"3\"><path d=\"m279 501 7-18 6 18 18 6-18 6-6 18-7-18-18-6Z\"/><path d=\"m983 158 5-13 5 13 13 5-13 5-5 13-5-13-13-5Z\"/></g></svg>\n    </div>\n    <div class=\"ds-placement-content\">\n      <div class=\"ds-placement-copy\">\n        <h1 id=\"ds-placement-title\"><span>You did it,</span><span>Sivanesh!</span></h1>\n        <div class=\"ds-placement-destination\"><strong>Applied Materials</strong></div>\n      </div>\n    </div>\n  </section>",
+      "css": ".ds-placement-banner{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;line-height:1.6}\n@font-face{font-family:\"Archivo Black\";src:url(\"/assets/fonts/archivo-black.ttf\") format(\"truetype\");font-style:normal;font-weight:400;font-display:swap}\n/* The placement celebration is separate from the archived search UI. */\n.ds-placement-banner{--celebration-ink:#632731;--celebration-red:#ad2d41;position:relative;isolation:isolate;overflow:hidden;margin:24px 0 12px;background:#ffdf6c;color:var(--celebration-ink);border:0;border-radius:16px}\n.ds-placement-content{position:relative;display:grid;place-items:center;min-height:560px;padding:130px 24px 80px}\n.ds-placement-copy{position:relative;z-index:2;min-width:0;text-align:center;max-width:660px}\n.ds-placement-banner h1{font-family:\"Archivo Black\",sans-serif;font-weight:400;font-size:clamp(48px,6.2vw,88px);line-height:1.08;letter-spacing:-.035em;margin:0 0 30px;text-wrap:balance}\n.ds-placement-banner h1 span{display:block;white-space:nowrap}\n.ds-placement-banner h1 span:last-child{color:var(--celebration-red)}\n.ds-placement-destination{display:flex;flex-direction:column;gap:8px;margin:0}\n.ds-placement-destination>strong{font-size:clamp(28px,3vw,38px);line-height:1.2;letter-spacing:-.025em;font-weight:750;text-decoration:underline;text-decoration-color:#fff8e5;text-decoration-thickness:9px;text-underline-offset:3px;text-decoration-skip-ink:none}\n.ds-placement-banner :focus-visible{outline:3px solid #2852a8;outline-offset:5px}\n.ds-party-decoration{position:absolute;inset:0;pointer-events:none}\n.ds-party-flags{position:absolute;top:0;left:0;width:100%;height:160px}\n.ds-party-balloons{position:absolute;width:clamp(135px,18vw,220px);top:175px;overflow:visible}\n.ds-balloons-left{left:18px;transform:rotate(-8deg)}\n.ds-balloons-right{right:18px;transform:rotate(8deg)}\n.ds-balloon{transform-origin:center;transform-box:fill-box}\n.ds-party-flags g{transform-origin:50% 0;transform-box:fill-box}\n.ds-party-sprinkles g{transform-origin:center;transform-box:fill-box}\n.ds-party-sprinkles{position:absolute;inset:0;width:100%;height:100%}\n.ds-placement-banner ::selection{background:#632731;color:#fff8e5}\n#ds-placement-confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}\n.ds-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}\n@media(min-width:901px) and (max-width:1200px){.ds-party-balloons{width:145px;top:230px}.ds-balloons-left{left:-34px}.ds-balloons-right{right:-34px}.ds-placement-banner h1{font-size:64px}.ds-placement-content{min-height:560px;padding-inline:74px}}\n@media(max-width:700px){.ds-placement-banner{margin-top:18px}.ds-placement-content{min-height:430px;padding:172px 18px 64px;align-items:start}.ds-placement-banner h1{font-size:clamp(38px,10vw,58px);line-height:1.12;margin-bottom:26px}.ds-placement-destination{margin:0}.ds-placement-destination>strong{font-size:27px;text-decoration-thickness:7px}.ds-party-flags{height:110px;width:190%;left:-45%}.ds-party-balloons{width:80px;top:52px}.ds-balloons-left{left:5px;transform:rotate(-14deg)}.ds-balloons-right{right:5px;transform:rotate(14deg)}.ds-party-sprinkles{opacity:.8}.ds-placement-copy{width:100%}}\n@media(max-width:380px){.ds-placement-banner h1{font-size:35px}.ds-placement-content{padding-inline:14px;min-height:420px}.ds-placement-destination>strong{font-size:24px}.ds-party-balloons{width:70px}}\n"
     }
   ],
   "narrative": {
     "northStar": "A party for Sivanesh",
-    "overview": "A bright yellow party poster celebrates Sivanesh joining Applied Materials. Burgundy lettering, red emphasis, balloon clusters, hanging flags and scattered paper make the scene celebratory after the animation stops. The user's feedback rejects a restrained career-announcement treatment for this banner.\n\nThis document governs the celebration component only. The archive retains its purple accent, navigation, cards, typography and theme behavior. Source authority is `site/styles.css`, `site/index.html` and `site/celebration.js`; product and direction context live in `PRODUCT.md` and `docs/design/celebration.md`. The fresh desktop/mobile render review returned a ship verdict. Deployment is tracked by the separate celebration-only Pages workflow.",
+    "overview": "A bright yellow party poster celebrates Sivanesh joining Applied Materials. Burgundy lettering, red emphasis, balloon clusters, hanging flags and scattered paper surround a still announcement. Falling confetti and swaying decorations continue automatically while the banner is visible.\n\nThis document governs the celebration component only. The archive retains its purple accent, navigation, cards, typography and theme behavior. Source authority is `site/styles.css`, `site/index.html` and `site/celebration.js`; direction context lives in `docs/design/celebration.md`. Fresh motion review approved the continuous-motion revision using normal and reduced-motion seven-frame filmstrips, five viewport widths and reduced-motion screenshots. Deployment verification is tracked separately.",
     "keyCharacteristics": [
       "Yellow poster with burgundy lettering and blue, red and pink party decorations.",
-      "Centered two-line congratulations in locally hosted Archivo Black.",
-      "A complete static scene with a finite entrance and replay sequence."
+      "Centered two-line congratulations in locally hosted Archivo Black, followed only by the employer.",
+      "Automatic falling confetti, bobbing balloons and swaying top decorations around a clear text area.",
+      "A complete still scene for reduced motion and without JavaScript."
     ],
     "rules": [
       {
@@ -217,12 +179,14 @@
     ],
     "dos": [
       "Do preserve the archive identity outside the celebration component.",
-      "Do keep the name, placement and replay control legible without JavaScript.",
-      "Do keep balloons, flags and paper visible when the animation stops.",
-      "Do honor reduced motion and cancel active motion on hidden pages, resize and page exit."
+      "Do keep the title and employer legible without JavaScript.",
+      "Do keep balloons, flags and paper visible in reduced motion.",
+      "Do pause motion in hidden pages and offscreen banners.",
+      "Do keep falling confetti outside the text exclusion rectangle."
     ],
     "donts": [
       "Don't apply the banner palette or Archivo Black to archive screens.",
+      "Don't add controls or supporting prose to the banner.",
       "Don't make animation necessary to understand the announcement.",
       "Don't treat a static preview as proof of live motion or deployment."
     ]

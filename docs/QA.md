@@ -173,3 +173,12 @@ The user found the previous announcement too restrained. The revised banner has 
 All 32 Node and 73 Python tests passed; dataset validation and the public-only privacy build passed. Chrome checked 1440, 1024, 768, 390 and 320px with no horizontal or title overflow and no running animations after 5.1 seconds. Keyboard replay produced visible canvas pixels, the archive anchor worked and reduced motion had no running animations. Actual dark theme, no-JavaScript rendering and in-motion confetti were captured and inspected. Banner text contrast is at least 4.96:1; button labels are 6.14:1 and footer text is 7.76:1.
 
 The detector reported inherited archive text size/contrast findings and design-token differences while the design record was being refreshed. The component record and sidecar now describe the revised source. Archive findings remain outside scope. The fresh independent review returned ship with no material banner blocker, based on the screenshots, source and supplied test results. Deployment is tracked separately by the celebration-only Pages workflow.
+
+
+## 19 November 2026: automatic ongoing celebration
+
+Removed the banner replay control, footer and all supporting prose. Only the congratulations and employer remain. Balloons, bunting and decorative paper now sway continuously; canvas confetti falls automatically around a clear text area. There are 55 particles on mobile and 105 on desktop with DPR capped at two. Offscreen/hidden motion pauses and resumes on return; reduced motion shows the still scene. No search or archive changes.
+
+All 32 Node and 73 Python tests, validation and the privacy build passed. Chrome checked 1440, 1024, 768, 390 and 320px: no horizontal overflow, zero banner buttons and only requested text. At 7.5 seconds, all 15 decorative loops and changing canvas pixels were active. Offscreen motion and canvas cleared; return resumed both. Reduced motion had zero running loops and canvas pixels. No browser errors.
+
+The motion reviewer approved normal/reduced seven-frame evidence and the responsive captures with no material fixes. Impeccable motion-capture could not pass its rest gate on either attempt; matched Playwright samples against unchanged source supplied the evidence. This verifies continuity/layout, not frame-rate smoothness. Detector findings were inherited archive typography/contrast and scoped design-record drift; the component record was refreshed. Deployment is tracked separately by the celebration-only Pages workflow.
