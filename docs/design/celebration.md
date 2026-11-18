@@ -1,30 +1,29 @@
-# Sivanesh celebration banner
+# Placement celebration
 
-Mode: Experience. Scope: the congratulations banner; the job archive and stopped search remain unchanged.
+Scope: celebration banner only. Mode: Experience. Sivanesh joined Applied Materials; the archive and disabled search workflows are outside the visual change.
 
 ## Direction contract
 
-THESIS: A placement deserves a personal celebration, followed by a useful archive. The name and Applied Materials placement lead.
+THESIS: A personal celebration that reads as a party even after the animation stops. The user's feedback rejects the restrained career-announcement treatment.
 
-OWN-WORLD: Warm white (#faf8f3), ink (#202626), burnt orange text (#a93418) and bright orange geometry (#ec552d). Locally hosted Archivo Black gives the congratulations its display voice. A precise wafer diagram relates the celebration to the semiconductor employer without pretending to be its logo.
+OWN-WORLD: A yellow poster, burgundy Archivo Black lettering, blue and pink balloons, hanging flags and scattered paper. Keep the archive's purple system outside this component.
 
-STORY: Sivanesh has found a job at Applied Materials. Replay the celebration, or continue to the archived research.
+STORY: The visitor sees Sivanesh's name, understands he joined Applied Materials, and can replay the celebration or explore the archive.
 
-FIRST VIEWPORT: Large two-line congratulations on the left; a wafer and upward arrow on the right. The employer and replay button sit below the title. Mobile keeps the same reading order with smaller right-aligned geometry.
+FIRST VIEWPORT: Centered two-line congratulations with large balloon clusters at the edges, flags across the top, employer below the title, and a burgundy replay button. On phones the balloons sit above the copy. Static confetti remains around the copy; a finite burst launches from both sides on arrival and replay.
 
-FORM: A component redesign inside the existing app, built directly in HTML/CSS. No whole-site identity change or generated comp. seed: none (narrow component scope). The new-work playbook explicitly skips concept-seed for a local extension or precisely specified narrow request. The context launcher returned Permission denied; existing code and screenshots supplied context.
+FORM: seed: none (narrow component revision). Code-led revision of the existing banner following the user's explicit request for a more celebratory result. No page-level concept tournament.
 
-FINISH: ship. Finish reviewer found no material banner defect across 1440, 1024, 768, 390 and 320px after the scoring persistence fixes were resolved. All 32 Node and 73 Python tests, build and public-privacy validation passed. Browser checks found no overflow or errors; keyboard replay activated confetti, all animations ended at 4.4s, and reduced motion produced zero animations. Root DESIGN.md and .impeccable/design.json document the celebration component while preserving the archive identity. No new shipping rasters were added; font and original SVG provenance are recorded below.
-
-Documentation limits: tokens were extracted from the shipped CSS, HTML and celebration runtime. Sidecar samples are static; their font preview needs the local font served at its source path. Browser/test results above are supplied by the implementation and finish-review passes, not rerun by the documenter. The context launcher executable permission was repaired and the detector ran. Its pre-existing archive/navigation findings (10px text and muted contrast of approximately 4.3:1) are inherited drift outside the banner scope; they were neither canonized into this system nor repaired. No whole-world or generated-comp round was required under the narrow-component exemption.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 
 ## Motion
 
-LottieFiles motion-design principles: an energetic reveal that resolves into stillness. Primary: masked headline reveal, 600 ms. Secondary: wafer settlement and arrow, 800/500 ms. Ambient: a single diagonal light sweep, 1800 ms. One easing family, cubic-bezier(.16,1,.3,1). Confetti ends at 4.4 seconds. Replay is keyboard-accessible. Reduced motion skips all spatial animation; the placement is always legible without JavaScript. Hidden pages, resize and page exit stop animation.
+Playful personality. One authored sequence: flags reveal, headline pops into place, balloons rise and settle, then three confetti volleys. Entrance easing is cubic-bezier(.16,1,.3,1). All motion stops within 4.8 seconds. No looping, flashing or audio. Reduced motion keeps the full static scene. Keyboard replay announces the congratulations; hidden tabs, resize and page exit cancel active effects.
 
-## Sources
+## Assets
 
-- Impeccable: https://github.com/pbakaus/impeccable (installed local skill).
-- Motion design: https://github.com/LottieFiles/motion-design-skill (installed local skill).
-- Archivo Black: https://github.com/google/fonts/tree/main/ofl/archivoblack ; SIL Open Font License included with the font.
-- Wafer and arrow: original geometric SVG, not an employer mark. No generated or sourced raster assets were added.
+Archivo Black is self-hosted under the OFL license. Source: https://github.com/google/fonts/tree/main/ofl/archivoblack. Flags, balloon ellipses and paper shapes are original geometric SVG and canvas shapes. No new raster assets or third-party runtime dependencies.
+
+## Review
+
+Pending the revised desktop/mobile render review and deployment verification.

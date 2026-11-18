@@ -1,133 +1,133 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-18T19:34:56.434009+00:00",
-  "title": "Design System: Sivanesh Job Engine \u2014 Celebration",
+  "generatedAt": "2026-11-18T19:44:38.536785+00:00",
+  "title": "Design System: Sivanesh Job Engine Celebration",
   "extensions": {
     "colorMeta": {
       "celebration-ink": {
         "role": "neutral",
-        "displayName": "Celebration ink",
+        "displayName": "Burgundy ink",
         "tonalRamp": [
-          "oklch(15% 0.0022 196.6)",
-          "oklch(27% 0.0047 196.6)",
-          "oklch(39% 0.0069 196.6)",
-          "oklch(51% 0.0086 196.6)",
-          "oklch(63% 0.0086 196.6)",
-          "oklch(75% 0.0069 196.6)",
-          "oklch(87% 0.0039 196.6)",
-          "oklch(95% 0.0013 196.6)"
+          "oklch(15% 0.0218 12.3)",
+          "oklch(27% 0.0480 12.3)",
+          "oklch(39% 0.0698 12.3)",
+          "oklch(51% 0.0872 12.3)",
+          "oklch(63% 0.0872 12.3)",
+          "oklch(75% 0.0698 12.3)",
+          "oklch(87% 0.0392 12.3)",
+          "oklch(95% 0.0131 12.3)"
         ]
       },
-      "celebration-orange": {
+      "celebration-red": {
         "role": "primary",
-        "displayName": "Celebration orange",
+        "displayName": "Celebration red",
         "tonalRamp": [
-          "oklch(15% 0.0485 35.5)",
-          "oklch(27% 0.1067 35.5)",
-          "oklch(39% 0.1551 35.5)",
-          "oklch(51% 0.1939 35.5)",
-          "oklch(63% 0.1939 35.5)",
-          "oklch(75% 0.1551 35.5)",
-          "oklch(87% 0.0873 35.5)",
-          "oklch(95% 0.0291 35.5)"
+          "oklch(15% 0.0409 16.8)",
+          "oklch(27% 0.0899 16.8)",
+          "oklch(39% 0.1308 16.8)",
+          "oklch(51% 0.1635 16.8)",
+          "oklch(63% 0.1635 16.8)",
+          "oklch(75% 0.1308 16.8)",
+          "oklch(87% 0.0736 16.8)",
+          "oklch(95% 0.0245 16.8)"
         ]
       },
-      "headline-orange": {
+      "party-yellow": {
         "role": "primary",
-        "displayName": "Headline orange",
+        "displayName": "Party yellow",
         "tonalRamp": [
-          "oklch(15% 0.0395 34.4)",
-          "oklch(27% 0.0868 34.4)",
-          "oklch(39% 0.1263 34.4)",
-          "oklch(51% 0.1578 34.4)",
-          "oklch(63% 0.1578 34.4)",
-          "oklch(75% 0.1263 34.4)",
-          "oklch(87% 0.0710 34.4)",
-          "oklch(95% 0.0237 34.4)"
+          "oklch(15% 0.0346 93.9)",
+          "oklch(27% 0.0761 93.9)",
+          "oklch(39% 0.1106 93.9)",
+          "oklch(51% 0.1383 93.9)",
+          "oklch(63% 0.1383 93.9)",
+          "oklch(75% 0.1106 93.9)",
+          "oklch(87% 0.0622 93.9)",
+          "oklch(95% 0.0207 93.9)"
         ]
       },
-      "warm-paper": {
-        "role": "neutral",
-        "displayName": "Warm paper",
+      "footer-yellow": {
+        "role": "primary",
+        "displayName": "Footer yellow",
         "tonalRamp": [
-          "oklch(15% 0.0017 88.6)",
-          "oklch(27% 0.0038 88.6)",
-          "oklch(39% 0.0056 88.6)",
-          "oklch(51% 0.0070 88.6)",
-          "oklch(63% 0.0070 88.6)",
-          "oklch(75% 0.0056 88.6)",
-          "oklch(87% 0.0031 88.6)",
-          "oklch(95% 0.0010 88.6)"
+          "oklch(15% 0.0359 90.2)",
+          "oklch(27% 0.0789 90.2)",
+          "oklch(39% 0.1148 90.2)",
+          "oklch(51% 0.1435 90.2)",
+          "oklch(63% 0.1435 90.2)",
+          "oklch(75% 0.1148 90.2)",
+          "oklch(87% 0.0646 90.2)",
+          "oklch(95% 0.0215 90.2)"
         ]
       },
-      "footer-paper": {
-        "role": "neutral",
-        "displayName": "Footer paper",
+      "party-blue": {
+        "role": "secondary",
+        "displayName": "Party blue",
         "tonalRamp": [
-          "oklch(15% 0.0024 93.6)",
-          "oklch(27% 0.0053 93.6)",
-          "oklch(39% 0.0076 93.6)",
-          "oklch(51% 0.0096 93.6)",
-          "oklch(63% 0.0096 93.6)",
-          "oklch(75% 0.0076 93.6)",
-          "oklch(87% 0.0043 93.6)",
-          "oklch(95% 0.0014 93.6)"
+          "oklch(15% 0.0366 262.5)",
+          "oklch(27% 0.0805 262.5)",
+          "oklch(39% 0.1171 262.5)",
+          "oklch(51% 0.1464 262.5)",
+          "oklch(63% 0.1464 262.5)",
+          "oklch(75% 0.1171 262.5)",
+          "oklch(87% 0.0659 262.5)",
+          "oklch(95% 0.0220 262.5)"
         ]
       },
-      "supporting-ink": {
-        "role": "neutral",
-        "displayName": "Supporting ink",
+      "party-pink": {
+        "role": "secondary",
+        "displayName": "Party pink",
         "tonalRamp": [
-          "oklch(15% 0.0035 153.3)",
-          "oklch(27% 0.0077 153.3)",
-          "oklch(39% 0.0111 153.3)",
-          "oklch(51% 0.0139 153.3)",
-          "oklch(63% 0.0139 153.3)",
-          "oklch(75% 0.0111 153.3)",
-          "oklch(87% 0.0063 153.3)",
-          "oklch(95% 0.0021 153.3)"
+          "oklch(15% 0.0319 9.0)",
+          "oklch(27% 0.0701 9.0)",
+          "oklch(39% 0.1020 9.0)",
+          "oklch(51% 0.1275 9.0)",
+          "oklch(63% 0.1275 9.0)",
+          "oklch(75% 0.1020 9.0)",
+          "oklch(87% 0.0574 9.0)",
+          "oklch(95% 0.0191 9.0)"
         ]
       },
-      "border": {
-        "role": "neutral",
-        "displayName": "Border",
+      "party-cream": {
+        "role": "secondary",
+        "displayName": "Party cream",
         "tonalRamp": [
-          "oklch(15% 0.0024 100.0)",
-          "oklch(27% 0.0053 100.0)",
-          "oklch(39% 0.0077 100.0)",
-          "oklch(51% 0.0096 100.0)",
-          "oklch(63% 0.0096 100.0)",
-          "oklch(75% 0.0077 100.0)",
-          "oklch(87% 0.0043 100.0)",
-          "oklch(95% 0.0014 100.0)"
+          "oklch(15% 0.0065 90.1)",
+          "oklch(27% 0.0143 90.1)",
+          "oklch(39% 0.0208 90.1)",
+          "oklch(51% 0.0260 90.1)",
+          "oklch(63% 0.0260 90.1)",
+          "oklch(75% 0.0208 90.1)",
+          "oklch(87% 0.0117 90.1)",
+          "oklch(95% 0.0039 90.1)"
+        ]
+      },
+      "string-brown": {
+        "role": "secondary",
+        "displayName": "String brown",
+        "tonalRamp": [
+          "oklch(15% 0.0247 48.6)",
+          "oklch(27% 0.0543 48.6)",
+          "oklch(39% 0.0789 48.6)",
+          "oklch(51% 0.0986 48.6)",
+          "oklch(63% 0.0986 48.6)",
+          "oklch(75% 0.0789 48.6)",
+          "oklch(87% 0.0444 48.6)",
+          "oklch(95% 0.0148 48.6)"
         ]
       },
       "button-hover": {
-        "role": "neutral",
-        "displayName": "Button hover",
+        "role": "primary",
+        "displayName": "Replay hover",
         "tonalRamp": [
-          "oklch(15% 0.0044 168.3)",
-          "oklch(27% 0.0098 168.3)",
-          "oklch(39% 0.0142 168.3)",
-          "oklch(51% 0.0177 168.3)",
-          "oklch(63% 0.0177 168.3)",
-          "oklch(75% 0.0142 168.3)",
-          "oklch(87% 0.0080 168.3)",
-          "oklch(95% 0.0027 168.3)"
-        ]
-      },
-      "button-label": {
-        "role": "neutral",
-        "displayName": "Button label",
-        "tonalRamp": [
-          "oklch(15% 0.0000 89.9)",
-          "oklch(27% 0.0000 89.9)",
-          "oklch(39% 0.0000 89.9)",
-          "oklch(51% 0.0000 89.9)",
-          "oklch(63% 0.0000 89.9)",
-          "oklch(75% 0.0000 89.9)",
-          "oklch(87% 0.0000 89.9)",
-          "oklch(95% 0.0000 89.9)"
+          "oklch(15% 0.0338 14.8)",
+          "oklch(27% 0.0744 14.8)",
+          "oklch(39% 0.1083 14.8)",
+          "oklch(51% 0.1354 14.8)",
+          "oklch(63% 0.1354 14.8)",
+          "oklch(75% 0.1083 14.8)",
+          "oklch(87% 0.0609 14.8)",
+          "oklch(95% 0.0203 14.8)"
         ]
       }
     },
@@ -142,7 +142,7 @@
       {
         "name": "entrance",
         "value": "cubic-bezier(.16,1,.3,1)",
-        "purpose": "Headline 600ms; wafer 800ms; arrow 500ms; sweep 1800ms; employer 450ms. Finite sequence; reduced motion skips it."
+        "purpose": "Headline 650/800ms, flags 700ms, balloons 1800ms, employer 500ms; reduced motion skips the sequence."
       },
       {
         "name": "control-transition",
@@ -151,14 +151,14 @@
       },
       {
         "name": "confetti-end",
-        "value": "4400ms",
-        "purpose": "Canvas clears and all tracked animations cancel."
+        "value": "4800ms",
+        "purpose": "Canvas clears and tracked animations cancel."
       }
     ],
     "breakpoints": [
       {
         "name": "compact-desktop",
-        "value": "1100px"
+        "value": "901px to 1200px"
       },
       {
         "name": "mobile",
@@ -168,41 +168,45 @@
         "name": "narrow-mobile",
         "value": "380px"
       }
-    ]
+    ],
+    "review": {
+      "status": "pending",
+      "scope": "Revised desktop/mobile render review and deployment verification."
+    }
   },
   "components": [
     {
       "name": "Celebration banner",
       "kind": "custom",
       "refersTo": "celebration-banner",
-      "description": "Static announcement with original SVG and archive handoff. Font preview requires the shipped local /assets/fonts/archivo-black.ttf asset to be served at its source path. Runtime confetti is not executed.",
-      "html": "<section class=\"ds-banner\"><div class=\"ds-content\"><div><h1 class=\"ds-title\"><span>Sivanesh.</span><span>You're hired.</span></h1><p class=\"ds-copy\">The next chapter looks good on you.</p><div class=\"ds-destination\"><span>Congratulations on joining</span><strong>Applied Materials</strong></div><button class=\"ds-replay\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M5 8a8 8 0 1 1-1 7M5 3v5h5\"/></svg>One more celebration</button></div><div class=\"ds-art\" aria-hidden=\"true\"><svg class=\"ds-wafer\" viewBox=\"0 0 320 320\" fill=\"none\">\n          <defs><pattern id=\"ds-wafer-dies\" width=\"24\" height=\"24\" patternUnits=\"userSpaceOnUse\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" fill=\"#faf8f3\" stroke=\"#252a2a\" stroke-width=\".6\"/></pattern><clipPath id=\"ds-wafer-edge\"><path d=\"M160 20a140 140 0 0 1 12 279l-12-12-12 12A140 140 0 0 1 160 20Z\"/></clipPath></defs>\n          <circle class=\"ds-wafer-halo\" cx=\"160\" cy=\"160\" r=\"157\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"2 9\"/>\n          <g class=\"ds-wafer-body\"><path d=\"M160 20a140 140 0 0 1 12 279l-12-12-12 12A140 140 0 0 1 160 20Z\" fill=\"url(#ds-wafer-dies)\" stroke=\"#252a2a\" stroke-width=\"1.2\"/><g clip-path=\"url(#ds-wafer-edge)\"><path class=\"ds-wafer-sweep\" d=\"M-40 220 220-40\" stroke=\"#ec552d\" stroke-width=\"64\" opacity=\".18\"/></g></g>\n          <g class=\"ds-arrow\"><circle cx=\"231\" cy=\"86\" r=\"62\" fill=\"#ec552d\"/><path d=\"M206 111 254 63m-43 0h43v43\" stroke=\"#202626\" stroke-width=\"8\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/></g>\n        </svg><span class=\"ds-caption\">A well-earned next move.</span></div></div><div class=\"ds-footer\"><span>Here's to what comes next.</span><a class=\"ds-archive\" href=\"#archive-start\">Explore the archive <svg viewBox=\"0 0 20 20\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a></div></section>",
-      "css": "@font-face{font-family:\"Archivo Black\";src:url(\"/assets/fonts/archivo-black.ttf\") format(\"truetype\");font-style:normal;font-weight:400;font-display:swap}.ds-banner{--celebration-ink:#202626;--celebration-orange:#ec552d;position:relative;isolation:isolate;overflow:hidden;margin:24px 0 12px;background:#faf8f3;color:var(--celebration-ink);border:1px solid #d3d2cb;border-radius:16px;font:14px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-content{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(200px,1fr);gap:24px;align-items:center;padding:52px 44px 44px}.ds-title{font-family:\"Archivo Black\",sans-serif;font-weight:400;font-size:clamp(42px,5.5vw,88px);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px;text-wrap:balance}.ds-title span{display:block;white-space:nowrap}.ds-title span:last-child{color:#a93418}.ds-copy{font-size:16px;line-height:1.5;margin:0 0 34px;color:#515953}.ds-destination{display:flex;flex-direction:column;gap:7px;margin:0 0 30px}.ds-destination>span{font-size:13px;line-height:1.5;color:#515953}.ds-destination>strong{font-size:clamp(26px,2.5vw,36px);line-height:1.15;letter-spacing:-.025em;font-weight:650}.ds-art{position:relative;text-align:center;color:#9b4d35;min-width:0}.ds-wafer{display:block;width:100%;max-width:320px;margin:auto;overflow:visible}.ds-caption{display:block;font-size:12px;color:#515953;margin-top:24px}.ds-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 44px;background:#f0eee7;border-top:1px solid #d3d2cb;font-size:12px;color:#515953}@media(max-width:1100px){.ds-content{padding:40px 30px;grid-template-columns:minmax(0,1.7fr) minmax(145px,1fr);gap:18px}.ds-title{font-size:clamp(38px,5.2vw,64px)}.ds-footer{padding-inline:30px}}@media(max-width:700px){.ds-content{display:block;position:relative;padding:32px 24px}.ds-title{font-size:clamp(34px,8.5vw,56px);line-height:1.08;margin-bottom:18px}.ds-copy{font-size:14px;max-width:27ch;margin-bottom:32px}.ds-destination{max-width:65%;margin-bottom:28px;min-height:72px}.ds-destination>span{font-size:12px}.ds-destination>strong{font-size:24px}.ds-art{position:absolute;right:15px;bottom:92px;width:116px;pointer-events:none}.ds-caption{display:none}.ds-footer{padding:15px 24px;align-items:flex-start;gap:6px;flex-direction:column}.ds-replay{font-size:12px}.ds-banner{margin-top:18px}}@media(max-width:380px){.ds-content{padding:28px 20px}.ds-title{font-size:32px}.ds-art{width:90px;right:12px;bottom:100px}.ds-destination{max-width:67%}.ds-destination>strong{font-size:23px}.ds-footer{padding-inline:20px}}.ds-replay{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 18px;background:var(--celebration-ink,#202626);color:#fff;border:1px solid var(--celebration-ink,#202626);border-radius:6px;font:600 13px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;cursor:pointer;transition:background 120ms ease-out,transform 120ms ease-out}.ds-replay:hover{background:#394540;transform:translateY(-2px)}.ds-replay:active{transform:translateY(0) scale(.98)}.ds-replay:focus-visible{outline:3px solid #a93418;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-replay{transition:none}.ds-replay:hover,.ds-replay:active{transform:none}}.ds-archive{display:inline-flex;align-items:center;gap:8px;color:var(--celebration-ink,#202626);text-decoration:none;min-height:32px;font:12px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-archive:hover{text-decoration:underline}.ds-archive:focus-visible{outline:3px solid #a93418;outline-offset:5px}@media(max-width:700px){.ds-archive{min-height:36px}}"
+      "description": "Static yellow party poster with actual inline SVG decorations. Font preview requires /assets/fonts/archivo-black.ttf. Runtime confetti does not execute.",
+      "html": "<section class=\"ds-placement-banner\" aria-labelledby=\"ds-placement-title\">\n    \n    <div class=\"ds-party-decoration\" aria-hidden=\"true\">\n      <svg class=\"ds-party-flags\" viewBox=\"0 0 1200 160\" preserveAspectRatio=\"xMidYMin slice\" fill=\"none\"><path d=\"M-20 10Q260 210 550 0M650 0Q940 210 1220 10\" stroke=\"#8a4b27\" stroke-width=\"2\"/><g fill=\"#ad2d41\"><path d=\"m38 45 45 23-43 35Z\"/><path d=\"m1015 75 47-16-10 59Z\"/></g><g fill=\"#2852a8\"><path d=\"m130 85 48 14-37 45Z\"/><path d=\"m1110 39 44-25 3 59Z\"/></g><g fill=\"#fff8e5\"><path d=\"m230 107 50-2-23 53Z\"/><path d=\"m809 79 45 23-43 35Z\"/></g><g fill=\"#e98295\"><path d=\"m335 86 45-21-3 58Z\"/><path d=\"m913 102 50-2-23 53Z\"/></g><g fill=\"#ad2d41\"><path d=\"m429 42 41-28 5 58Z\"/><path d=\"m726 29 39 31-53 21Z\"/></g></svg>\n      <svg class=\"ds-party-balloons ds-balloons-left\" viewBox=\"0 0 230 390\" fill=\"none\"><g class=\"ds-balloon ds-balloon-back\"><path d=\"M146 157c-36 41 27 59 0 99s22 75 3 124\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"148\" cy=\"96\" rx=\"57\" ry=\"69\" transform=\"rotate(16 148 96)\" fill=\"#2852a8\"/><path d=\"m143 162 9 2-6-13Z\" fill=\"#2852a8\"/><path d=\"M121 49c-12 7-19 19-21 30\" stroke=\"#fff8e5\" stroke-opacity=\".6\" stroke-width=\"6\" stroke-linecap=\"round\"/></g><g class=\"ds-balloon ds-balloon-front\"><path d=\"M69 221c31 33-16 45 4 78s-12 46 1 83\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"64\" cy=\"148\" rx=\"60\" ry=\"76\" transform=\"rotate(-15 64 148)\" fill=\"#ad2d41\"/><path d=\"m65 223 11-1-8-12Z\" fill=\"#ad2d41\"/><path d=\"M38 99c-12 10-17 24-16 35\" stroke=\"#fff8e5\" stroke-opacity=\".65\" stroke-width=\"6\" stroke-linecap=\"round\"/></g></svg>\n      <svg class=\"ds-party-balloons ds-balloons-right\" viewBox=\"0 0 230 390\" fill=\"none\"><g class=\"ds-balloon ds-balloon-back\"><path d=\"M72 168c-30 37 27 64 0 99s20 68 1 111\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"73\" cy=\"99\" rx=\"57\" ry=\"71\" transform=\"rotate(-15 73 99)\" fill=\"#e98295\"/><path d=\"m68 170 11-1-7-13Z\" fill=\"#e98295\"/><path d=\"M46 52c-12 9-18 21-18 32\" stroke=\"#fff8e5\" stroke-opacity=\".75\" stroke-width=\"6\" stroke-linecap=\"round\"/></g><g class=\"ds-balloon ds-balloon-front\"><path d=\"M166 236c-32 39 19 47-3 79s11 45-1 67\" stroke=\"#8a4b27\" stroke-width=\"1.5\"/><ellipse cx=\"168\" cy=\"160\" rx=\"59\" ry=\"76\" transform=\"rotate(15 168 160)\" fill=\"#2852a8\"/><path d=\"m159 236 12 2-4-14Z\" fill=\"#2852a8\"/><path d=\"M143 110c-12 8-18 20-19 32\" stroke=\"#fff8e5\" stroke-opacity=\".6\" stroke-width=\"6\" stroke-linecap=\"round\"/></g></svg>\n      <svg class=\"ds-party-sprinkles\" viewBox=\"0 0 1200 650\" preserveAspectRatio=\"none\" fill=\"none\"><g stroke=\"#ad2d41\" stroke-width=\"7\"><path d=\"m210 226 13 19m811 108 14 18M353 554l-14 13M904 189l11-17M99 471l17 7\"/></g><g stroke=\"#2852a8\" stroke-width=\"7\"><path d=\"m303 185-8 22m685 356 18 10M1005 254l18-7M176 562l9-19M1110 505l-19 9\"/></g><g stroke=\"#fff8e5\" stroke-width=\"8\"><path d=\"m243 437 11 21m680-35 17-10M421 130l5 19M763 559l6 17\"/></g><g fill=\"#ad2d41\"><circle cx=\"276\" cy=\"332\" r=\"5\"/><circle cx=\"1041\" cy=\"548\" r=\"5\"/></g><g fill=\"#2852a8\"><circle cx=\"400\" cy=\"586\" r=\"5\"/><circle cx=\"845\" cy=\"151\" r=\"5\"/></g><g stroke=\"#ad2d41\" stroke-width=\"3\"><path d=\"m279 501 7-18 6 18 18 6-18 6-6 18-7-18-18-6Z\"/><path d=\"m983 158 5-13 5 13 13 5-13 5-5 13-5-13-13-5Z\"/></g></svg>\n    </div>\n    <div class=\"ds-placement-content\">\n      <div class=\"ds-placement-copy\">\n        <h1 id=\"ds-placement-title\"><span>You did it,</span><span>Sivanesh!</span></h1>\n        <div class=\"ds-placement-destination\"><span>Congratulations on joining</span><strong>Applied Materials</strong></div>\n        <p class=\"ds-placement-congrats\">Here's to you and your next big chapter.</p>\n        <button class=\"ds-celebrate-button\" id=\"ds-celebrate-again\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"m4 20 4-12 8 8-12 4Zm7-14 2-3m3 6 5-1m-4 5 3 2M9 4 7 2m11 3 2-3\"/></svg>Celebrate again</button>\n      </div>\n    </div>\n    <div class=\"ds-placement-footer\"><span>A new job. A very good reason to celebrate.</span><a href=\"#archive-start\">View the job-search archive <svg viewBox=\"0 0 20 20\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a></div>\n    <p id=\"celebration-status\" class=\"ds-sr-only\" role=\"status\"></p>\n  </section>",
+      "css": "@font-face{font-family:\"Archivo Black\";src:url(\"/assets/fonts/archivo-black.ttf\") format(\"truetype\");font-style:normal;font-weight:400;font-display:swap}\n.ds-placement-banner{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;line-height:1.6}.ds-placement-banner button{font-family:inherit}\n\n.ds-placement-banner{--celebration-ink:#632731;--celebration-red:#ad2d41;position:relative;isolation:isolate;overflow:hidden;margin:24px 0 12px;background:#ffdf6c;color:var(--celebration-ink);border:0;border-radius:16px}\n.ds-placement-content{position:relative;display:grid;place-items:center;min-height:640px;padding:130px 24px 52px}\n.ds-placement-copy{position:relative;z-index:2;min-width:0;text-align:center;max-width:660px}\n.ds-placement-banner h1{font-family:\"Archivo Black\",sans-serif;font-weight:400;font-size:clamp(48px,6.2vw,88px);line-height:1.08;letter-spacing:-.035em;margin:0 0 30px;text-wrap:balance}\n.ds-placement-banner h1 span{display:block;white-space:nowrap}\n.ds-placement-banner h1 span:last-child{color:var(--celebration-red)}\n.ds-placement-destination{display:flex;flex-direction:column;gap:8px;margin:0 0 20px}\n.ds-placement-destination>span{font-size:15px;line-height:1.5}\n.ds-placement-destination>strong{font-size:clamp(28px,3vw,38px);line-height:1.2;letter-spacing:-.025em;font-weight:750;text-decoration:underline;text-decoration-color:#fff8e5;text-decoration-thickness:9px;text-underline-offset:3px;text-decoration-skip-ink:none}\n.ds-placement-congrats{font-size:15px;line-height:1.6;margin:0 0 28px}\n.ds-celebrate-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;background:var(--celebration-red);color:#fff8e5;border:0;border-radius:8px;font-size:14px;font-weight:650;transition:background 120ms ease-out,transform 120ms ease-out;cursor:pointer}\n.ds-celebrate-button:hover{background:#862134;transform:translateY(-2px)}\n.ds-celebrate-button:active{transform:translateY(0) scale(.97)}\n.ds-placement-banner :focus-visible{outline:3px solid #2852a8;outline-offset:5px}\n.ds-party-decoration{position:absolute;inset:0;pointer-events:none}\n.ds-party-flags{position:absolute;top:0;left:0;width:100%;height:160px}\n.ds-party-balloons{position:absolute;width:clamp(135px,18vw,220px);top:175px;overflow:visible}\n.ds-balloons-left{left:18px;transform:rotate(-8deg)}\n.ds-balloons-right{right:18px;transform:rotate(8deg)}\n.ds-balloon{transform-origin:center;transform-box:fill-box}\n.ds-party-sprinkles{position:absolute;inset:0;width:100%;height:100%}\n.ds-placement-footer{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 28px;background:#fbd25a;font-size:12px;color:var(--celebration-ink)}\n.ds-placement-footer a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:underline;text-underline-offset:4px;min-height:32px}\n.ds-placement-footer a:hover{text-decoration-thickness:2px}\n.ds-placement-banner ::selection{background:#632731;color:#fff8e5}\n#placement-confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}\n.ds-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}\n@media(min-width:901px) and (max-width:1200px){.ds-party-balloons{width:145px;top:230px}.ds-balloons-left{left:-34px}.ds-balloons-right{right:-34px}.ds-placement-banner h1{font-size:64px}.ds-placement-content{min-height:650px;padding-inline:74px}}\n@media(max-width:700px){.ds-placement-banner{margin-top:18px}.ds-placement-content{min-height:560px;padding:172px 18px 42px;align-items:start}.ds-placement-banner h1{font-size:clamp(38px,10vw,58px);line-height:1.12;margin-bottom:26px}.ds-placement-destination{gap:8px;margin-bottom:18px}.ds-placement-destination>span{font-size:13px}.ds-placement-destination>strong{font-size:27px;text-decoration-thickness:7px}.ds-placement-congrats{font-size:13px;margin-bottom:24px}.ds-party-flags{height:110px;width:190%;left:-45%}.ds-party-balloons{width:80px;top:52px}.ds-balloons-left{left:5px;transform:rotate(-14deg)}.ds-balloons-right{right:5px;transform:rotate(14deg)}.ds-party-sprinkles{opacity:.8}.ds-placement-copy{width:100%}.ds-placement-footer{padding:15px 20px;align-items:center;text-align:center;gap:5px;flex-direction:column}.ds-placement-footer>a{min-height:40px}.ds-celebrate-button{min-height:50px}}\n@media(max-width:380px){.ds-placement-banner h1{font-size:35px}.ds-placement-content{padding-inline:14px;min-height:550px}.ds-placement-destination>strong{font-size:24px}.ds-placement-congrats{max-width:25ch;margin-inline:auto}.ds-party-balloons{width:70px}}\n@media(prefers-reduced-motion:reduce){.ds-celebrate-button{transition:none}.ds-celebrate-button:hover,.ds-celebrate-button:active{transform:none}}\n"
     },
     {
-      "name": "Replay",
+      "name": "Replay button",
       "kind": "button",
       "refersTo": "replay",
-      "description": "Native keyboard-accessible replay control; preview demonstrates styles only.",
-      "html": "<button class=\"ds-replay\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M5 8a8 8 0 1 1-1 7M5 3v5h5\"/></svg>One more celebration</button>",
-      "css": ".ds-replay{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 18px;background:var(--celebration-ink,#202626);color:#fff;border:1px solid var(--celebration-ink,#202626);border-radius:6px;font:600 13px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;cursor:pointer;transition:background 120ms ease-out,transform 120ms ease-out}.ds-replay:hover{background:#394540;transform:translateY(-2px)}.ds-replay:active{transform:translateY(0) scale(.98)}.ds-replay:focus-visible{outline:3px solid #a93418;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-replay{transition:none}.ds-replay:hover,.ds-replay:active{transform:none}}"
+      "description": "Native replay control with hover, active and keyboard focus states.",
+      "html": "<div class=\"ds-control\"><button class=\"ds-celebrate-button\" id=\"ds-celebrate-again\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"m4 20 4-12 8 8-12 4Zm7-14 2-3m3 6 5-1m-4 5 3 2M9 4 7 2m11 3 2-3\"/></svg>Celebrate again</button></div>",
+      "css": ".ds-control{--celebration-ink:#632731;--celebration-red:#ad2d41;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;line-height:1.6}.ds-control button{font-family:inherit}.ds-control :focus-visible{outline:3px solid #2852a8;outline-offset:5px}.ds-celebrate-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;background:var(--celebration-red);color:#fff8e5;border:0;border-radius:8px;font-size:14px;font-weight:650;transition:background 120ms ease-out,transform 120ms ease-out;cursor:pointer}.ds-celebrate-button:hover{background:#862134;transform:translateY(-2px)}.ds-celebrate-button:active{transform:translateY(0) scale(.97)}@media(prefers-reduced-motion:reduce){.ds-celebrate-button{transition:none}.ds-celebrate-button:hover,.ds-celebrate-button:active{transform:none}}"
     },
     {
       "name": "Archive handoff",
       "kind": "custom",
       "refersTo": "archive-link",
-      "description": "Footer navigation to the preserved archive; preview destination requires its host page.",
-      "html": "<a class=\"ds-archive\" href=\"#archive-start\">Explore the archive <svg viewBox=\"0 0 20 20\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a>",
-      "css": ".ds-archive{display:inline-flex;align-items:center;gap:8px;color:var(--celebration-ink,#202626);text-decoration:none;min-height:32px;font:12px/1.6 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-archive:hover{text-decoration:underline}.ds-archive:focus-visible{outline:3px solid #a93418;outline-offset:5px}@media(max-width:700px){.ds-archive{min-height:36px}}"
+      "description": "Yellow footer with underlined archive link and inline arrow.",
+      "html": "<div class=\"ds-control\"><div class=\"ds-placement-footer\"><span>A new job. A very good reason to celebrate.</span><a href=\"#archive-start\">View the job-search archive <svg viewBox=\"0 0 20 20\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a></div></div>",
+      "css": ".ds-control{--celebration-ink:#632731;--celebration-red:#ad2d41;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;line-height:1.6}.ds-control button{font-family:inherit}.ds-control :focus-visible{outline:3px solid #2852a8;outline-offset:5px}.ds-placement-footer{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 28px;background:#fbd25a;font-size:12px;color:var(--celebration-ink)}.ds-placement-footer a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:underline;text-underline-offset:4px;min-height:32px}.ds-placement-footer a:hover{text-decoration-thickness:2px}@media(max-width:700px){.ds-placement-footer{padding:15px 20px;text-align:center;gap:5px;flex-direction:column}.ds-placement-footer>a{min-height:40px}}"
     }
   ],
   "narrative": {
-    "northStar": "A well-earned next move",
-    "overview": "A warm, personal placement announcement inside the existing job archive. The congratulations and employer carry the message; an original wafer diagram and rising arrow connect the moment to semiconductor work. This document governs the celebration component only. The archive retains its existing purple accent, navigation, cards, typography and theme behavior.\n\nThe north star uses the shipped illustration caption. It describes this component, not a replacement identity for the archive. Source authority is `site/styles.css`, `site/index.html` and `site/celebration.js`; product and direction context live in `PRODUCT.md` and `docs/design/celebration.md`.",
+    "northStar": "A party for Sivanesh",
+    "overview": "A bright yellow party poster celebrates Sivanesh joining Applied Materials. Burgundy lettering, red emphasis, balloon clusters, hanging flags and scattered paper make the scene celebratory after the animation stops. The user's feedback rejects a restrained career-announcement treatment for this banner.\n\nThis document governs the celebration component only. The archive retains its purple accent, navigation, cards, typography and theme behavior. Source authority is `site/styles.css`, `site/index.html` and `site/celebration.js`; product and direction context live in `PRODUCT.md` and `docs/design/celebration.md`. The revised desktop/mobile render review and deployment verification are pending.",
     "keyCharacteristics": [
-      "Warm paper, dark ink and two distinct orange roles.",
-      "Archivo Black for the two-line congratulations; inherited system type for supporting text.",
-      "Flat surfaces, precise SVG geometry and a finite celebration that settles into stillness."
+      "Yellow poster with burgundy lettering and blue, red and pink party decorations.",
+      "Centered two-line congratulations in locally hosted Archivo Black.",
+      "A complete static scene with a finite entrance and replay sequence."
     ],
     "rules": [
       {
@@ -214,13 +218,13 @@
     "dos": [
       "Do preserve the archive identity outside the celebration component.",
       "Do keep the name, placement and replay control legible without JavaScript.",
-      "Do use burnt orange for the headline emphasis and bright orange for geometry.",
-      "Do honor reduced motion and stop active motion when the page is hidden, resized or exited."
+      "Do keep balloons, flags and paper visible when the animation stops.",
+      "Do honor reduced motion and cancel active motion on hidden pages, resize and page exit."
     ],
     "donts": [
       "Don't apply the banner palette or Archivo Black to archive screens.",
-      "Don't treat the original wafer illustration as an Applied Materials logo.",
-      "Don't make animation necessary to understand the announcement."
+      "Don't make animation necessary to understand the announcement.",
+      "Don't describe the pending render review or deployment verification as complete."
     ]
   }
 }

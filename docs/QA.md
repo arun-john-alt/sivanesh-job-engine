@@ -164,3 +164,12 @@ All 32 Node and 73 Python tests passed, along with validation and the public-onl
 Impeccable's independent reviewer found no material banner visual or motion issue and scored its two documentation fixes resolved with a ship verdict. The detector reported only inherited archive/navigation 10px text and 4.3:1 muted contrast; those remain outside this component's scope. The context launcher initially lacked executable permission after installation; that permission was repaired and the detector ran successfully. Design records capture the banner scope and motion rules.
 
 A separate celebration-only Pages workflow builds the public allowlist and deploys static files. It has no schedule, discovery, availability checking, search API keys or recovery steps. The existing job engine, key transfer and watchdog workflows remain disabled. No job data or private workspace was changed.
+
+
+## 19 November 2026: party celebration revision
+
+The user found the previous announcement too restrained. The revised banner has a yellow background, centered congratulations, balloon clusters, hanging flags and static confetti, plus three canvas-confetti volleys and a finite 4.8-second entrance. The static scene carries the congratulations without JavaScript or motion. The archive and job dataset are unchanged.
+
+All 32 Node and 73 Python tests passed; dataset validation and the public-only privacy build passed. Chrome checked 1440, 1024, 768, 390 and 320px with no horizontal or title overflow and no running animations after 5.1 seconds. Keyboard replay produced visible canvas pixels, the archive anchor worked and reduced motion had no running animations. Actual dark theme, no-JavaScript rendering and in-motion confetti were captured and inspected. Banner text contrast is at least 4.96:1; button labels are 6.14:1 and footer text is 7.76:1.
+
+The detector reported inherited archive text size/contrast findings and design-token differences while the design record was being refreshed. The component record and sidecar now describe the revised source. Archive findings remain outside scope. Fresh visual review and deployment verification are pending.

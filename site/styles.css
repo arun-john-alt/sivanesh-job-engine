@@ -14,32 +14,35 @@ body.dark{--bg:#171820;--paper:#20212c;--ink:#eeeef6;--muted:#a1a3b4;--line:#323
 .stats{flex-wrap:wrap;row-gap:8px}.pending-opening{margin-top:16px}.pending-opening .section-head{align-items:flex-start;gap:12px}.pending-opening .section-head h3{margin:6px 0 0}.pending-opening .tag{white-space:normal;text-align:center}#pendingSearch{padding-left:14px}
 
 @font-face{font-family:"Archivo Black";src:url("assets/fonts/archivo-black.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
-.placement-banner{--celebration-ink:#202626;--celebration-orange:#ec552d;position:relative;isolation:isolate;overflow:hidden;margin:24px 0 12px;background:#faf8f3;color:var(--celebration-ink);border:1px solid #d3d2cb;border-radius:16px}
-.placement-content{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(200px,1fr);gap:24px;align-items:center;padding:52px 44px 44px}
-.placement-copy{position:relative;z-index:2;min-width:0}
-.placement-banner h1{font-family:"Archivo Black",sans-serif;font-weight:400;font-size:clamp(42px,5.5vw,88px);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px;text-wrap:balance}
+/* The placement celebration is separate from the archived search UI. */
+.placement-banner{--celebration-ink:#632731;--celebration-red:#ad2d41;position:relative;isolation:isolate;overflow:hidden;margin:24px 0 12px;background:#ffdf6c;color:var(--celebration-ink);border:0;border-radius:16px}
+.placement-content{position:relative;display:grid;place-items:center;min-height:640px;padding:130px 24px 52px}
+.placement-copy{position:relative;z-index:2;min-width:0;text-align:center;max-width:660px}
+.placement-banner h1{font-family:"Archivo Black",sans-serif;font-weight:400;font-size:clamp(48px,6.2vw,88px);line-height:1.08;letter-spacing:-.035em;margin:0 0 30px;text-wrap:balance}
 .placement-banner h1 span{display:block;white-space:nowrap}
-.placement-banner h1 span:last-child{color:#a93418}
-.placement-congrats{font-size:16px;line-height:1.5;margin:0 0 34px;color:#515953}
-.placement-destination{display:flex;flex-direction:column;gap:7px;margin:0 0 30px}
-.placement-destination>span{font-size:13px;line-height:1.5;color:#515953}
-.placement-destination>strong{font-size:clamp(26px,2.5vw,36px);line-height:1.15;letter-spacing:-.025em;font-weight:650}
-.celebrate-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 18px;background:var(--celebration-ink);color:#fff;border:1px solid var(--celebration-ink);border-radius:6px;font-size:13px;font-weight:600;transition:background 120ms ease-out,transform 120ms ease-out}
-.celebrate-button:hover{background:#394540;transform:translateY(-2px)}
-.celebrate-button:active{transform:translateY(0) scale(.98)}
-.placement-banner :focus-visible{outline:3px solid #a93418;outline-offset:5px}
-.placement-art{position:relative;text-align:center;color:#9b4d35;min-width:0}
-.placement-wafer{display:block;width:100%;max-width:320px;margin:auto;overflow:visible}
-.placement-art-caption{display:block;font-size:12px;color:#515953;margin-top:24px}
-.placement-arrow{transform-origin:231px 86px}
-.wafer-body{transform-origin:160px 160px}
-.placement-footer{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 44px;background:#f0eee7;border-top:1px solid #d3d2cb;font-size:12px;color:#515953}
-.placement-footer a{display:inline-flex;align-items:center;gap:8px;color:var(--celebration-ink);text-decoration:none;min-height:32px}
-.placement-footer a:hover{text-decoration:underline}
-.placement-banner ::selection{background:#ec552d;color:#202626}
+.placement-banner h1 span:last-child{color:var(--celebration-red)}
+.placement-destination{display:flex;flex-direction:column;gap:8px;margin:0 0 20px}
+.placement-destination>span{font-size:15px;line-height:1.5}
+.placement-destination>strong{font-size:clamp(28px,3vw,38px);line-height:1.2;letter-spacing:-.025em;font-weight:750;text-decoration:underline;text-decoration-color:#fff8e5;text-decoration-thickness:9px;text-underline-offset:3px;text-decoration-skip-ink:none}
+.placement-congrats{font-size:15px;line-height:1.6;margin:0 0 28px}
+.celebrate-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;background:var(--celebration-red);color:#fff8e5;border:0;border-radius:8px;font-size:14px;font-weight:650;transition:background 120ms ease-out,transform 120ms ease-out;cursor:pointer}
+.celebrate-button:hover{background:#862134;transform:translateY(-2px)}
+.celebrate-button:active{transform:translateY(0) scale(.97)}
+.placement-banner :focus-visible{outline:3px solid #2852a8;outline-offset:5px}
+.party-decoration{position:absolute;inset:0;pointer-events:none}
+.party-flags{position:absolute;top:0;left:0;width:100%;height:160px}
+.party-balloons{position:absolute;width:clamp(135px,18vw,220px);top:175px;overflow:visible}
+.balloons-left{left:18px;transform:rotate(-8deg)}
+.balloons-right{right:18px;transform:rotate(8deg)}
+.balloon{transform-origin:center;transform-box:fill-box}
+.party-sprinkles{position:absolute;inset:0;width:100%;height:100%}
+.placement-footer{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 28px;background:#fbd25a;font-size:12px;color:var(--celebration-ink)}
+.placement-footer a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:underline;text-underline-offset:4px;min-height:32px}
+.placement-footer a:hover{text-decoration-thickness:2px}
+.placement-banner ::selection{background:#632731;color:#fff8e5}
 #placement-confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
-@media(max-width:1100px){.placement-content{padding:40px 30px;grid-template-columns:minmax(0,1.7fr) minmax(145px,1fr);gap:18px}.placement-banner h1{font-size:clamp(38px,5.2vw,64px)}.placement-footer{padding-inline:30px}}
-@media(max-width:700px){.placement-content{display:block;position:relative;padding:32px 24px}.placement-banner h1{font-size:clamp(34px,8.5vw,56px);line-height:1.08;margin-bottom:18px}.placement-congrats{font-size:14px;max-width:27ch;margin-bottom:32px}.placement-destination{max-width:65%;margin-bottom:28px;min-height:72px}.placement-destination>span{font-size:12px}.placement-destination>strong{font-size:24px}.placement-art{position:absolute;right:15px;bottom:92px;width:116px;pointer-events:none}.placement-art-caption{display:none}.placement-footer{padding:15px 24px;align-items:flex-start;gap:6px;flex-direction:column}.placement-footer>a{min-height:36px}.celebrate-button{min-height:48px;font-size:12px}.placement-banner{margin-top:18px}}
-@media(max-width:380px){.placement-content{padding:28px 20px}.placement-banner h1{font-size:32px}.placement-art{width:90px;right:12px;bottom:100px}.placement-destination{max-width:67%}.placement-destination>strong{font-size:23px}.placement-footer{padding-inline:20px}}
+@media(min-width:901px) and (max-width:1200px){.party-balloons{width:145px;top:230px}.balloons-left{left:-34px}.balloons-right{right:-34px}.placement-banner h1{font-size:64px}.placement-content{min-height:650px;padding-inline:74px}}
+@media(max-width:700px){.placement-banner{margin-top:18px}.placement-content{min-height:560px;padding:172px 18px 42px;align-items:start}.placement-banner h1{font-size:clamp(38px,10vw,58px);line-height:1.12;margin-bottom:26px}.placement-destination{gap:8px;margin-bottom:18px}.placement-destination>span{font-size:13px}.placement-destination>strong{font-size:27px;text-decoration-thickness:7px}.placement-congrats{font-size:13px;margin-bottom:24px}.party-flags{height:110px;width:190%;left:-45%}.party-balloons{width:80px;top:52px}.balloons-left{left:5px;transform:rotate(-14deg)}.balloons-right{right:5px;transform:rotate(14deg)}.party-sprinkles{opacity:.8}.placement-copy{width:100%}.placement-footer{padding:15px 20px;align-items:center;text-align:center;gap:5px;flex-direction:column}.placement-footer>a{min-height:40px}.celebrate-button{min-height:50px}}
+@media(max-width:380px){.placement-banner h1{font-size:35px}.placement-content{padding-inline:14px;min-height:550px}.placement-destination>strong{font-size:24px}.placement-congrats{max-width:25ch;margin-inline:auto}.party-balloons{width:70px}}
 @media(prefers-reduced-motion:reduce){.celebrate-button{transition:none}.celebrate-button:hover,.celebrate-button:active{transform:none}}
